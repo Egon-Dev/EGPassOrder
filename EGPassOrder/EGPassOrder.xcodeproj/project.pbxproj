@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
+		E6018C212B3E92000032566E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E6018C202B3E92000032566E /* Lottie */; };
+		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C177992B3D46D20011FE74 /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6018C212B3E92000032566E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6018C192B3E73FB0032566E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6018C1A2B3E741D0032566E /* SplashView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6018C1A2B3E741D0032566E /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				E6018C1B2B3E742F0032566E /* SplashView.swift */,
+				E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
 		E6C177892B3D46D10011FE74 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +117,7 @@
 		E6C177942B3D46D10011FE74 /* EGPassOrder */ = {
 			isa = PBXGroup;
 			children = (
+				E6018C192B3E73FB0032566E /* Views */,
 				E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */,
 				E6C177972B3D46D10011FE74 /* ContentView.swift */,
 				E6C177992B3D46D20011FE74 /* Assets.xcassets */,
@@ -143,6 +167,9 @@
 			dependencies = (
 			);
 			name = EGPassOrder;
+			packageProductDependencies = (
+				E6018C202B3E92000032566E /* Lottie */,
+			);
 			productName = EGPassOrder;
 			productReference = E6C177922B3D46D10011FE74 /* EGPassOrder.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,9 @@
 				Base,
 			);
 			mainGroup = E6C177892B3D46D10011FE74;
+			packageReferences = (
+				E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = E6C177932B3D46D10011FE74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +263,7 @@
 			files = (
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
 				E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */,
+				E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +290,7 @@
 			files = (
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
+				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6018C202B3E92000032566E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6C1778A2B3D46D10011FE74 /* Project object */;
 }
