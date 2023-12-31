@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6018C182B3E6F040032566E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C172B3E6F040032566E /* ColorExtension.swift */; };
 		E67C6E722B3D4925004BE0BF /* OnBoardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C6E712B3D4925004BE0BF /* OnBoardingPageView.swift */; };
 		E67C6E752B3D4CB6004BE0BF /* OnBoardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C6E742B3D4CB6004BE0BF /* OnBoardingPageControl.swift */; };
 		E67C6E772B3D4CCC004BE0BF /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C6E762B3D4CCC004BE0BF /* OnBoardingPageViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6018C172B3E6F040032566E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E67C6E712B3D4925004BE0BF /* OnBoardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageView.swift; sourceTree = "<group>"; };
 		E67C6E742B3D4CB6004BE0BF /* OnBoardingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageControl.swift; sourceTree = "<group>"; };
 		E67C6E762B3D4CCC004BE0BF /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6018C162B3E6EE90032566E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E6018C172B3E6F040032566E /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E67C6E6F2B3D4907004BE0BF /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +100,10 @@
 		E67C6E702B3D4912004BE0BF /* OnBoardingView */ = {
 			isa = PBXGroup;
 			children = (
-				E67C6E782B3D5376004BE0BF /* Legacy */,
+				E67C6E712B3D4925004BE0BF /* OnBoardingPageView.swift */,
+				E67C6E742B3D4CB6004BE0BF /* OnBoardingPageControl.swift */,
+				E67C6E762B3D4CCC004BE0BF /* OnBoardingPageViewController.swift */,
+				E67C6E7B2B3D6539004BE0BF /* OnBoardingPage.swift */,
 			);
 			path = OnBoardingView;
 			sourceTree = "<group>";
@@ -101,17 +114,6 @@
 				E6C177992B3D46D20011FE74 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		E67C6E782B3D5376004BE0BF /* Legacy */ = {
-			isa = PBXGroup;
-			children = (
-				E67C6E712B3D4925004BE0BF /* OnBoardingPageView.swift */,
-				E67C6E742B3D4CB6004BE0BF /* OnBoardingPageControl.swift */,
-				E67C6E762B3D4CCC004BE0BF /* OnBoardingPageViewController.swift */,
-				E67C6E7B2B3D6539004BE0BF /* OnBoardingPage.swift */,
-			);
-			path = Legacy;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -137,6 +139,7 @@
 		E6C177942B3D46D10011FE74 /* EGPassOrder */ = {
 			isa = PBXGroup;
 			children = (
+				E6018C162B3E6EE90032566E /* Utils */,
 				E67C6E6F2B3D4907004BE0BF /* View */,
 				E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */,
 				E6C177972B3D46D10011FE74 /* ContentView.swift */,
@@ -303,6 +306,7 @@
 			files = (
 				E67C6E722B3D4925004BE0BF /* OnBoardingPageView.swift in Sources */,
 				E67C6E7C2B3D6539004BE0BF /* OnBoardingPage.swift in Sources */,
+				E6018C182B3E6F040032566E /* ColorExtension.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E67C6E772B3D4CCC004BE0BF /* OnBoardingPageViewController.swift in Sources */,
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
