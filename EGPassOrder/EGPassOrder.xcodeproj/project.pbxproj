@@ -12,7 +12,6 @@
 		1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */; };
 		1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */; };
 		1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */; };
-		1601F33F2B42A8E500A2AC61 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F33E2B42A8E400A2AC61 /* ColorExtension.swift */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
 		E6018C212B3E92000032566E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E6018C202B3E92000032566E /* Lottie */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
@@ -48,7 +47,6 @@
 		1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
 		1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageControl.swift; sourceTree = "<group>"; };
 		1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1601F33E2B42A8E400A2AC61 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,14 +114,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		1601F33D2B42A8E400A2AC61 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				1601F33E2B42A8E400A2AC61 /* ColorExtension.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		1601F3432B42A9B200A2AC61 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				1601F3432B42A9B200A2AC61 /* App */,
-				1601F33D2B42A8E400A2AC61 /* Utils */,
 				1601F33A2B42A8DE00A2AC61 /* Resources */,
 				E6018C192B3E73FB0032566E /* Presentations */,
 				E6C1779B2B3D46D20011FE74 /* Preview Content */,
@@ -350,7 +339,6 @@
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
-				1601F33F2B42A8E500A2AC61 /* ColorExtension.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
 				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
