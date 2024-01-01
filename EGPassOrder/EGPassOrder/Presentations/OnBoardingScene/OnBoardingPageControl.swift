@@ -45,3 +45,14 @@ extension OnBoardingPageControl {
         }
     }
 }
+
+
+// MARK: - Colors
+fileprivate extension Color {
+    static let onBoardingIndigo = Color("OnBoardingView/indigo")
+    static let onBoardingOrange = Color("OnBoardingView/orange")
+
+    var uiColor: UIColor {
+        return UIColor(self)
+    }
+}

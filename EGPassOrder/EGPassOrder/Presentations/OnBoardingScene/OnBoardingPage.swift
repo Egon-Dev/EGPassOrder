@@ -38,3 +38,13 @@ struct OnBoardingPage: View {
 #Preview {
     OnBoardingPage(backgroundImage: Image("OnBoardingView/page_4"))
 }
+
+
+// MARK: - Colors
+fileprivate extension Color {
+    static let onBoardingOrange = Color("OnBoardingView/orange")
+
+    var uiColor: UIColor {
+        return UIColor(self)
+    }
+}
