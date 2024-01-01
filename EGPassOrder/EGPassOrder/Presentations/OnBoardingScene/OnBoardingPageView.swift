@@ -29,9 +29,9 @@ struct OnBoardingPageView: View {
 
 #Preview {
     OnBoardingPageView(pageImages: [
-        Image("OnBoardingView/page_1"),
-        Image("OnBoardingView/page_2"),
-        Image("OnBoardingView/page_3"),
-        Image("OnBoardingView/page_4")
+        Image("OnBoardingScene/page_1"),
+        Image("OnBoardingScene/page_2"),
+        Image("OnBoardingScene/page_3"),
+        Image("OnBoardingScene/page_4")
     ])
 }
