@@ -89,12 +89,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		E67C6E6F2B3D4907004BE0BF /* View */ = {
+		E67C6E6F2B3D4907004BE0BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				E67C6E702B3D4912004BE0BF /* OnBoardingView */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E67C6E702B3D4912004BE0BF /* OnBoardingView */ = {
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E6018C162B3E6EE90032566E /* Utils */,
-				E67C6E6F2B3D4907004BE0BF /* View */,
+				E67C6E6F2B3D4907004BE0BF /* Views */,
 				E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */,
 				E6C177972B3D46D10011FE74 /* ContentView.swift */,
 				E67C6E732B3D4932004BE0BF /* Resources */,
