@@ -11,6 +11,9 @@ struct HomeView: View {
     var body: some View {
         VStack {
             HomeTabBarView(spacing: 20, height: 40)
+            HomePromotionPageView()
+                .frame(height: 200)
+            Spacer()
         }
         .padding()
     }

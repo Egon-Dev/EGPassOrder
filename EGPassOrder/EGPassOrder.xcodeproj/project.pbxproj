@@ -16,6 +16,7 @@
 		1698FF8F2B42EA2000D5D49B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF8E2B42EA2000D5D49B /* HomeView.swift */; };
 		1698FF912B42EA5700D5D49B /* HomeSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */; };
 		1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */; };
+		1698FF952B43007600D5D49B /* HomePromotionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF942B43007600D5D49B /* HomePromotionPageView.swift */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
 		E6018C212B3E92000032566E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E6018C202B3E92000032566E /* Lottie */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
@@ -55,6 +56,7 @@
 		1698FF8E2B42EA2000D5D49B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchBarView.swift; sourceTree = "<group>"; };
 		1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
+		1698FF942B43007600D5D49B /* HomePromotionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePromotionPageView.swift; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				1698FF8E2B42EA2000D5D49B /* HomeView.swift */,
 				1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */,
 				1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */,
+				1698FF942B43007600D5D49B /* HomePromotionPageView.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
 				1601F3322B42A8A400A2AC61 /* OnBoardingPage.swift in Sources */,
 				1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */,
+				1698FF952B43007600D5D49B /* HomePromotionPageView.swift in Sources */,
 				1698FF912B42EA5700D5D49B /* HomeSearchBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,12 @@ struct HomeTabBarView: View {
     private let spacing: CGFloat
     private let height: CGFloat
     
-    init(itemInfoList: [TabBarItemInfo] = TabBarItemInfo.allCases, selectedTabIndex: Int = .zero, spacing: CGFloat, height: CGFloat) {
+    init(
+        itemInfoList: [TabBarItemInfo] = TabBarItemInfo.allCases,
+        selectedTabIndex: Int = .zero,
+        spacing: CGFloat,
+        height: CGFloat
+    ) {
         self.itemInfoList = itemInfoList
         self.selectedTabIndex = selectedTabIndex
         self.spacing = spacing
