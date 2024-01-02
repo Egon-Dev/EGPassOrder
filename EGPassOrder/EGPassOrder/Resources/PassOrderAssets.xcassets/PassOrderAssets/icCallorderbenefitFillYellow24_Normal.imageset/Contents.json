@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "icCallorderbenefitFillYellow24_Normal.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "icCallorderbenefitFillYellow24_Normal@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "icCallorderbenefitFillYellow24_Normal@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

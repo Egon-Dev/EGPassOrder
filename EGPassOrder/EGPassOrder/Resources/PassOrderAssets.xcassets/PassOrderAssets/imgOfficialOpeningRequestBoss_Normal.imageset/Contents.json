@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "imgOfficialOpeningRequestBoss_Normal.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "imgOfficialOpeningRequestBoss_Normal@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "imgOfficialOpeningRequestBoss_Normal@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

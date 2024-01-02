@@ -27,6 +27,10 @@
 		E6C177A72B3D46D30011FE74 /* EGPassOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */; };
 		E6C177B12B3D46D30011FE74 /* EGPassOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */; };
 		E6C177B32B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */; };
+		E6EB663B2B439E5400B82AD9 /* HomeNearbyShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB663A2B439E5400B82AD9 /* HomeNearbyShopListView.swift */; };
+		E6EB663E2B43A96A00B82AD9 /* LargeShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */; };
+		E6EB66402B43ADD100B82AD9 /* ShopListCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */; };
+		E6EB66422B43B19D00B82AD9 /* PassOrderAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EB66412B43B19D00B82AD9 /* PassOrderAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		E6C177AC2B3D46D30011FE74 /* EGPassOrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGPassOrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITests.swift; sourceTree = "<group>"; };
 		E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6EB663A2B439E5400B82AD9 /* HomeNearbyShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNearbyShopListView.swift; sourceTree = "<group>"; };
+		E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeShopListCell.swift; sourceTree = "<group>"; };
+		E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCellType.swift; sourceTree = "<group>"; };
+		E6EB66412B43B19D00B82AD9 /* PassOrderAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PassOrderAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */,
+				E6EB66412B43B19D00B82AD9 /* PassOrderAssets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -144,10 +153,12 @@
 		1698FF8D2B42EA1300D5D49B /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
+				E6EB663C2B43A94800B82AD9 /* ShopListCells */,
 				1698FF8E2B42EA2000D5D49B /* HomeView.swift */,
 				1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */,
 				1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */,
 				1698FF942B43007600D5D49B /* HomePromotionPageView.swift */,
+				E6EB663A2B439E5400B82AD9 /* HomeNearbyShopListView.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -227,6 +238,15 @@
 				E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */,
 			);
 			path = EGPassOrderUITests;
+			sourceTree = "<group>";
+		};
+		E6EB663C2B43A94800B82AD9 /* ShopListCells */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */,
+				E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */,
+			);
+			path = ShopListCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +361,7 @@
 			files = (
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
 				E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */,
+				E6EB66422B43B19D00B82AD9 /* PassOrderAssets.xcassets in Resources */,
 				1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */,
 				E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */,
 			);
@@ -368,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1698FF8F2B42EA2000D5D49B /* HomeView.swift in Sources */,
+				E6EB66402B43ADD100B82AD9 /* ShopListCellType.swift in Sources */,
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
@@ -377,6 +399,8 @@
 				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
 				1601F3322B42A8A400A2AC61 /* OnBoardingPage.swift in Sources */,
 				1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */,
+				E6EB663B2B439E5400B82AD9 /* HomeNearbyShopListView.swift in Sources */,
+				E6EB663E2B43A96A00B82AD9 /* LargeShopListCell.swift in Sources */,
 				1698FF952B43007600D5D49B /* HomePromotionPageView.swift in Sources */,
 				1698FF912B42EA5700D5D49B /* HomeSearchBarView.swift in Sources */,
 			);

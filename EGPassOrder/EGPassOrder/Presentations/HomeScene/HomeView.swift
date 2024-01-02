@@ -12,7 +12,7 @@ struct HomeView: View {
         VStack {
             HomeTabBarView(spacing: 20, height: 40)
             HomePromotionPageView()
-                .frame(height: 200)
+                .frame(height: 100)
             Spacer()
         }
         .padding()
