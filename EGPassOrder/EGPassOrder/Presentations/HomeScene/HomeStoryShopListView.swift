@@ -49,7 +49,7 @@ private struct HomeStoryShopScrollView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: [GridItem()], spacing: 20) {
                     ForEach(rows.indices, id: \.self) { item in
-                        LargeShopListCell(proxy: proxy)
+                        LargeShopListCell()
                     }
                 }
             }

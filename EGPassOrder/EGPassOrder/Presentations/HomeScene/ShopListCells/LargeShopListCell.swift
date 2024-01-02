@@ -9,14 +9,13 @@ import SwiftUI
 
 struct LargeShopListCell: View {
     @State private var isPhoneOrderShop: Bool = false
-    @State var proxy: GeometryProxy
 
     var body: some View {
-        VStack {
-            LargeShopListImageView(isPhoneOrderShop: $isPhoneOrderShop, proxy: $proxy)
-                .frame(width: proxy.size.width * 0.5, height: proxy.size.height * 0.7)
-            LargeShopListDescriptionView(isPhoneOrderShop: $isPhoneOrderShop, proxy: $proxy)
-                .frame(width: proxy.size.width * 0.5, height: proxy.size.height * 0.3)
+        VStack(alignment: .leading) {
+            LargeShopListImageView(isPhoneOrderShop: $isPhoneOrderShop)
+                .aspectRatio(0.2, contentMode: .fit)
+            LargeShopListDescriptionView(isPhoneOrderShop: $isPhoneOrderShop)
+                .aspectRatio(1, contentMode: .fit)
         }
     }
 }
@@ -24,22 +23,22 @@ struct LargeShopListCell: View {
 
 private struct LargeShopListImageView: View {
     @Binding fileprivate var isPhoneOrderShop: Bool
-    @Binding fileprivate var proxy: GeometryProxy
 
     var body: some View {
         ZStack {
             Image.testShopImage
                 .resizable()
-                .frame(width: proxy.size.width * 0.5, height: proxy.size.height * 0.7)
                 .aspectRatio(contentMode: .fill)
 
             if isPhoneOrderShop == true {
                 LargeShopListDimmedImageView()
+                    .padding()
             } else {
                 LargeShopListDefaultImageView()
+                    .padding()
             }
         }
-        .frame(width: proxy.size.width * 0.5, height: proxy.size.height * 0.7)
+        .clipShape(.rect(cornerRadius: 12))
     }
 }
 
@@ -47,43 +46,41 @@ private struct LargeShopListImageView: View {
 extension LargeShopListImageView {
     private struct LargeShopListDimmedImageView: View {
         var body: some View {
-            ZStack {
-                Color.shopListCellImageDimmed
+            Color.shopListCellImageDimmed
+            
+            VStack {
+                Image.phoneOrderLargeIcon
+                Text("전화주문 매장")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundStyle(Color.shopListCellWhite)
+            }
+            
+            VStack(alignment: .leading) {
+                Spacer()
                 
-                VStack {
-                    Image.phoneOrderLargeIcon
-                    Text("전화주문 매장")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundStyle(Color.shopListCellWhite)
+                HStack {
+                    Image.phoneCallBadge
+                    Spacer()
                 }
                 
-                VStack(alignment: .leading) {
+                HStack {
+                    Label {
+                        Text("0")
+                            .foregroundStyle(Color.shopListCellOrange)
+                    } icon: {
+                        Image.heartIcon
+                    }
+                    
+                    Label {
+                        Text("0")
+                            .foregroundStyle(Color.shopListCellWhite)
+                    } icon: {
+                        Image.commentIcon
+                    }
+                    .labelStyle(.titleAndIcon)
+                    
                     Spacer()
-                    
-                    HStack {
-                        Image.phoneCallBadge
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Label {
-                            Text("0")
-                                .foregroundStyle(Color.shopListCellOrange)
-                        } icon: {
-                            Image.heartIcon
-                        }
-                        
-                        Label {
-                            Text("0")
-                                .foregroundStyle(Color.shopListCellWhite)
-                        } icon: {
-                            Image.commentIcon
-                        }
-                        .labelStyle(.titleAndIcon)
-                        
-                        Spacer()
-                    }
                 }
             }
         }
@@ -94,59 +91,54 @@ extension LargeShopListImageView {
 extension LargeShopListImageView {
     private struct LargeShopListDefaultImageView: View {
         var body: some View {
-            GeometryReader { proxy in
-                VStack(alignment: .leading) {
+            VStack(alignment: .leading) {
+                Spacer()
+                
+                HStack {
+                    Image.pointBadge
+                    Image.pointTogetherBadge
+                    Image.newShopBadge
                     Spacer()
-
-                    HStack {
-                        Image.pointBadge
-                        Image.pointTogetherBadge
-                        Image.newShopBadge
-                        Spacer()
-                    }
-                    .frame(width: proxy.size.width)
-
-                    HStack {
-                        Label {
-                            Text("0")
-                                .foregroundStyle(Color.shopListCellOrange)
-                        } icon: {
-                            Image.heartIcon
-                        }
-
-                        Label {
-                            Text("0")
-                                .foregroundStyle(Color.shopListCellWhite)
-                        } icon: {
-                            Image.commentIcon
-                        }
-                        .labelStyle(.titleAndIcon)
-
-                        Spacer()
-                    }
-                    .frame(width: proxy.size.width)
-
-                    HStack {
-                        Label {
-                            var formattedNumber: String {
-                                let numberFormatter = NumberFormatter()
-                                numberFormatter.numberStyle = .decimal
-
-                                return numberFormatter.string(from: NSNumber(value: 1234)) ?? "0"
-                            }
-
-                            Text("주문수 \(formattedNumber)")
-                                .foregroundStyle(Color.shopListCellWhite)
-                                .font(.subheadline)
-                        } icon: {
-                            Image.cartIcon
-                        }
-                        .labelStyle(.titleAndIcon)
-                        Spacer()
-                    }
-                    .frame(width: proxy.size.width)
                 }
-                .frame(width: proxy.size.width, height: proxy.size.height)
+                
+                HStack {
+                    Label {
+                        Text("0")
+                            .foregroundStyle(Color.shopListCellOrange)
+                    } icon: {
+                        Image.heartIcon
+                    }
+
+                    Label {
+                        Text("0")
+                            .foregroundStyle(Color.shopListCellWhite)
+                    } icon: {
+                        Image.commentIcon
+                    }
+                    .labelStyle(.titleAndIcon)
+
+                    Spacer()
+                }
+                
+                HStack {
+                    Label {
+                        var formattedNumber: String {
+                            let numberFormatter = NumberFormatter()
+                            numberFormatter.numberStyle = .decimal
+
+                            return numberFormatter.string(from: NSNumber(value: 1234)) ?? "0"
+                        }
+
+                        Text("주문수 \(formattedNumber)")
+                            .foregroundStyle(Color.shopListCellWhite)
+                            .font(.subheadline)
+                    } icon: {
+                        Image.cartIcon
+                    }
+                    .labelStyle(.titleAndIcon)
+                    
+                    Spacer()
+                }
             }
         }
     }
@@ -155,13 +147,13 @@ extension LargeShopListImageView {
 
 private struct LargeShopListDescriptionView: View {
     @Binding fileprivate var isPhoneOrderShop: Bool
-    @Binding fileprivate var proxy: GeometryProxy
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("커피사피엔스 구로한영 캐슬시티점")
-                .font(.title3)
+            Text("커피사피엔스 구로한영 캐슬시티점 aaaaaaaa")
                 .lineLimit(2)
+                .font(.title3)
+                .background(.cyan)
             
             if isPhoneOrderShop == false {
                 Label {
@@ -179,6 +171,16 @@ private struct LargeShopListDescriptionView: View {
                 Image.shopDistanceIcon
             }
         }
+        .background(Color.red)
+    }
+}
+
+
+struct MatchedWidthKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
     }
 }
 
@@ -209,10 +211,5 @@ fileprivate extension Color {
 }
 
 #Preview {
-    VStack {
-        GeometryReader { proxy in
-            LargeShopListCell(proxy: proxy)
-        }
-    }
-    .frame(height: 400)
+    LargeShopListCell()
 }

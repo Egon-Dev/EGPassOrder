@@ -11,14 +11,11 @@ struct HomeNearbyShopListView: View {
     @State private var isPhoneOrderShop: Bool = true
 
     var body: some View {
-        GeometryReader { proxy in
-            VStack(alignment: .leading) {
-                HomeNearbyShopListTitleView(isPhoneOrderShop: $isPhoneOrderShop)
-                HomeNearbyShopListScrollView()
-                    .frame(width: proxy.size.width, height: proxy.size.height * 0.6)
-                HomeNearbyShopListAccessaryView()
-                    .padding()
-            }
+        VStack(alignment: .leading) {
+            HomeNearbyShopListTitleView(isPhoneOrderShop: $isPhoneOrderShop)
+            HomeNearbyShopListScrollView()
+            HomeNearbyShopListAccessaryView()
+                .padding()
         }
     }
 }
@@ -59,11 +56,11 @@ private struct HomeNearbyShopListTitleView: View {
 
 private struct HomeNearbyShopListScrollView: View {
     let rows: [GridItem] = [
-        GridItem(),
-        GridItem(),
-        GridItem(),
-        GridItem(),
-        GridItem()
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
     ]
 
     var body: some View {
@@ -71,11 +68,12 @@ private struct HomeNearbyShopListScrollView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: [GridItem()], spacing: 20) {
                     ForEach(rows.indices, id: \.self) { item in
-                        LargeShopListCell(proxy: proxy)
+                        LargeShopListCell()
                     }
                 }
             }
         }
+        .frame(height: 500)
     }
 }
 
