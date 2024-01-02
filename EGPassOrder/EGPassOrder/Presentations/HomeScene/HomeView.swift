@@ -13,6 +13,7 @@ struct HomeView: View {
             HomeTabBarView(spacing: 20, height: 40)
             HomePromotionPageView()
                 .frame(height: 100)
+            HomeNearbyShopListView()
             Spacer()
         }
         .padding()

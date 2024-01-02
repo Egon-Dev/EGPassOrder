@@ -12,15 +12,15 @@ enum ShopListCellType {
     case medium
     case small
 
-    @ViewBuilder
-    func createView() -> some View {
-        switch self {
-        case .large:
-            LargeShopListCell()
-        case .medium:
-            LargeShopListCell()
-        case .small:
-            LargeShopListCell()
-        }
-    }
+//    @ViewBuilder
+//    func createView() -> some View {
+//        switch self {
+//        case .large:
+//            LargeShopListCell()
+//        case .medium:
+//            LargeShopListCell()
+//        case .small:
+//            LargeShopListCell()
+//        }
+//    }
 }
