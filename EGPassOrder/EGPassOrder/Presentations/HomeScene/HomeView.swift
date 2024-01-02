@@ -14,7 +14,10 @@ struct HomeView: View {
             HomePromotionPageView()
                 .frame(height: 100)
             HomeNearbyShopListView()
-            Spacer()
+            HomePointShopListView()
+//            HomePassOrderAdView()
+//            HomeDrinkAndGoShopListView()
+//            HomeNewShopListView()
         }
         .padding()
     }

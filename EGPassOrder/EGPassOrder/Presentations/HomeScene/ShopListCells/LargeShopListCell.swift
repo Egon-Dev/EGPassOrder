@@ -12,7 +12,7 @@ struct LargeShopListCell: View {
     @State var proxy: GeometryProxy
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             LargeShopListImageView(isPhoneOrderShop: $isPhoneOrderShop, proxy: $proxy)
                 .frame(width: proxy.size.width * 0.5, height: proxy.size.height * 0.7)
             LargeShopListDescriptionView(isPhoneOrderShop: $isPhoneOrderShop, proxy: $proxy)
@@ -85,7 +85,6 @@ extension LargeShopListImageView {
                         Spacer()
                     }
                 }
-                .padding(8)
             }
         }
     }
@@ -147,7 +146,6 @@ extension LargeShopListImageView {
                     }
                     .frame(width: proxy.size.width)
                 }
-                .padding()
                 .frame(width: proxy.size.width, height: proxy.size.height)
             }
         }
@@ -210,6 +208,11 @@ fileprivate extension Color {
     static let shopListCellGray = Color("ShopListCells/gray")
 }
 
-//#Preview {
-//    LargeShopListCell()
-//}
+#Preview {
+    VStack {
+        GeometryReader { proxy in
+            LargeShopListCell(proxy: proxy)
+        }
+    }
+    .frame(height: 400)
+}

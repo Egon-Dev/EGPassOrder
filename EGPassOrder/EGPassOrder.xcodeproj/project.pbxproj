@@ -31,6 +31,12 @@
 		E6EB663E2B43A96A00B82AD9 /* LargeShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */; };
 		E6EB66402B43ADD100B82AD9 /* ShopListCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */; };
 		E6EB66422B43B19D00B82AD9 /* PassOrderAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EB66412B43B19D00B82AD9 /* PassOrderAssets.xcassets */; };
+		E6EB66442B43F10300B82AD9 /* HomePointShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB66432B43F10300B82AD9 /* HomePointShopListView.swift */; };
+		E6EB66462B43F2D300B82AD9 /* HomePassOrderAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB66452B43F2D300B82AD9 /* HomePassOrderAdView.swift */; };
+		E6EB66482B43F2F400B82AD9 /* HomeStoryShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB66472B43F2F400B82AD9 /* HomeStoryShopListView.swift */; };
+		E6EB664A2B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */; };
+		E6EB664C2B43F3CC00B82AD9 /* HomeNewShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */; };
+		E6EB664E2B43F41600B82AD9 /* SmallShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,12 @@
 		E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeShopListCell.swift; sourceTree = "<group>"; };
 		E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCellType.swift; sourceTree = "<group>"; };
 		E6EB66412B43B19D00B82AD9 /* PassOrderAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PassOrderAssets.xcassets; sourceTree = "<group>"; };
+		E6EB66432B43F10300B82AD9 /* HomePointShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePointShopListView.swift; sourceTree = "<group>"; };
+		E6EB66452B43F2D300B82AD9 /* HomePassOrderAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassOrderAdView.swift; sourceTree = "<group>"; };
+		E6EB66472B43F2F400B82AD9 /* HomeStoryShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryShopListView.swift; sourceTree = "<group>"; };
+		E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDrinkAndGoShopListView.swift; sourceTree = "<group>"; };
+		E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewShopListView.swift; sourceTree = "<group>"; };
+		E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallShopListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +171,11 @@
 				1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */,
 				1698FF942B43007600D5D49B /* HomePromotionPageView.swift */,
 				E6EB663A2B439E5400B82AD9 /* HomeNearbyShopListView.swift */,
+				E6EB66432B43F10300B82AD9 /* HomePointShopListView.swift */,
+				E6EB66452B43F2D300B82AD9 /* HomePassOrderAdView.swift */,
+				E6EB66472B43F2F400B82AD9 /* HomeStoryShopListView.swift */,
+				E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */,
+				E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -245,6 +262,7 @@
 			children = (
 				E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */,
 				E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */,
+				E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */,
 			);
 			path = ShopListCells;
 			sourceTree = "<group>";
@@ -392,12 +410,18 @@
 				E6EB66402B43ADD100B82AD9 /* ShopListCellType.swift in Sources */,
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
+				E6EB664A2B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
+				E6EB66462B43F2D300B82AD9 /* HomePassOrderAdView.swift in Sources */,
 				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
+				E6EB664C2B43F3CC00B82AD9 /* HomeNewShopListView.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
 				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
 				1601F3322B42A8A400A2AC61 /* OnBoardingPage.swift in Sources */,
+				E6EB664E2B43F41600B82AD9 /* SmallShopListCell.swift in Sources */,
+				E6EB66482B43F2F400B82AD9 /* HomeStoryShopListView.swift in Sources */,
+				E6EB66442B43F10300B82AD9 /* HomePointShopListView.swift in Sources */,
 				1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */,
 				E6EB663B2B439E5400B82AD9 /* HomeNearbyShopListView.swift in Sources */,
 				E6EB663E2B43A96A00B82AD9 /* LargeShopListCell.swift in Sources */,
