@@ -13,6 +13,7 @@ struct HomeDrinkAndGoShopListView: View {
             HomeDrinkAndGoShopTitleView()
             HomeDrinkAndGoShopScrollView()
             HomeDrinkAndGoShopAccessaryView()
+                .padding()
         }
     }
 }
@@ -41,19 +42,27 @@ private struct HomeDrinkAndGoShopScrollView: View {
         GridItem(),
         GridItem(),
         GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
         GridItem()
     ]
 
     var body: some View {
         GeometryReader { proxy in
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: [GridItem()], spacing: 20) {
+                LazyHGrid(rows: [GridItem()], alignment: .top, spacing: 10) {
                     ForEach(rows.indices, id: \.self) { item in
-                        LargeShopListCell()
+                        MediumShopListCell(width: 150, height: 100)
                     }
                 }
             }
         }
+        .frame(height: 280)
     }
 }
 

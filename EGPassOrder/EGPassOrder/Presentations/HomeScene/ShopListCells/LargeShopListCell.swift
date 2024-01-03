@@ -153,7 +153,6 @@ private struct LargeShopListDescriptionView: View {
             Text("커피사피엔스 구로한영 캐슬시티점 aaaaaaaa")
                 .lineLimit(2)
                 .font(.title3)
-                .background(.cyan)
             
             if isPhoneOrderShop == false {
                 Label {
@@ -171,7 +170,6 @@ private struct LargeShopListDescriptionView: View {
                 Image.shopDistanceIcon
             }
         }
-        .background(Color.red)
     }
 }
 

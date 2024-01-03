@@ -13,6 +13,7 @@ struct HomeStoryShopListView: View {
             HomeStoryShopTitleView()
             HomeStoryShopScrollView()
             HomeStoryShopAccessaryView()
+                .padding()
         }
     }
 }
@@ -41,19 +42,27 @@ private struct HomeStoryShopScrollView: View {
         GridItem(),
         GridItem(),
         GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
         GridItem()
     ]
 
     var body: some View {
         GeometryReader { proxy in
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: [GridItem()], spacing: 20) {
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()], spacing: 10) {
                     ForEach(rows.indices, id: \.self) { item in
-                        LargeShopListCell()
+                        SmallShopListCell()
                     }
                 }
             }
         }
+        .frame(height: 320)
     }
 }
 

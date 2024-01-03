@@ -13,6 +13,7 @@ struct HomeNewShopListView: View {
             HomeNewShopTitleView()
             HomeNewShopScrollView()
             HomeNewShopAccessaryView()
+                .padding()
         }
     }
 }
@@ -47,13 +48,14 @@ private struct HomeNewShopScrollView: View {
     var body: some View {
         GeometryReader { proxy in
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: [GridItem()], spacing: 20) {
+                LazyHGrid(rows: [GridItem()], alignment: .top, spacing: 20) {
                     ForEach(rows.indices, id: \.self) { item in
-                        LargeShopListCell()
+                        SquareShopListCell(width: 220)
                     }
                 }
             }
         }
+        .frame(height: 420)
     }
 }
 

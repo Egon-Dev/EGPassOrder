@@ -43,7 +43,7 @@ extension MainTabView {
 #Preview {
     MainTabView(tabItemList: [
         MainTabView.TabItem(
-            view: Text("홈1 Tab"),
+            view: HomeView(),
             iconImage: Image(systemName: "1.square.fill"),
             titleText: Text("홈1")
         ),

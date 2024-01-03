@@ -1,57 +1,61 @@
 //
-//  SmallShopListCell.swift
+//  MediumShopListCell.swift
 //  EGPassOrder
 //
-//  Created by changmuk.im@phoenixdarts.com on 1/2/24.
+//  Created by lymchgmk on 1/4/24.
 //
 
 import SwiftUI
 
-struct SmallShopListCell: View {
+struct MediumShopListCell: View {
+    @State var width: CGFloat
+    @State var height: CGFloat
     @State var isOpenedShop: Bool = true
 
     var body: some View {
-        HStack(alignment: .center, spacing: .zero) {
-            ShopImageView(isOpenedShop: $isOpenedShop, imageHeight: 100)
-            ShopDescriptionView()
+        VStack(alignment: .leading) {
+            ShopImageView(isOpenedShop: $isOpenedShop, width: $width, height: $height)
+            ShopDescriptionView(width: $width)
         }
     }
 }
 
-
 private struct ShopImageView: View {
     @Binding var isOpenedShop: Bool
-    @State var imageHeight: CGFloat
+    @Binding var width: CGFloat
+    @Binding var height: CGFloat
 
     var body: some View {
         ZStack {
             Image.testImage
                 .resizable()
-                .frame(width: imageHeight, height: imageHeight)
+                .frame(width: width, height: height)
                 .clipShape(.rect(cornerRadius: 12))
 
             if isOpenedShop == false {
-                DimmedShopImageView(imageHeight: $imageHeight)
+                DimmedShopImageView(width: $width, height: $height)
             } else {
-                DefaultImageView(imageHeight: $imageHeight)
+                DefaultImageView(width: $width, height: $height)
             }
         }
-        .frame(width: imageHeight, height: imageHeight)
+        .frame(width: width, height: height)
     }
 
     struct DimmedShopImageView: View {
-        @Binding var imageHeight: CGFloat
+        @Binding var width: CGFloat
+        @Binding var height: CGFloat
         
         var body: some View {
             ZStack {
                 Color.shopListCellImageDimmed
             }
-            .frame(width: imageHeight, height: imageHeight)
+            .frame(width: width, height: height)
         }
     }
 
     struct DefaultImageView: View {
-        @Binding var imageHeight: CGFloat
+        @Binding var width: CGFloat
+        @Binding var height: CGFloat
         
         var body: some View {
             ZStack {
@@ -68,16 +72,40 @@ private struct ShopImageView: View {
                     .padding(6)
                 }
             }
-            .frame(width: imageHeight, height: imageHeight)
+            .frame(width: width, height: height)
         }
     }
 }
 
 
 private struct ShopDescriptionView: View {
+    @Binding var width: CGFloat
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("하이브커피")
+            Text("하이브커피 asfasdfasdfadsfads")
+                .lineLimit(2)
+                .font(.title3)
+                .padding(.bottom, 8)
+            
+            HStack {
+                Label {
+                    Text("0")
+                        .foregroundStyle(Color.shopListCellOrange)
+                } icon: {
+                    Image.heartIcon
+                }
+
+                Label {
+                    Text("0")
+                        .foregroundStyle(Color.shopListCellWhite)
+                } icon: {
+                    Image.commentIcon
+                }
+                .labelStyle(.titleAndIcon)
+
+                Spacer()
+            }
 
             Label {
                 Text("132.0m")
@@ -94,13 +122,13 @@ private struct ShopDescriptionView: View {
             }
 
             Label {
-                Text("구매가능 포인트 330P")
+                Text("구매가능")
                     .foregroundStyle(Color.shopListCellGray)
             } icon: {
                 Image.pointIcon
             }
         }
-        .padding(.leading, 8)
+        .frame(maxWidth: width)
     }
 }
 
@@ -118,16 +146,20 @@ fileprivate extension Image {
         Image("ShopListCells/discountCircleSmallBadge")
     static let pointBadge = Image("ShopListCells/pointCircleSmallBadge")
     static let pointTogetherBadge = Image("ShopListCells/pointTogetherCircleSmallBadge")
+    static let heartIcon = Image("ShopListCells/heartIcon")
+    static let commentIcon = Image("ShopListCells/commentIcon")
 }
 
 
 // MARK: - Color
 fileprivate extension Color {
-    static let shopListCellGray = Color("ShopListCells/gray")
+    static let shopListCellWhite = Color.white
+    static let shopListCellOrange = Color("ShopListCells/orange")
     static let shopListCellImageDimmed = Color.black.opacity(0.5)
+    static let shopListCellGray = Color("ShopListCells/gray")
 }
 
 
 #Preview {
-    SmallShopListCell()
+    MediumShopListCell(width: 150, height: 100)
 }

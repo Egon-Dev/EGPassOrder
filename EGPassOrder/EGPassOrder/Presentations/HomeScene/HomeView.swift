@@ -9,19 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ScrollView(.vertical) {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack {
                 HomeTabBarView(spacing: 20, height: 40)
+                    .padding()
                 HomePromotionPageView()
                     .frame(height: 100)
+                    .padding()
                 HomeNearbyShopListView()
-                // HomePointShopListView()
-                // HomePassOrderAdView()
-                // HomeDrinkAndGoShopListView()
-                // HomeNewShopListView()
+                HomePointShopListView()
+                HomePassOrderAdView()
+                HomeStoryShopListView()
+                HomeDrinkAndGoShopListView()
+                HomeNewShopListView()
             }
         }
-        .padding()
     }
 }
 
