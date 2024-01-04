@@ -39,6 +39,8 @@
 		E6EB664A2B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */; };
 		E6EB664C2B43F3CC00B82AD9 /* HomeNewShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */; };
 		E6EB664E2B43F41600B82AD9 /* SmallShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */; };
+		E6EB665D2B46517700B82AD9 /* ShopListCellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB665C2B46517700B82AD9 /* ShopListCellConfigurable.swift */; };
+		E6EB66602B46A5E900B82AD9 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = E6EB665F2B46A5E900B82AD9 /* NMapsMap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,7 @@
 		E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDrinkAndGoShopListView.swift; sourceTree = "<group>"; };
 		E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewShopListView.swift; sourceTree = "<group>"; };
 		E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallShopListCell.swift; sourceTree = "<group>"; };
+		E6EB665C2B46517700B82AD9 /* ShopListCellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCellConfigurable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6018C212B3E92000032566E /* Lottie in Frameworks */,
+				E6EB66602B46A5E900B82AD9 /* NMapsMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +268,9 @@
 		E6EB663C2B43A94800B82AD9 /* ShopListCells */ = {
 			isa = PBXGroup;
 			children = (
-				E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */,
 				E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */,
+				E6EB665C2B46517700B82AD9 /* ShopListCellConfigurable.swift */,
+				E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */,
 				E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */,
 				162A28FD2B45AFE7007EA03A /* MediumShopListCell.swift */,
 				162A28FF2B45B455007EA03A /* SquareShopListCell.swift */,
@@ -291,6 +296,7 @@
 			name = EGPassOrder;
 			packageProductDependencies = (
 				E6018C202B3E92000032566E /* Lottie */,
+				E6EB665F2B46A5E900B82AD9 /* NMapsMap */,
 			);
 			productName = EGPassOrder;
 			productReference = E6C177922B3D46D10011FE74 /* EGPassOrder.app */;
@@ -366,6 +372,7 @@
 			mainGroup = E6C177892B3D46D10011FE74;
 			packageReferences = (
 				E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				E6EB665E2B46A5E900B82AD9 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */,
 			);
 			productRefGroup = E6C177932B3D46D10011FE74 /* Products */;
 			projectDirPath = "";
@@ -420,6 +427,7 @@
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				E6EB664A2B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
+				E6EB665D2B46517700B82AD9 /* ShopListCellConfigurable.swift in Sources */,
 				E6EB66462B43F2D300B82AD9 /* HomePassOrderAdView.swift in Sources */,
 				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
 				E6EB664C2B43F3CC00B82AD9 /* HomeNewShopListView.swift in Sources */,
@@ -774,6 +782,14 @@
 				minimumVersion = 4.3.4;
 			};
 		};
+		E6EB665E2B46A5E900B82AD9 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stleamist/NMapsMap-SwiftPM.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -781,6 +797,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		E6EB665F2B46A5E900B82AD9 /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6EB665E2B46A5E900B82AD9 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */;
+			productName = NMapsMap;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

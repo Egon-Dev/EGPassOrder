@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeTabBarView: View {
-    @State var selectedTabIndex: Int
+    @Binding var selectedTabIndex: Int
     @Namespace var namespace
     private let itemInfoList: [TabBarItemInfo]
     private let spacing: CGFloat
@@ -16,12 +16,12 @@ struct HomeTabBarView: View {
     
     init(
         itemInfoList: [TabBarItemInfo] = TabBarItemInfo.allCases,
-        selectedTabIndex: Int = .zero,
+        selectedTabIndex: Binding<Int>,
         spacing: CGFloat,
         height: CGFloat
     ) {
         self.itemInfoList = itemInfoList
-        self.selectedTabIndex = selectedTabIndex
+        _selectedTabIndex = selectedTabIndex
         self.spacing = spacing
         self.height = height
     }
@@ -123,6 +123,6 @@ extension HomeTabBarView {
 }
 
 
-#Preview {
-    HomeTabBarView(spacing: 20, height: 40)
-}
+//#Preview {
+//    HomeTabBarView(spacing: 20, height: 40)
+//}

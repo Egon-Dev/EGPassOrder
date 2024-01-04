@@ -25,29 +25,27 @@ private struct HomeNearbyShopListTitleView: View {
     @Binding var isPhoneOrderShop: Bool
 
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("게스트님과")
-                        Text("가까이 있는 매장")
-                            .foregroundStyle(Color.nearbyShopListOrange)
-                            .fontWeight(.bold)
-                        + Text("이에요!")
-                    }
-
-                    Spacer()
-
-                    Image.passBadge
+        VStack(alignment: .leading) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("게스트님과")
+                    Text("가까이 있는 매장")
+                        .foregroundStyle(Color.nearbyShopListOrange)
+                        .fontWeight(.bold)
+                    + Text("이에요!")
                 }
 
-                HStack {
-                    Text("전화주문 매장 보기")
-                    Toggle("", isOn: $isPhoneOrderShop)
-                        .tint(Color.nearbyShopListOrange)
-                        .labelsHidden()
-                    Spacer()
-                }
+                Spacer()
+
+                Image.passbadgeIcon
+            }
+
+            HStack {
+                Text("전화주문 매장 보기")
+                Toggle("", isOn: $isPhoneOrderShop)
+                    .tint(Color.nearbyShopListOrange)
+                    .labelsHidden()
+                Spacer()
             }
         }
     }
@@ -66,14 +64,14 @@ private struct HomeNearbyShopListScrollView: View {
     var body: some View {
         GeometryReader { proxy in
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: [GridItem()], spacing: 20) {
+                LazyHGrid(rows: [GridItem()], alignment:.top ,spacing: 20) {
                     ForEach(rows.indices, id: \.self) { item in
-                        LargeShopListCell()
+                        LargeShopListCell(imageWidth: proxy.size.width * 0.5)
                     }
                 }
             }
         }
-        .frame(height: 500)
+        .frame(height: 400)
     }
 }
 
@@ -91,7 +89,7 @@ private struct HomeNearbyShopListAccessaryView: View {
 
 // MARK: - Images
 fileprivate extension Image {
-    static let passBadge = Image("HomeScene/passBadge")
+    static let passbadgeIcon = Image("HomeScene/passbadgeIcon")
 }
 
 
