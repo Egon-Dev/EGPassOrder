@@ -16,6 +16,7 @@
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
 		E6018C212B3E92000032566E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E6018C202B3E92000032566E /* Lottie */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
+		E63266632B47ABD6002FAD09 /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63266622B47ABD6002FAD09 /* OrderDetailView.swift */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C177992B3D46D20011FE74 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		1601F3452B42AB5200A2AC61 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
+		E63266622B47ABD6002FAD09 /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		E6018C192B3E73FB0032566E /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				E63266612B47ABBA002FAD09 /* OrderDetailScene */,
 				1601F3442B42AB2200A2AC61 /* MainScene */,
 				1601F3282B42A8A400A2AC61 /* OnBoardingScene */,
 				E6018C1A2B3E741D0032566E /* SplashScene */,
@@ -150,6 +153,14 @@
 				E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */,
 			);
 			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		E63266612B47ABBA002FAD09 /* OrderDetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				E63266622B47ABD6002FAD09 /* OrderDetailView.swift */,
+			);
+			path = OrderDetailScene;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -355,6 +366,7 @@
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
 				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
 				1601F3322B42A8A400A2AC61 /* OnBoardingPage.swift in Sources */,
+				E63266632B47ABD6002FAD09 /* OrderDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

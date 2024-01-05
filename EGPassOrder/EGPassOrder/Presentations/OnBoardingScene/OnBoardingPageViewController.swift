@@ -39,7 +39,7 @@ struct OnBoardingPageViewController<Page: View>: UIViewControllerRepresentable {
 extension OnBoardingPageViewController {
     class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var parent: OnBoardingPageViewController
-        var controllers = [UIViewController]()
+        var controllers: [UIViewController] = []
 
         init(_ pageVC: OnBoardingPageViewController) {
             parent = pageVC
@@ -69,7 +69,7 @@ extension OnBoardingPageViewController {
                 return nil
             }
 
-            if index == controllers.count - 1{
+            if index == controllers.count - 1 {
                 return nil
             } else {
                 return controllers[index + 1]
