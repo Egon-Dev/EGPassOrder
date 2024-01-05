@@ -1,0 +1,24 @@
+PODS:
+  - lottie-ios (4.3.4)
+  - NMapsGeometry (1.0.1)
+  - NMapsMap (3.17.0):
+    - NMapsGeometry
+
+DEPENDENCIES:
+  - lottie-ios
+  - NMapsMap
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - NMapsGeometry
+    - NMapsMap
+
+SPEC CHECKSUMS:
+  lottie-ios: 3d98679b41fa6fd6aff2352b3953dbd3df8a397e
+  NMapsGeometry: 53c573ead66466681cf123f99f698dc8071a4b83
+  NMapsMap: a5b909a31b6f3d27a670f6eb2ddc913c38975474
+
+PODFILE CHECKSUM: 97c5ee04910cad3f039079783ec9cce639f44129
+
+COCOAPODS: 1.12.1

@@ -28,6 +28,7 @@ struct HomeView: View {
 
             Spacer()
         }
+        .edgesIgnoringSafeArea(.bottom)
         .onTapGesture {
             withAnimation {
                 isDropdownVisible = false
@@ -58,9 +59,16 @@ fileprivate struct OrderByListView: View {
 fileprivate struct OrderByMapView: View {
     var body: some View {
         GeometryReader { proxy in
-            NaverMapView()
-                .frame(width: proxy.size.width, height: proxy.size.height)
+            VStack(spacing: .zero) {
+                NaverMapView()
+                ShopListTapView()
+                    .frame(height: 150)
+            }
+            .onAppear {
+                NaverMapCoordinator.shared.checkIfLocationServiceIsEnabled()
+            }
         }
+        
     }
 
     struct NaverMapView: UIViewRepresentable {
@@ -70,7 +78,9 @@ fileprivate struct OrderByMapView: View {
 
         func makeUIView(context: Context) -> NMFNaverMapView {
             let naverMapCoordinator = context.coordinator
-            return naverMapCoordinator.view
+            let naverMapView = naverMapCoordinator.getNaverMapView()
+
+            return naverMapView
         }
 
         func updateUIView(_ uiView: NMFNaverMapView, context: Context) {}
@@ -89,7 +99,7 @@ fileprivate struct OrderByMapView: View {
         var locationManager: CLLocationManager?
         let startInfoWindow = NMFInfoWindow()
 
-        let view = NMFNaverMapView(frame: .zero)
+        private let view = NMFNaverMapView(frame: .zero)
 
         private override init() {
             super.init()
@@ -101,10 +111,10 @@ fileprivate struct OrderByMapView: View {
             view.mapView.minZoomLevel = 1 // 최소 줌 레벨
             view.mapView.maxZoomLevel = 17 // 최대 줌 레벨
 
-            view.showLocationButton = true // 현위치 버튼: 위치 추적 모드를 표현합니다. 탭하면 모드가 변경됩니다.
-            view.showZoomControls = true // 줌 버튼: 탭하면 지도의 줌 레벨을 1씩 증가 또는 감소합니다.
-            view.showCompass = true //  나침반 : 카메라의 회전 및 틸트 상태를 표현합니다. 탭하면 카메라의 헤딩과 틸트가 0으로 초기화됩니다. 헤딩과 틸트가 0이 되면 자동으로 사라집니다
-            view.showScaleBar = true // 스케일 바 : 지도의 축척을 표현합니다. 지도를 조작하는 기능은 없습니다.
+            view.showLocationButton = false // 현위치 버튼: 위치 추적 모드를 표현합니다. 탭하면 모드가 변경됩니다.
+            view.showZoomControls = false // 줌 버튼: 탭하면 지도의 줌 레벨을 1씩 증가 또는 감소합니다.
+            view.showCompass = false //  나침반 : 카메라의 회전 및 틸트 상태를 표현합니다. 탭하면 카메라의 헤딩과 틸트가 0으로 초기화됩니다. 헤딩과 틸트가 0이 되면 자동으로 사라집니다
+            view.showScaleBar = false // 스케일 바 : 지도의 축척을 표현합니다. 지도를 조작하는 기능은 없습니다.
 
             view.mapView.addCameraDelegate(delegate: self)
             view.mapView.touchDelegate = self
@@ -189,7 +199,38 @@ fileprivate struct OrderByMapView: View {
         }
 
         func getNaverMapView() -> NMFNaverMapView {
-            view
+            let locationButton = NMFLocationButton()
+            view.addSubview(locationButton)
+            locationButton.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                locationButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 16),
+                locationButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+            ])
+            locationButton.mapView = view.mapView
+            
+            let phoneOrderShopSwitch = UISwitch()
+            phoneOrderShopSwitch.onTintColor = .orange
+            let phoneOrderShopLabel = UILabel()
+            phoneOrderShopLabel.text = "전화주문 매장 보기"
+            phoneOrderShopLabel.font = .systemFont(ofSize: 14)
+            let phoneOrderShopStackView = UIStackView(arrangedSubviews: [phoneOrderShopLabel, phoneOrderShopSwitch])
+            phoneOrderShopStackView.axis = .horizontal
+            phoneOrderShopStackView.alignment = .center
+            phoneOrderShopStackView.spacing = 10
+            phoneOrderShopStackView.backgroundColor = .white
+            phoneOrderShopStackView.layer.borderColor = UIColor.lightGray.cgColor
+            phoneOrderShopStackView.layer.borderWidth = 1
+            phoneOrderShopStackView.layer.cornerRadius = 6
+            view.addSubview(phoneOrderShopStackView)
+            phoneOrderShopStackView.isLayoutMarginsRelativeArrangement = true
+            phoneOrderShopStackView.layoutMargins = UIEdgeInsets(top: 4, left: 6, bottom: 4, right: 6)
+            phoneOrderShopStackView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                phoneOrderShopStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                phoneOrderShopStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16)
+            ])
+
+            return view
         }
 
         // 마커 부분의 lat lng를 init 부분에 호출해서 사용하면 바로 사용가능하지만
@@ -206,6 +247,27 @@ fileprivate struct OrderByMapView: View {
             dataSource.title = "서울특별시청"
             infoWindow.dataSource = dataSource
             infoWindow.open(with: marker)
+        }
+    }
+
+    struct ShopListTapView: View {
+        @State var selectedPageIndex: Int = .zero
+
+        var body: some View {
+            GeometryReader { proxy in
+                TabView(selection: $selectedPageIndex) {
+                    Text("Page 1")
+                        .tag(0)
+
+                    Text("Page 2")
+                        .tag(1)
+
+                    Text("Page 3")
+                        .tag(2)
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                .background(.red)
+            }
         }
     }
 }

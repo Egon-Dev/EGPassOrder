@@ -19,12 +19,12 @@
 		1698FF912B42EA5700D5D49B /* HomeSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */; };
 		1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */; };
 		1698FF952B43007600D5D49B /* HomePromotionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698FF942B43007600D5D49B /* HomePromotionPageView.swift */; };
+		38C3B68E3506BFE90C0AFF4F /* Pods_EGPassOrder_EGPassOrderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13597116AD16009BA960253D /* Pods_EGPassOrder_EGPassOrderUITests.framework */; };
+		6D6DDFCF4F8539FAB0907785 /* Pods_EGPassOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71887370D54D670C4D17ABFA /* Pods_EGPassOrder.framework */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
-		E6018C212B3E92000032566E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E6018C202B3E92000032566E /* Lottie */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
-		E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C177992B3D46D20011FE74 /* Assets.xcassets */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
 		E6C177A72B3D46D30011FE74 /* EGPassOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */; };
 		E6C177B12B3D46D30011FE74 /* EGPassOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */; };
@@ -40,7 +40,7 @@
 		E6EB664C2B43F3CC00B82AD9 /* HomeNewShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */; };
 		E6EB664E2B43F41600B82AD9 /* SmallShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */; };
 		E6EB665D2B46517700B82AD9 /* ShopListCellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB665C2B46517700B82AD9 /* ShopListCellConfigurable.swift */; };
-		E6EB66602B46A5E900B82AD9 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = E6EB665F2B46A5E900B82AD9 /* NMapsMap */; };
+		F3D9BC54659113D420CD2920 /* Pods_EGPassOrderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4F4BA2215670A8EC60DA2E /* Pods_EGPassOrderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13597116AD16009BA960253D /* Pods_EGPassOrder_EGPassOrderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGPassOrder_EGPassOrderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
 		1601F32A2B42A8A400A2AC61 /* OnBoardingPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageView.swift; sourceTree = "<group>"; };
 		1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +74,18 @@
 		1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchBarView.swift; sourceTree = "<group>"; };
 		1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
 		1698FF942B43007600D5D49B /* HomePromotionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePromotionPageView.swift; sourceTree = "<group>"; };
+		188FDF47C69FE654771D02EF /* Pods-EGPassOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.debug.xcconfig"; sourceTree = "<group>"; };
+		2D8FAF7CB368DCD52D3CA9D3 /* Pods-EGPassOrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.release.xcconfig"; sourceTree = "<group>"; };
+		37558ADC9EE1925DE43A2887 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B4F4BA2215670A8EC60DA2E /* Pods_EGPassOrderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGPassOrderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71887370D54D670C4D17ABFA /* Pods_EGPassOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGPassOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DB7138240CEB9200DB6D06 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF2D68A594552C9EB52987EC /* Pods-EGPassOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E6C177992B3D46D20011FE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6C177A22B3D46D30011FE74 /* EGPassOrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGPassOrderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderTests.swift; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 		E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewShopListView.swift; sourceTree = "<group>"; };
 		E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallShopListCell.swift; sourceTree = "<group>"; };
 		E6EB665C2B46517700B82AD9 /* ShopListCellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCellConfigurable.swift; sourceTree = "<group>"; };
+		F83E9B2F84E2C8B6D2DC6828 /* Pods-EGPassOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6018C212B3E92000032566E /* Lottie in Frameworks */,
-				E6EB66602B46A5E900B82AD9 /* NMapsMap in Frameworks */,
+				6D6DDFCF4F8539FAB0907785 /* Pods_EGPassOrder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D9BC54659113D420CD2920 /* Pods_EGPassOrderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C3B68E3506BFE90C0AFF4F /* Pods_EGPassOrder_EGPassOrderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +137,6 @@
 		1601F3272B42A89300A2AC61 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				E6C177992B3D46D20011FE74 /* Assets.xcassets */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -188,6 +196,29 @@
 			path = HomeScene;
 			sourceTree = "<group>";
 		};
+		332A8090E21F79951DCA386C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71887370D54D670C4D17ABFA /* Pods_EGPassOrder.framework */,
+				13597116AD16009BA960253D /* Pods_EGPassOrder_EGPassOrderUITests.framework */,
+				3B4F4BA2215670A8EC60DA2E /* Pods_EGPassOrderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F487A72659244FD3974A19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				188FDF47C69FE654771D02EF /* Pods-EGPassOrder.debug.xcconfig */,
+				F83E9B2F84E2C8B6D2DC6828 /* Pods-EGPassOrder.release.xcconfig */,
+				37558ADC9EE1925DE43A2887 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */,
+				99DB7138240CEB9200DB6D06 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */,
+				BF2D68A594552C9EB52987EC /* Pods-EGPassOrderTests.debug.xcconfig */,
+				2D8FAF7CB368DCD52D3CA9D3 /* Pods-EGPassOrderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E6018C192B3E73FB0032566E /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +247,8 @@
 				E6C177AF2B3D46D30011FE74 /* EGPassOrderUITests */,
 				E6C177932B3D46D10011FE74 /* Products */,
 				1601F3272B42A89300A2AC61 /* Recovered References */,
+				7F487A72659244FD3974A19B /* Pods */,
+				332A8090E21F79951DCA386C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,9 +318,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177B62B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrder" */;
 			buildPhases = (
+				69B9114F4111B6D0FB5B4617 /* [CP] Check Pods Manifest.lock */,
 				E6C1778E2B3D46D10011FE74 /* Sources */,
 				E6C1778F2B3D46D10011FE74 /* Frameworks */,
 				E6C177902B3D46D10011FE74 /* Resources */,
+				1B04C84B81E6F48BF2AF7511 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,8 +330,6 @@
 			);
 			name = EGPassOrder;
 			packageProductDependencies = (
-				E6018C202B3E92000032566E /* Lottie */,
-				E6EB665F2B46A5E900B82AD9 /* NMapsMap */,
 			);
 			productName = EGPassOrder;
 			productReference = E6C177922B3D46D10011FE74 /* EGPassOrder.app */;
@@ -306,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177B92B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrderTests" */;
 			buildPhases = (
+				A5EA91A7363D61B3AE1F1A10 /* [CP] Check Pods Manifest.lock */,
 				E6C1779E2B3D46D30011FE74 /* Sources */,
 				E6C1779F2B3D46D30011FE74 /* Frameworks */,
 				E6C177A02B3D46D30011FE74 /* Resources */,
@@ -324,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177BC2B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrderUITests" */;
 			buildPhases = (
+				F6C25D9392134527A81F8FBB /* [CP] Check Pods Manifest.lock */,
 				E6C177A82B3D46D30011FE74 /* Sources */,
 				E6C177A92B3D46D30011FE74 /* Frameworks */,
 				E6C177AA2B3D46D30011FE74 /* Resources */,
+				15F01F4E4F82B25016A679AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,8 +407,6 @@
 			);
 			mainGroup = E6C177892B3D46D10011FE74;
 			packageReferences = (
-				E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */,
-				E6EB665E2B46A5E900B82AD9 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */,
 			);
 			productRefGroup = E6C177932B3D46D10011FE74 /* Products */;
 			projectDirPath = "";
@@ -391,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
-				E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */,
 				E6EB66422B43B19D00B82AD9 /* PassOrderAssets.xcassets in Resources */,
 				1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */,
 				E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */,
@@ -413,6 +446,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15F01F4E4F82B25016A679AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B04C84B81E6F48BF2AF7511 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69B9114F4111B6D0FB5B4617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EA91A7363D61B3AE1F1A10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C25D9392134527A81F8FBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-EGPassOrderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6C1778E2B3D46D10011FE74 /* Sources */ = {
@@ -516,7 +652,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -531,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -579,7 +715,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -588,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -600,6 +736,7 @@
 		};
 		E6C177B72B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188FDF47C69FE654771D02EF /* Pods-EGPassOrder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -629,6 +766,7 @@
 		};
 		E6C177B82B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83E9B2F84E2C8B6D2DC6828 /* Pods-EGPassOrder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -658,6 +796,7 @@
 		};
 		E6C177BA2B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2D68A594552C9EB52987EC /* Pods-EGPassOrderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -678,6 +817,7 @@
 		};
 		E6C177BB2B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8FAF7CB368DCD52D3CA9D3 /* Pods-EGPassOrderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -698,6 +838,7 @@
 		};
 		E6C177BD2B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37558ADC9EE1925DE43A2887 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -716,6 +857,7 @@
 		};
 		E6C177BE2B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DB7138240CEB9200DB6D06 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -772,38 +914,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-spm";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.4;
-			};
-		};
-		E6EB665E2B46A5E900B82AD9 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stleamist/NMapsMap-SwiftPM.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E6018C202B3E92000032566E /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E6018C1F2B3E92000032566E /* XCRemoteSwiftPackageReference "lottie-spm" */;
-			productName = Lottie;
-		};
-		E6EB665F2B46A5E900B82AD9 /* NMapsMap */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E6EB665E2B46A5E900B82AD9 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */;
-			productName = NMapsMap;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6C1778A2B3D46D10011FE74 /* Project object */;
 }
