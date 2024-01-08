@@ -9,21 +9,31 @@ import NMapsMap
 import SwiftUI
 
 struct HomeView: View {
-    @State var selectedTabIndex: Int = 1
+    @Binding var isTabBarHidden: Bool
+    @State var selectedTabIndex: Int = .zero
     @State var isDropdownVisible = false
 
     var body: some View {
         VStack {
             HomeSearchBarView(isDropdownVisible: $isDropdownVisible)
-                .zIndex(1)
                 .padding(.horizontal)
+                .zIndex(1)
             HomeTabBarView(selectedTabIndex: $selectedTabIndex, spacing: 20, height: 40)
                 .padding(.horizontal)
-            
+
             if selectedTabIndex == .zero {
                 OrderByListView()
+                    .onAppear {
+                        MainTabView.isTabBarHidden = false
+                        print(3, MainTabView.isTabBarHidden)
+                    }
             } else {
                 OrderByMapView()
+                    .onAppear {
+                        MainTabView.isTabBarHidden = true
+                        print(4, MainTabView.isTabBarHidden)
+                    }
+                    .ignoresSafeArea(edges: .bottom)
             }
 
             Spacer()
@@ -273,5 +283,5 @@ fileprivate struct OrderByMapView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(isTabBarHidden: .constant(true))
 }
