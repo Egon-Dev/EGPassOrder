@@ -29,7 +29,7 @@ struct OrderDetailView: View {
                 )
                 .frame(height: 120)
                 PointByShopView()
-                DescriptionView()
+                DetailView()
             }
         }
         .sheet(isPresented: $isDatePickerVisible) {
@@ -65,7 +65,7 @@ private struct DatePickerButton: View {
                     Text("\(pointByShopDate.formattedString(format: "yyyy년 MM월"))")
                         .font(.title3)
                         .tint(.black)
-                    Image(systemName: "42.circle")
+                    Image.chevronDownCircle
                 }
             })
 
@@ -77,38 +77,42 @@ private struct DatePickerButton: View {
 
 private struct DatePickerView: View {
     @Binding var pickedDate: Date
-    @State private var selectedYearIndex = 0
-    @State private var selectedMonthIndex = 0
+    @State private var selectedYear: Int
+    @State private var selectedMonth: Int
 
-    let years = Array(2000...2030)
-    let months = Array(1...12)
+    init(pickedDate: Binding<Date>) {
+        _pickedDate = pickedDate
+        _selectedYear = State(initialValue: pickedDate.wrappedValue.year)
+        _selectedMonth = State(initialValue: pickedDate.wrappedValue.month)
+    }
 
     var body: some View {
         VStack {
-            Text("")
-
             HStack {
-                Picker(selection: $selectedYearIndex, label: Text("Year")) {
-                    ForEach(years.indices) {
-                        let yearString = NumberFormatter.localizedString(from: NSNumber(value: years[$0]), number: .none)
+                let years = Array((Date().year - 10)...(Date().year))
+                let months = Array(1...12)
+
+                // Year Picker
+                Picker(selection: $selectedYear, label: Text("Year")) {
+                    ForEach(years, id: \.self) { year in
+                        let yearString = NumberFormatter.localizedString(from: NSNumber(value: year), number: .none)
                         Text("\(yearString)년")
                     }
                 }
-                .onChange(of: selectedYearIndex) { _, index in
-                    pickedDate = pickedDate.update(with: .year, value: years[index])
-                    pickedDate = pickedDate.update(with: .month, value: months[selectedMonthIndex])
+                .onChange(of: selectedYear) { _, pickedYear in
+                    pickedDate = pickedDate.update(with: .year, value: pickedYear)
                 }
                 .pickerStyle(.wheel)
                 .padding(.leading)
-
-                Picker(selection: $selectedMonthIndex, label: Text("Month")) {
-                    ForEach(months.indices) {
-                        Text("\(months[$0])월")
+                
+                // Month Picker
+                Picker(selection: $selectedMonth, label: Text("Month")) {
+                    ForEach(months, id: \.self) { month in
+                        Text("\(month)월")
                     }
                 }
-                .onChange(of: selectedMonthIndex) { _, index in
-                    pickedDate = pickedDate.update(with: .year, value: years[selectedYearIndex])
-                    pickedDate = pickedDate.update(with: .month, value: index + 1)
+                .onChange(of: selectedMonth) { _, pickedMonth in
+                    pickedDate = pickedDate.update(with: .month, value: pickedMonth)
                 }
                 .pickerStyle(.wheel)
                 .padding(.trailing)
@@ -283,7 +287,7 @@ private struct PointByShopView: View {
                     Text("매장별 적립 내역")
                         .font(.title3)
                         .tint(.black)
-                    Image(systemName: "42.circle")
+                    Image.chevronRight
 
                     Spacer()
                 }
@@ -293,9 +297,42 @@ private struct PointByShopView: View {
 }
 
 
-private struct DescriptionView: View {
+private struct DetailView: View {
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        VStack(spacing: 20) {
+            DetailHeadView()
+                .frame(height: 120)
+            DetailBodyView()
+                .frame(height: 300)
+        }
+    }
+
+    struct DetailHeadView: View {
+        var body: some View {
+            GeometryReader { proxy in
+                Image("OnBoardingScene/page_1")
+                    .resizable()
+                    .frame(height: proxy.size.height)
+            }
+        }
+    }
+
+    struct DetailBodyView: View {
+        @State private var isEmptyList: Bool = true
+
+        var body: some View {
+            GeometryReader { proxy in
+                if isEmptyList == true {
+                    Image("OnBoardingScene/page_1")
+                        .resizable()
+                        .frame(height: proxy.size.height)
+                } else {
+                    Image("OnBoardingScene/page_2")
+                        .resizable()
+                        .frame(height: proxy.size.height)
+                }
+            }
+        }
     }
 }
 
@@ -322,8 +359,7 @@ fileprivate extension Date {
     }
 
     func update(with dateComponent: Calendar.Component, value: Int) -> Date {
-        var components = Calendar.current.dateComponents([dateComponent], from: self)
-        components.setValue(1, for: .day)
+        var components = Calendar.current.dateComponents([.year, .month], from: self)
         components.setValue(value, for: dateComponent)
         return Calendar.current.date(from: components) ?? self
     }
@@ -338,7 +374,8 @@ fileprivate extension Date {
 
 // MARK: - Images
 fileprivate extension Image {
-    
+    static let chevronDownCircle = Image("OrderDetailScene/chevronDownCircle")
+    static let chevronRight = Image("OrderDetailScene/chevronRight")
 }
 
 
