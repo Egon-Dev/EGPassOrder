@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var selectedTabIndex: Int = 0
-    @State static var isTabBarHidden: Bool = false
+    @State var isTabBarHidden: Bool = false
     private let tabItemList: [TabItem]
     
     init(tabItemList: [TabItem]) {
@@ -21,12 +21,18 @@ struct MainTabView: View {
             TabView(selection: $selectedTabIndex) {
                 ForEach(tabItemList.indices, id: \.self) { index in
                     let tabItem = tabItemList[index]
-                    AnyView(tabItem.view)
-                        .tag(index)
+
+                    if tabItem.view is HomeView {
+                        AnyView(HomeView(isTabBarHidden: $isTabBarHidden))
+                            .tag(index)
+                    } else {
+                        AnyView(tabItem.view)
+                            .tag(index)
+                    }
                 }
             }
             
-            if MainTabView.isTabBarHidden == false {
+            if isTabBarHidden == false {
                 TabBarView(
                     selectedTabIndex: $selectedTabIndex,
                     tabItemList: tabItemList
@@ -82,7 +88,7 @@ extension MainTabView {
 #Preview {
     MainTabView(tabItemList: [
         MainTabView.TabItem(
-            view: HomeView(isTabBarHidden: MainTabView.$isTabBarHidden),
+            view: HomeView(isTabBarHidden: .constant(true)),
             iconImage: Image(systemName: "1.square.fill"),
             titleText: Text("홈1")
         ),

@@ -24,14 +24,14 @@ struct HomeView: View {
             if selectedTabIndex == .zero {
                 OrderByListView()
                     .onAppear {
-                        MainTabView.isTabBarHidden = false
-                        print(3, MainTabView.isTabBarHidden)
+                        isTabBarHidden = false
+                        print(3, isTabBarHidden)
                     }
             } else {
                 OrderByMapView()
                     .onAppear {
-                        MainTabView.isTabBarHidden = true
-                        print(4, MainTabView.isTabBarHidden)
+                        isTabBarHidden = true
+                        print(4, isTabBarHidden)
                     }
                     .ignoresSafeArea(edges: .bottom)
             }
