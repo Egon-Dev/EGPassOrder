@@ -42,7 +42,6 @@ struct HomePromotionPageView: View {
                     }
                 }
             }
-            .background(.cyan)
         }
     }
     

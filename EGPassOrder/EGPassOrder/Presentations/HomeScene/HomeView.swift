@@ -25,13 +25,11 @@ struct HomeView: View {
                 OrderByListView()
                     .onAppear {
                         isTabBarHidden = false
-                        print(3, isTabBarHidden)
                     }
             } else {
                 OrderByMapView()
                     .onAppear {
                         isTabBarHidden = true
-                        print(4, isTabBarHidden)
                     }
                     .ignoresSafeArea(edges: .bottom)
             }
@@ -51,17 +49,24 @@ struct HomeView: View {
 fileprivate struct OrderByListView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            HomePromotionPageView()
-                .frame(height: 100)
-                .padding()
-            HomeNearbyShopListView()
-            HomePointShopListView()
-            HomePassOrderAdView()
-                .frame(width: .infinity, height: 100)
-                .padding()
-            HomeStoryShopListView()
-            HomeDrinkAndGoShopListView()
-            HomeNewShopListView()
+            VStack(spacing: 20) {
+                HomeCelebrationView()
+                    .padding()
+                HomeMenuListView()
+                    .frame(height: 40)
+                    .padding()
+                HomePromotionPageView()
+                    .frame(height: 100)
+                    .padding()
+                HomeNearbyShopListView()
+                HomePointShopListView()
+                HomePassOrderAdView()
+                    .frame(width: .infinity, height: 100)
+                    .padding()
+                HomeStoryShopListView()
+                HomeDrinkAndGoShopListView()
+                HomeNewShopListView()
+            }
         }
     }
 }

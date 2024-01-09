@@ -123,6 +123,6 @@ extension HomeTabBarView {
 }
 
 
-//#Preview {
-//    HomeTabBarView(spacing: 20, height: 40)
-//}
+#Preview {
+    HomeTabBarView(selectedTabIndex: .constant(1), spacing: 20, height: 40)
+}

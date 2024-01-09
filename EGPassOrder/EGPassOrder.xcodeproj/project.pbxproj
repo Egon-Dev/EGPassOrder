@@ -23,6 +23,8 @@
 		6D6DDFCF4F8539FAB0907785 /* Pods_EGPassOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71887370D54D670C4D17ABFA /* Pods_EGPassOrder.framework */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
+		E6BA6B192B4CD8F0000CF8C4 /* HomeCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */; };
+		E6BA6B1B2B4CF46C000CF8C4 /* HomeMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
@@ -83,6 +85,8 @@
 		BF2D68A594552C9EB52987EC /* Pods-EGPassOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
+		E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCelebrationView.swift; sourceTree = "<group>"; };
+		E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuListView.swift; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,10 +148,8 @@
 		1601F3282B42A8A400A2AC61 /* OnBoardingScene */ = {
 			isa = PBXGroup;
 			children = (
-				1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */,
+				E6BA6B172B4CCE2D000CF8C4 /* SubViews */,
 				1601F32A2B42A8A400A2AC61 /* OnBoardingPageView.swift */,
-				1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */,
-				1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */,
 			);
 			path = OnBoardingScene;
 			sourceTree = "<group>";
@@ -181,17 +183,8 @@
 		1698FF8D2B42EA1300D5D49B /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
-				E6EB663C2B43A94800B82AD9 /* ShopListCells */,
+				E6BA6B162B4CCE13000CF8C4 /* SubViews */,
 				1698FF8E2B42EA2000D5D49B /* HomeView.swift */,
-				1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */,
-				1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */,
-				1698FF942B43007600D5D49B /* HomePromotionPageView.swift */,
-				E6EB663A2B439E5400B82AD9 /* HomeNearbyShopListView.swift */,
-				E6EB66432B43F10300B82AD9 /* HomePointShopListView.swift */,
-				E6EB66452B43F2D300B82AD9 /* HomePassOrderAdView.swift */,
-				E6EB66472B43F2F400B82AD9 /* HomeStoryShopListView.swift */,
-				E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */,
-				E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -237,6 +230,35 @@
 				E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */,
 			);
 			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		E6BA6B162B4CCE13000CF8C4 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB663C2B43A94800B82AD9 /* ShopListCells */,
+				E6EB66492B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift */,
+				E6EB663A2B439E5400B82AD9 /* HomeNearbyShopListView.swift */,
+				E6EB664B2B43F3CC00B82AD9 /* HomeNewShopListView.swift */,
+				E6EB66452B43F2D300B82AD9 /* HomePassOrderAdView.swift */,
+				E6EB66432B43F10300B82AD9 /* HomePointShopListView.swift */,
+				1698FF942B43007600D5D49B /* HomePromotionPageView.swift */,
+				1698FF902B42EA5700D5D49B /* HomeSearchBarView.swift */,
+				E6EB66472B43F2F400B82AD9 /* HomeStoryShopListView.swift */,
+				1698FF922B42EA6B00D5D49B /* HomeTabBarView.swift */,
+				E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */,
+				E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		E6BA6B172B4CCE2D000CF8C4 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */,
+				1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */,
+				1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -301,12 +323,12 @@
 		E6EB663C2B43A94800B82AD9 /* ShopListCells */ = {
 			isa = PBXGroup;
 			children = (
-				E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */,
 				E6EB665C2B46517700B82AD9 /* ShopListCellConfigurable.swift */,
-				E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */,
+				E6EB663F2B43ADD100B82AD9 /* ShopListCellType.swift */,
 				E6EB664D2B43F41600B82AD9 /* SmallShopListCell.swift */,
 				162A28FD2B45AFE7007EA03A /* MediumShopListCell.swift */,
 				162A28FF2B45B455007EA03A /* SquareShopListCell.swift */,
+				E6EB663D2B43A96A00B82AD9 /* LargeShopListCell.swift */,
 			);
 			path = ShopListCells;
 			sourceTree = "<group>";
@@ -562,6 +584,7 @@
 				162A29002B45B455007EA03A /* SquareShopListCell.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				E6EB664A2B43F36100B82AD9 /* HomeDrinkAndGoShopListView.swift in Sources */,
+				E6BA6B192B4CD8F0000CF8C4 /* HomeCelebrationView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
 				E6EB665D2B46517700B82AD9 /* ShopListCellConfigurable.swift in Sources */,
 				E6EB66462B43F2D300B82AD9 /* HomePassOrderAdView.swift in Sources */,
@@ -574,6 +597,7 @@
 				E6EB664E2B43F41600B82AD9 /* SmallShopListCell.swift in Sources */,
 				E6EB66482B43F2F400B82AD9 /* HomeStoryShopListView.swift in Sources */,
 				E6EB66442B43F10300B82AD9 /* HomePointShopListView.swift in Sources */,
+				E6BA6B1B2B4CF46C000CF8C4 /* HomeMenuListView.swift in Sources */,
 				1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */,
 				E6EB663B2B439E5400B82AD9 /* HomeNearbyShopListView.swift in Sources */,
 				E6EB663E2B43A96A00B82AD9 /* LargeShopListCell.swift in Sources */,
