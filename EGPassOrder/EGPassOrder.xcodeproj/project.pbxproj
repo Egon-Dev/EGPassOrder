@@ -26,6 +26,79 @@
 		E6BA6B192B4CD8F0000CF8C4 /* HomeCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */; };
 		E6BA6B1B2B4CF46C000CF8C4 /* HomeMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */; };
 		E6BA6B252B4D4170000CF8C4 /* PromotionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B242B4D4170000CF8C4 /* PromotionPageView.swift */; };
+		E6BA6B702B4D4E0E000CF8C4 /* tip5.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B272B4D4E08000CF8C4 /* tip5.json */; };
+		E6BA6B712B4D4E0E000CF8C4 /* gift_order_success.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B282B4D4E09000CF8C4 /* gift_order_success.json */; };
+		E6BA6B722B4D4E0E000CF8C4 /* friend_report_friendship_100_0.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B292B4D4E09000CF8C4 /* friend_report_friendship_100_0.json */; };
+		E6BA6B732B4D4E0E000CF8C4 /* passorder1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B2A2B4D4E09000CF8C4 /* passorder1.json */; };
+		E6BA6B742B4D4E0E000CF8C4 /* benefit2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B2B2B4D4E09000CF8C4 /* benefit2.json */; };
+		E6BA6B752B4D4E0E000CF8C4 /* write_naver_receipt_review_guide_down.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B2C2B4D4E09000CF8C4 /* write_naver_receipt_review_guide_down.json */; };
+		E6BA6B762B4D4E0E000CF8C4 /* time4.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B2D2B4D4E09000CF8C4 /* time4.json */; };
+		E6BA6B772B4D4E0E000CF8C4 /* time6.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B2E2B4D4E09000CF8C4 /* time6.json */; };
+		E6BA6B782B4D4E0E000CF8C4 /* order_together_send_gift_button.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B2F2B4D4E09000CF8C4 /* order_together_send_gift_button.json */; };
+		E6BA6B792B4D4E0E000CF8C4 /* tip3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B302B4D4E09000CF8C4 /* tip3.json */; };
+		E6BA6B7A2B4D4E0E000CF8C4 /* time9.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B312B4D4E09000CF8C4 /* time9.json */; };
+		E6BA6B7B2B4D4E0E000CF8C4 /* benefit6.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B322B4D4E09000CF8C4 /* benefit6.json */; };
+		E6BA6B7C2B4D4E0E000CF8C4 /* usage9.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B332B4D4E09000CF8C4 /* usage9.json */; };
+		E6BA6B7D2B4D4E0E000CF8C4 /* benefit4.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B342B4D4E0A000CF8C4 /* benefit4.json */; };
+		E6BA6B7E2B4D4E0E000CF8C4 /* tip4.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B352B4D4E0A000CF8C4 /* tip4.json */; };
+		E6BA6B7F2B4D4E0E000CF8C4 /* usage11.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B362B4D4E0A000CF8C4 /* usage11.json */; };
+		E6BA6B802B4D4E0E000CF8C4 /* usage5.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B372B4D4E0A000CF8C4 /* usage5.json */; };
+		E6BA6B812B4D4E0E000CF8C4 /* write_naver_receipt_review_copy_text_guide.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B382B4D4E0A000CF8C4 /* write_naver_receipt_review_copy_text_guide.json */; };
+		E6BA6B822B4D4E0E000CF8C4 /* safety2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B392B4D4E0A000CF8C4 /* safety2.json */; };
+		E6BA6B832B4D4E0E000CF8C4 /* usage6.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B3A2B4D4E0A000CF8C4 /* usage6.json */; };
+		E6BA6B842B4D4E0E000CF8C4 /* friend_report_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B3B2B4D4E0A000CF8C4 /* friend_report_loading.json */; };
+		E6BA6B852B4D4E0E000CF8C4 /* order_together_button_nudge.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B3C2B4D4E0A000CF8C4 /* order_together_button_nudge.json */; };
+		E6BA6B862B4D4E0E000CF8C4 /* friend_report_friendship_10_90.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B3D2B4D4E0A000CF8C4 /* friend_report_friendship_10_90.json */; };
+		E6BA6B872B4D4E0E000CF8C4 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B3E2B4D4E0A000CF8C4 /* loading.json */; };
+		E6BA6B882B4D4E0E000CF8C4 /* time2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B3F2B4D4E0A000CF8C4 /* time2.json */; };
+		E6BA6B892B4D4E0E000CF8C4 /* usage2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B402B4D4E0A000CF8C4 /* usage2.json */; };
+		E6BA6B8A2B4D4E0E000CF8C4 /* time7.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B412B4D4E0A000CF8C4 /* time7.json */; };
+		E6BA6B8B2B4D4E0E000CF8C4 /* passorder2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B422B4D4E0A000CF8C4 /* passorder2.json */; };
+		E6BA6B8C2B4D4E0E000CF8C4 /* share100WonPopupCouponPresent.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B432B4D4E0B000CF8C4 /* share100WonPopupCouponPresent.json */; };
+		E6BA6B8D2B4D4E0E000CF8C4 /* tip1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B442B4D4E0B000CF8C4 /* tip1.json */; };
+		E6BA6B8E2B4D4E0E000CF8C4 /* tip2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B452B4D4E0B000CF8C4 /* tip2.json */; };
+		E6BA6B8F2B4D4E0E000CF8C4 /* usage8.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B462B4D4E0B000CF8C4 /* usage8.json */; };
+		E6BA6B902B4D4E0E000CF8C4 /* friend_report_friendship_90_10.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B472B4D4E0B000CF8C4 /* friend_report_friendship_90_10.json */; };
+		E6BA6B912B4D4E0E000CF8C4 /* passmoney_card_onboarding.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B482B4D4E0B000CF8C4 /* passmoney_card_onboarding.json */; };
+		E6BA6B922B4D4E0E000CF8C4 /* order_together_onboarding.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B492B4D4E0B000CF8C4 /* order_together_onboarding.json */; };
+		E6BA6B932B4D4E0E000CF8C4 /* safety4.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B4A2B4D4E0B000CF8C4 /* safety4.json */; };
+		E6BA6B942B4D4E0E000CF8C4 /* time3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B4B2B4D4E0B000CF8C4 /* time3.json */; };
+		E6BA6B952B4D4E0E000CF8C4 /* time1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B4C2B4D4E0B000CF8C4 /* time1.json */; };
+		E6BA6B962B4D4E0E000CF8C4 /* friend_report_friendship_0_100.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B4D2B4D4E0B000CF8C4 /* friend_report_friendship_0_100.json */; };
+		E6BA6B972B4D4E0E000CF8C4 /* passmoney_card_pay.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B4E2B4D4E0B000CF8C4 /* passmoney_card_pay.json */; };
+		E6BA6B982B4D4E0E000CF8C4 /* order_together_button.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B4F2B4D4E0B000CF8C4 /* order_together_button.json */; };
+		E6BA6B992B4D4E0E000CF8C4 /* time8.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B502B4D4E0B000CF8C4 /* time8.json */; };
+		E6BA6B9A2B4D4E0E000CF8C4 /* friend_report_friendship_70_30.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B512B4D4E0B000CF8C4 /* friend_report_friendship_70_30.json */; };
+		E6BA6B9B2B4D4E0E000CF8C4 /* usage1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B522B4D4E0C000CF8C4 /* usage1.json */; };
+		E6BA6B9C2B4D4E0E000CF8C4 /* friend_report_friendship_40_60.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B532B4D4E0C000CF8C4 /* friend_report_friendship_40_60.json */; };
+		E6BA6B9D2B4D4E0E000CF8C4 /* manager1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B542B4D4E0C000CF8C4 /* manager1.json */; };
+		E6BA6B9E2B4D4E0E000CF8C4 /* tip6.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B552B4D4E0C000CF8C4 /* tip6.json */; };
+		E6BA6B9F2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B562B4D4E0C000CF8C4 /* write_naver_receipt_review_onboarding_3.json */; };
+		E6BA6BA02B4D4E0E000CF8C4 /* passorder3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B572B4D4E0C000CF8C4 /* passorder3.json */; };
+		E6BA6BA12B4D4E0E000CF8C4 /* safety3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B582B4D4E0C000CF8C4 /* safety3.json */; };
+		E6BA6BA22B4D4E0E000CF8C4 /* time5.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B592B4D4E0C000CF8C4 /* time5.json */; };
+		E6BA6BA32B4D4E0E000CF8C4 /* usage7.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B5A2B4D4E0C000CF8C4 /* usage7.json */; };
+		E6BA6BA42B4D4E0E000CF8C4 /* friend_report_friendship_30_70.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B5B2B4D4E0D000CF8C4 /* friend_report_friendship_30_70.json */; };
+		E6BA6BA52B4D4E0E000CF8C4 /* friend_report_friendship_80_20.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B5C2B4D4E0D000CF8C4 /* friend_report_friendship_80_20.json */; };
+		E6BA6BA62B4D4E0E000CF8C4 /* friend_report_down.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B5D2B4D4E0D000CF8C4 /* friend_report_down.json */; };
+		E6BA6BA72B4D4E0E000CF8C4 /* friend_report_friendship_20_80.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B5E2B4D4E0D000CF8C4 /* friend_report_friendship_20_80.json */; };
+		E6BA6BA82B4D4E0E000CF8C4 /* manager2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B5F2B4D4E0D000CF8C4 /* manager2.json */; };
+		E6BA6BA92B4D4E0E000CF8C4 /* usage3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B602B4D4E0D000CF8C4 /* usage3.json */; };
+		E6BA6BAA2B4D4E0E000CF8C4 /* write_naver_receipt_review_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B612B4D4E0D000CF8C4 /* write_naver_receipt_review_loading.json */; };
+		E6BA6BAB2B4D4E0E000CF8C4 /* friend_report_friendship_50_50.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B622B4D4E0D000CF8C4 /* friend_report_friendship_50_50.json */; };
+		E6BA6BAC2B4D4E0E000CF8C4 /* benefit5.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B632B4D4E0D000CF8C4 /* benefit5.json */; };
+		E6BA6BAD2B4D4E0E000CF8C4 /* manager3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B642B4D4E0D000CF8C4 /* manager3.json */; };
+		E6BA6BAE2B4D4E0E000CF8C4 /* usage10.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B652B4D4E0D000CF8C4 /* usage10.json */; };
+		E6BA6BAF2B4D4E0E000CF8C4 /* benefit3.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B662B4D4E0D000CF8C4 /* benefit3.json */; };
+		E6BA6BB02B4D4E0E000CF8C4 /* usage12.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B672B4D4E0E000CF8C4 /* usage12.json */; };
+		E6BA6BB12B4D4E0E000CF8C4 /* benefit1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B682B4D4E0E000CF8C4 /* benefit1.json */; };
+		E6BA6BB22B4D4E0E000CF8C4 /* friend_report_friendship_60_40.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B692B4D4E0E000CF8C4 /* friend_report_friendship_60_40.json */; };
+		E6BA6BB32B4D4E0E000CF8C4 /* usage4.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B6A2B4D4E0E000CF8C4 /* usage4.json */; };
+		E6BA6BB42B4D4E0E000CF8C4 /* safety1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B6B2B4D4E0E000CF8C4 /* safety1.json */; };
+		E6BA6BB52B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_1.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B6C2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_1.json */; };
+		E6BA6BB62B4D4E0E000CF8C4 /* safety5.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B6D2B4D4E0E000CF8C4 /* safety5.json */; };
+		E6BA6BB72B4D4E0E000CF8C4 /* right_arrow.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B6E2B4D4E0E000CF8C4 /* right_arrow.json */; };
+		E6BA6BB82B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_2.json in Resources */ = {isa = PBXBuildFile; fileRef = E6BA6B6F2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_2.json */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
@@ -89,6 +162,79 @@
 		E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCelebrationView.swift; sourceTree = "<group>"; };
 		E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuListView.swift; sourceTree = "<group>"; };
 		E6BA6B242B4D4170000CF8C4 /* PromotionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPageView.swift; sourceTree = "<group>"; };
+		E6BA6B272B4D4E08000CF8C4 /* tip5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tip5.json; sourceTree = "<group>"; };
+		E6BA6B282B4D4E09000CF8C4 /* gift_order_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_order_success.json; sourceTree = "<group>"; };
+		E6BA6B292B4D4E09000CF8C4 /* friend_report_friendship_100_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_100_0.json; sourceTree = "<group>"; };
+		E6BA6B2A2B4D4E09000CF8C4 /* passorder1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passorder1.json; sourceTree = "<group>"; };
+		E6BA6B2B2B4D4E09000CF8C4 /* benefit2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = benefit2.json; sourceTree = "<group>"; };
+		E6BA6B2C2B4D4E09000CF8C4 /* write_naver_receipt_review_guide_down.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = write_naver_receipt_review_guide_down.json; sourceTree = "<group>"; };
+		E6BA6B2D2B4D4E09000CF8C4 /* time4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time4.json; sourceTree = "<group>"; };
+		E6BA6B2E2B4D4E09000CF8C4 /* time6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time6.json; sourceTree = "<group>"; };
+		E6BA6B2F2B4D4E09000CF8C4 /* order_together_send_gift_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order_together_send_gift_button.json; sourceTree = "<group>"; };
+		E6BA6B302B4D4E09000CF8C4 /* tip3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tip3.json; sourceTree = "<group>"; };
+		E6BA6B312B4D4E09000CF8C4 /* time9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time9.json; sourceTree = "<group>"; };
+		E6BA6B322B4D4E09000CF8C4 /* benefit6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = benefit6.json; sourceTree = "<group>"; };
+		E6BA6B332B4D4E09000CF8C4 /* usage9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage9.json; sourceTree = "<group>"; };
+		E6BA6B342B4D4E0A000CF8C4 /* benefit4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = benefit4.json; sourceTree = "<group>"; };
+		E6BA6B352B4D4E0A000CF8C4 /* tip4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tip4.json; sourceTree = "<group>"; };
+		E6BA6B362B4D4E0A000CF8C4 /* usage11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage11.json; sourceTree = "<group>"; };
+		E6BA6B372B4D4E0A000CF8C4 /* usage5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage5.json; sourceTree = "<group>"; };
+		E6BA6B382B4D4E0A000CF8C4 /* write_naver_receipt_review_copy_text_guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = write_naver_receipt_review_copy_text_guide.json; sourceTree = "<group>"; };
+		E6BA6B392B4D4E0A000CF8C4 /* safety2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = safety2.json; sourceTree = "<group>"; };
+		E6BA6B3A2B4D4E0A000CF8C4 /* usage6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage6.json; sourceTree = "<group>"; };
+		E6BA6B3B2B4D4E0A000CF8C4 /* friend_report_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_loading.json; sourceTree = "<group>"; };
+		E6BA6B3C2B4D4E0A000CF8C4 /* order_together_button_nudge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order_together_button_nudge.json; sourceTree = "<group>"; };
+		E6BA6B3D2B4D4E0A000CF8C4 /* friend_report_friendship_10_90.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_10_90.json; sourceTree = "<group>"; };
+		E6BA6B3E2B4D4E0A000CF8C4 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		E6BA6B3F2B4D4E0A000CF8C4 /* time2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time2.json; sourceTree = "<group>"; };
+		E6BA6B402B4D4E0A000CF8C4 /* usage2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage2.json; sourceTree = "<group>"; };
+		E6BA6B412B4D4E0A000CF8C4 /* time7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time7.json; sourceTree = "<group>"; };
+		E6BA6B422B4D4E0A000CF8C4 /* passorder2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passorder2.json; sourceTree = "<group>"; };
+		E6BA6B432B4D4E0B000CF8C4 /* share100WonPopupCouponPresent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = share100WonPopupCouponPresent.json; sourceTree = "<group>"; };
+		E6BA6B442B4D4E0B000CF8C4 /* tip1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tip1.json; sourceTree = "<group>"; };
+		E6BA6B452B4D4E0B000CF8C4 /* tip2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tip2.json; sourceTree = "<group>"; };
+		E6BA6B462B4D4E0B000CF8C4 /* usage8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage8.json; sourceTree = "<group>"; };
+		E6BA6B472B4D4E0B000CF8C4 /* friend_report_friendship_90_10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_90_10.json; sourceTree = "<group>"; };
+		E6BA6B482B4D4E0B000CF8C4 /* passmoney_card_onboarding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passmoney_card_onboarding.json; sourceTree = "<group>"; };
+		E6BA6B492B4D4E0B000CF8C4 /* order_together_onboarding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order_together_onboarding.json; sourceTree = "<group>"; };
+		E6BA6B4A2B4D4E0B000CF8C4 /* safety4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = safety4.json; sourceTree = "<group>"; };
+		E6BA6B4B2B4D4E0B000CF8C4 /* time3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time3.json; sourceTree = "<group>"; };
+		E6BA6B4C2B4D4E0B000CF8C4 /* time1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time1.json; sourceTree = "<group>"; };
+		E6BA6B4D2B4D4E0B000CF8C4 /* friend_report_friendship_0_100.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_0_100.json; sourceTree = "<group>"; };
+		E6BA6B4E2B4D4E0B000CF8C4 /* passmoney_card_pay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passmoney_card_pay.json; sourceTree = "<group>"; };
+		E6BA6B4F2B4D4E0B000CF8C4 /* order_together_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order_together_button.json; sourceTree = "<group>"; };
+		E6BA6B502B4D4E0B000CF8C4 /* time8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time8.json; sourceTree = "<group>"; };
+		E6BA6B512B4D4E0B000CF8C4 /* friend_report_friendship_70_30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_70_30.json; sourceTree = "<group>"; };
+		E6BA6B522B4D4E0C000CF8C4 /* usage1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage1.json; sourceTree = "<group>"; };
+		E6BA6B532B4D4E0C000CF8C4 /* friend_report_friendship_40_60.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_40_60.json; sourceTree = "<group>"; };
+		E6BA6B542B4D4E0C000CF8C4 /* manager1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manager1.json; sourceTree = "<group>"; };
+		E6BA6B552B4D4E0C000CF8C4 /* tip6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tip6.json; sourceTree = "<group>"; };
+		E6BA6B562B4D4E0C000CF8C4 /* write_naver_receipt_review_onboarding_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = write_naver_receipt_review_onboarding_3.json; sourceTree = "<group>"; };
+		E6BA6B572B4D4E0C000CF8C4 /* passorder3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passorder3.json; sourceTree = "<group>"; };
+		E6BA6B582B4D4E0C000CF8C4 /* safety3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = safety3.json; sourceTree = "<group>"; };
+		E6BA6B592B4D4E0C000CF8C4 /* time5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time5.json; sourceTree = "<group>"; };
+		E6BA6B5A2B4D4E0C000CF8C4 /* usage7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage7.json; sourceTree = "<group>"; };
+		E6BA6B5B2B4D4E0D000CF8C4 /* friend_report_friendship_30_70.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_30_70.json; sourceTree = "<group>"; };
+		E6BA6B5C2B4D4E0D000CF8C4 /* friend_report_friendship_80_20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_80_20.json; sourceTree = "<group>"; };
+		E6BA6B5D2B4D4E0D000CF8C4 /* friend_report_down.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_down.json; sourceTree = "<group>"; };
+		E6BA6B5E2B4D4E0D000CF8C4 /* friend_report_friendship_20_80.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_20_80.json; sourceTree = "<group>"; };
+		E6BA6B5F2B4D4E0D000CF8C4 /* manager2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manager2.json; sourceTree = "<group>"; };
+		E6BA6B602B4D4E0D000CF8C4 /* usage3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage3.json; sourceTree = "<group>"; };
+		E6BA6B612B4D4E0D000CF8C4 /* write_naver_receipt_review_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = write_naver_receipt_review_loading.json; sourceTree = "<group>"; };
+		E6BA6B622B4D4E0D000CF8C4 /* friend_report_friendship_50_50.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_50_50.json; sourceTree = "<group>"; };
+		E6BA6B632B4D4E0D000CF8C4 /* benefit5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = benefit5.json; sourceTree = "<group>"; };
+		E6BA6B642B4D4E0D000CF8C4 /* manager3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manager3.json; sourceTree = "<group>"; };
+		E6BA6B652B4D4E0D000CF8C4 /* usage10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage10.json; sourceTree = "<group>"; };
+		E6BA6B662B4D4E0D000CF8C4 /* benefit3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = benefit3.json; sourceTree = "<group>"; };
+		E6BA6B672B4D4E0E000CF8C4 /* usage12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage12.json; sourceTree = "<group>"; };
+		E6BA6B682B4D4E0E000CF8C4 /* benefit1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = benefit1.json; sourceTree = "<group>"; };
+		E6BA6B692B4D4E0E000CF8C4 /* friend_report_friendship_60_40.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friend_report_friendship_60_40.json; sourceTree = "<group>"; };
+		E6BA6B6A2B4D4E0E000CF8C4 /* usage4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = usage4.json; sourceTree = "<group>"; };
+		E6BA6B6B2B4D4E0E000CF8C4 /* safety1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = safety1.json; sourceTree = "<group>"; };
+		E6BA6B6C2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = write_naver_receipt_review_onboarding_1.json; sourceTree = "<group>"; };
+		E6BA6B6D2B4D4E0E000CF8C4 /* safety5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = safety5.json; sourceTree = "<group>"; };
+		E6BA6B6E2B4D4E0E000CF8C4 /* right_arrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = right_arrow.json; sourceTree = "<group>"; };
+		E6BA6B6F2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = write_naver_receipt_review_onboarding_2.json; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +305,7 @@
 		1601F33A2B42A8DE00A2AC61 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6BA6B262B4D4DF1000CF8C4 /* LottieAnimations */,
 				1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */,
 				E6EB66412B43B19D00B82AD9 /* PassOrderAssets.xcassets */,
 			);
@@ -270,6 +417,86 @@
 				E6BA6B242B4D4170000CF8C4 /* PromotionPageView.swift */,
 			);
 			path = CommonSubviews;
+			sourceTree = "<group>";
+		};
+		E6BA6B262B4D4DF1000CF8C4 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				E6BA6B682B4D4E0E000CF8C4 /* benefit1.json */,
+				E6BA6B2B2B4D4E09000CF8C4 /* benefit2.json */,
+				E6BA6B662B4D4E0D000CF8C4 /* benefit3.json */,
+				E6BA6B342B4D4E0A000CF8C4 /* benefit4.json */,
+				E6BA6B632B4D4E0D000CF8C4 /* benefit5.json */,
+				E6BA6B322B4D4E09000CF8C4 /* benefit6.json */,
+				E6BA6B5D2B4D4E0D000CF8C4 /* friend_report_down.json */,
+				E6BA6B4D2B4D4E0B000CF8C4 /* friend_report_friendship_0_100.json */,
+				E6BA6B3D2B4D4E0A000CF8C4 /* friend_report_friendship_10_90.json */,
+				E6BA6B5E2B4D4E0D000CF8C4 /* friend_report_friendship_20_80.json */,
+				E6BA6B5B2B4D4E0D000CF8C4 /* friend_report_friendship_30_70.json */,
+				E6BA6B532B4D4E0C000CF8C4 /* friend_report_friendship_40_60.json */,
+				E6BA6B622B4D4E0D000CF8C4 /* friend_report_friendship_50_50.json */,
+				E6BA6B692B4D4E0E000CF8C4 /* friend_report_friendship_60_40.json */,
+				E6BA6B512B4D4E0B000CF8C4 /* friend_report_friendship_70_30.json */,
+				E6BA6B5C2B4D4E0D000CF8C4 /* friend_report_friendship_80_20.json */,
+				E6BA6B472B4D4E0B000CF8C4 /* friend_report_friendship_90_10.json */,
+				E6BA6B292B4D4E09000CF8C4 /* friend_report_friendship_100_0.json */,
+				E6BA6B3B2B4D4E0A000CF8C4 /* friend_report_loading.json */,
+				E6BA6B282B4D4E09000CF8C4 /* gift_order_success.json */,
+				E6BA6B3E2B4D4E0A000CF8C4 /* loading.json */,
+				E6BA6B542B4D4E0C000CF8C4 /* manager1.json */,
+				E6BA6B5F2B4D4E0D000CF8C4 /* manager2.json */,
+				E6BA6B642B4D4E0D000CF8C4 /* manager3.json */,
+				E6BA6B3C2B4D4E0A000CF8C4 /* order_together_button_nudge.json */,
+				E6BA6B4F2B4D4E0B000CF8C4 /* order_together_button.json */,
+				E6BA6B492B4D4E0B000CF8C4 /* order_together_onboarding.json */,
+				E6BA6B2F2B4D4E09000CF8C4 /* order_together_send_gift_button.json */,
+				E6BA6B482B4D4E0B000CF8C4 /* passmoney_card_onboarding.json */,
+				E6BA6B4E2B4D4E0B000CF8C4 /* passmoney_card_pay.json */,
+				E6BA6B2A2B4D4E09000CF8C4 /* passorder1.json */,
+				E6BA6B422B4D4E0A000CF8C4 /* passorder2.json */,
+				E6BA6B572B4D4E0C000CF8C4 /* passorder3.json */,
+				E6BA6B6E2B4D4E0E000CF8C4 /* right_arrow.json */,
+				E6BA6B6B2B4D4E0E000CF8C4 /* safety1.json */,
+				E6BA6B392B4D4E0A000CF8C4 /* safety2.json */,
+				E6BA6B582B4D4E0C000CF8C4 /* safety3.json */,
+				E6BA6B4A2B4D4E0B000CF8C4 /* safety4.json */,
+				E6BA6B6D2B4D4E0E000CF8C4 /* safety5.json */,
+				E6BA6B432B4D4E0B000CF8C4 /* share100WonPopupCouponPresent.json */,
+				E6BA6B4C2B4D4E0B000CF8C4 /* time1.json */,
+				E6BA6B3F2B4D4E0A000CF8C4 /* time2.json */,
+				E6BA6B4B2B4D4E0B000CF8C4 /* time3.json */,
+				E6BA6B2D2B4D4E09000CF8C4 /* time4.json */,
+				E6BA6B592B4D4E0C000CF8C4 /* time5.json */,
+				E6BA6B2E2B4D4E09000CF8C4 /* time6.json */,
+				E6BA6B412B4D4E0A000CF8C4 /* time7.json */,
+				E6BA6B502B4D4E0B000CF8C4 /* time8.json */,
+				E6BA6B312B4D4E09000CF8C4 /* time9.json */,
+				E6BA6B442B4D4E0B000CF8C4 /* tip1.json */,
+				E6BA6B452B4D4E0B000CF8C4 /* tip2.json */,
+				E6BA6B302B4D4E09000CF8C4 /* tip3.json */,
+				E6BA6B352B4D4E0A000CF8C4 /* tip4.json */,
+				E6BA6B272B4D4E08000CF8C4 /* tip5.json */,
+				E6BA6B552B4D4E0C000CF8C4 /* tip6.json */,
+				E6BA6B522B4D4E0C000CF8C4 /* usage1.json */,
+				E6BA6B402B4D4E0A000CF8C4 /* usage2.json */,
+				E6BA6B602B4D4E0D000CF8C4 /* usage3.json */,
+				E6BA6B6A2B4D4E0E000CF8C4 /* usage4.json */,
+				E6BA6B372B4D4E0A000CF8C4 /* usage5.json */,
+				E6BA6B3A2B4D4E0A000CF8C4 /* usage6.json */,
+				E6BA6B5A2B4D4E0C000CF8C4 /* usage7.json */,
+				E6BA6B462B4D4E0B000CF8C4 /* usage8.json */,
+				E6BA6B332B4D4E09000CF8C4 /* usage9.json */,
+				E6BA6B652B4D4E0D000CF8C4 /* usage10.json */,
+				E6BA6B362B4D4E0A000CF8C4 /* usage11.json */,
+				E6BA6B672B4D4E0E000CF8C4 /* usage12.json */,
+				E6BA6B382B4D4E0A000CF8C4 /* write_naver_receipt_review_copy_text_guide.json */,
+				E6BA6B2C2B4D4E09000CF8C4 /* write_naver_receipt_review_guide_down.json */,
+				E6BA6B612B4D4E0D000CF8C4 /* write_naver_receipt_review_loading.json */,
+				E6BA6B6C2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_1.json */,
+				E6BA6B6F2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_2.json */,
+				E6BA6B562B4D4E0C000CF8C4 /* write_naver_receipt_review_onboarding_3.json */,
+			);
+			path = LottieAnimations;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -457,10 +684,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BA6B8C2B4D4E0E000CF8C4 /* share100WonPopupCouponPresent.json in Resources */,
+				E6BA6BA92B4D4E0E000CF8C4 /* usage3.json in Resources */,
+				E6BA6B8A2B4D4E0E000CF8C4 /* time7.json in Resources */,
+				E6BA6BB82B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_2.json in Resources */,
+				E6BA6B812B4D4E0E000CF8C4 /* write_naver_receipt_review_copy_text_guide.json in Resources */,
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
 				E6EB66422B43B19D00B82AD9 /* PassOrderAssets.xcassets in Resources */,
+				E6BA6BAC2B4D4E0E000CF8C4 /* benefit5.json in Resources */,
+				E6BA6B702B4D4E0E000CF8C4 /* tip5.json in Resources */,
+				E6BA6B952B4D4E0E000CF8C4 /* time1.json in Resources */,
+				E6BA6B7E2B4D4E0E000CF8C4 /* tip4.json in Resources */,
+				E6BA6B782B4D4E0E000CF8C4 /* order_together_send_gift_button.json in Resources */,
+				E6BA6BB62B4D4E0E000CF8C4 /* safety5.json in Resources */,
+				E6BA6B8F2B4D4E0E000CF8C4 /* usage8.json in Resources */,
+				E6BA6BB52B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_1.json in Resources */,
+				E6BA6B742B4D4E0E000CF8C4 /* benefit2.json in Resources */,
+				E6BA6BB02B4D4E0E000CF8C4 /* usage12.json in Resources */,
+				E6BA6B762B4D4E0E000CF8C4 /* time4.json in Resources */,
+				E6BA6B902B4D4E0E000CF8C4 /* friend_report_friendship_90_10.json in Resources */,
+				E6BA6BA42B4D4E0E000CF8C4 /* friend_report_friendship_30_70.json in Resources */,
+				E6BA6B9D2B4D4E0E000CF8C4 /* manager1.json in Resources */,
+				E6BA6B9F2B4D4E0E000CF8C4 /* write_naver_receipt_review_onboarding_3.json in Resources */,
+				E6BA6B892B4D4E0E000CF8C4 /* usage2.json in Resources */,
+				E6BA6BA02B4D4E0E000CF8C4 /* passorder3.json in Resources */,
+				E6BA6B852B4D4E0E000CF8C4 /* order_together_button_nudge.json in Resources */,
+				E6BA6BAD2B4D4E0E000CF8C4 /* manager3.json in Resources */,
+				E6BA6B962B4D4E0E000CF8C4 /* friend_report_friendship_0_100.json in Resources */,
+				E6BA6B752B4D4E0E000CF8C4 /* write_naver_receipt_review_guide_down.json in Resources */,
+				E6BA6B802B4D4E0E000CF8C4 /* usage5.json in Resources */,
+				E6BA6B732B4D4E0E000CF8C4 /* passorder1.json in Resources */,
+				E6BA6B7B2B4D4E0E000CF8C4 /* benefit6.json in Resources */,
+				E6BA6BAB2B4D4E0E000CF8C4 /* friend_report_friendship_50_50.json in Resources */,
+				E6BA6B7A2B4D4E0E000CF8C4 /* time9.json in Resources */,
+				E6BA6B8E2B4D4E0E000CF8C4 /* tip2.json in Resources */,
+				E6BA6B7F2B4D4E0E000CF8C4 /* usage11.json in Resources */,
+				E6BA6B832B4D4E0E000CF8C4 /* usage6.json in Resources */,
+				E6BA6B9A2B4D4E0E000CF8C4 /* friend_report_friendship_70_30.json in Resources */,
+				E6BA6BA22B4D4E0E000CF8C4 /* time5.json in Resources */,
 				1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */,
+				E6BA6BA12B4D4E0E000CF8C4 /* safety3.json in Resources */,
+				E6BA6BA32B4D4E0E000CF8C4 /* usage7.json in Resources */,
+				E6BA6B922B4D4E0E000CF8C4 /* order_together_onboarding.json in Resources */,
+				E6BA6B7C2B4D4E0E000CF8C4 /* usage9.json in Resources */,
+				E6BA6BA82B4D4E0E000CF8C4 /* manager2.json in Resources */,
+				E6BA6BAE2B4D4E0E000CF8C4 /* usage10.json in Resources */,
+				E6BA6B872B4D4E0E000CF8C4 /* loading.json in Resources */,
+				E6BA6B7D2B4D4E0E000CF8C4 /* benefit4.json in Resources */,
+				E6BA6B722B4D4E0E000CF8C4 /* friend_report_friendship_100_0.json in Resources */,
+				E6BA6B942B4D4E0E000CF8C4 /* time3.json in Resources */,
+				E6BA6BB72B4D4E0E000CF8C4 /* right_arrow.json in Resources */,
+				E6BA6B842B4D4E0E000CF8C4 /* friend_report_loading.json in Resources */,
+				E6BA6B912B4D4E0E000CF8C4 /* passmoney_card_onboarding.json in Resources */,
+				E6BA6BA72B4D4E0E000CF8C4 /* friend_report_friendship_20_80.json in Resources */,
+				E6BA6B8D2B4D4E0E000CF8C4 /* tip1.json in Resources */,
+				E6BA6B882B4D4E0E000CF8C4 /* time2.json in Resources */,
+				E6BA6BB12B4D4E0E000CF8C4 /* benefit1.json in Resources */,
+				E6BA6BAA2B4D4E0E000CF8C4 /* write_naver_receipt_review_loading.json in Resources */,
+				E6BA6B992B4D4E0E000CF8C4 /* time8.json in Resources */,
+				E6BA6B712B4D4E0E000CF8C4 /* gift_order_success.json in Resources */,
+				E6BA6B792B4D4E0E000CF8C4 /* tip3.json in Resources */,
 				E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */,
+				E6BA6BA62B4D4E0E000CF8C4 /* friend_report_down.json in Resources */,
+				E6BA6B8B2B4D4E0E000CF8C4 /* passorder2.json in Resources */,
+				E6BA6B9B2B4D4E0E000CF8C4 /* usage1.json in Resources */,
+				E6BA6B932B4D4E0E000CF8C4 /* safety4.json in Resources */,
+				E6BA6B972B4D4E0E000CF8C4 /* passmoney_card_pay.json in Resources */,
+				E6BA6B982B4D4E0E000CF8C4 /* order_together_button.json in Resources */,
+				E6BA6BB42B4D4E0E000CF8C4 /* safety1.json in Resources */,
+				E6BA6BB22B4D4E0E000CF8C4 /* friend_report_friendship_60_40.json in Resources */,
+				E6BA6B862B4D4E0E000CF8C4 /* friend_report_friendship_10_90.json in Resources */,
+				E6BA6BA52B4D4E0E000CF8C4 /* friend_report_friendship_80_20.json in Resources */,
+				E6BA6B822B4D4E0E000CF8C4 /* safety2.json in Resources */,
+				E6BA6B772B4D4E0E000CF8C4 /* time6.json in Resources */,
+				E6BA6BB32B4D4E0E000CF8C4 /* usage4.json in Resources */,
+				E6BA6BAF2B4D4E0E000CF8C4 /* benefit3.json in Resources */,
+				E6BA6B9C2B4D4E0E000CF8C4 /* friend_report_friendship_40_60.json in Resources */,
+				E6BA6B9E2B4D4E0E000CF8C4 /* tip6.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
