@@ -17,6 +17,7 @@
 		E6018C212B3E92000032566E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E6018C202B3E92000032566E /* Lottie */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
 		E6BA6B1E2B4D348A000CF8C4 /* FavoriteCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B1D2B4D348A000CF8C4 /* FavoriteCafeView.swift */; };
+		E6BA6B222B4D3AA6000CF8C4 /* PromotionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B212B4D3AA6000CF8C4 /* PromotionPageView.swift */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C177992B3D46D20011FE74 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
 		E6BA6B1D2B4D348A000CF8C4 /* FavoriteCafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCafeView.swift; sourceTree = "<group>"; };
+		E6BA6B212B4D3AA6000CF8C4 /* PromotionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPageView.swift; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		E6018C192B3E73FB0032566E /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				E6BA6B202B4D3A8E000CF8C4 /* CommonSubviews */,
 				E6BA6B1C2B4D346C000CF8C4 /* FavoriteCafeScene */,
 				1601F3442B42AB2200A2AC61 /* MainScene */,
 				1601F3282B42A8A400A2AC61 /* OnBoardingScene */,
@@ -161,6 +164,14 @@
 				E6BA6B1D2B4D348A000CF8C4 /* FavoriteCafeView.swift */,
 			);
 			path = FavoriteCafeScene;
+			sourceTree = "<group>";
+		};
+		E6BA6B202B4D3A8E000CF8C4 /* CommonSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6BA6B212B4D3AA6000CF8C4 /* PromotionPageView.swift */,
+			);
+			path = CommonSubviews;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -361,6 +372,7 @@
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
+				E6BA6B222B4D3AA6000CF8C4 /* PromotionPageView.swift in Sources */,
 				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E6BA6B1E2B4D348A000CF8C4 /* FavoriteCafeView.swift in Sources */,
