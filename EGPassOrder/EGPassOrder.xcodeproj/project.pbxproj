@@ -25,6 +25,7 @@
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
 		E6BA6B192B4CD8F0000CF8C4 /* HomeCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */; };
 		E6BA6B1B2B4CF46C000CF8C4 /* HomeMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */; };
+		E6BA6B252B4D4170000CF8C4 /* PromotionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA6B242B4D4170000CF8C4 /* PromotionPageView.swift */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
 		E6BA6B182B4CD8F0000CF8C4 /* HomeCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCelebrationView.swift; sourceTree = "<group>"; };
 		E6BA6B1A2B4CF46C000CF8C4 /* HomeMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuListView.swift; sourceTree = "<group>"; };
+		E6BA6B242B4D4170000CF8C4 /* PromotionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPageView.swift; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		E6018C192B3E73FB0032566E /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				E6BA6B232B4D4162000CF8C4 /* CommonSubviews */,
 				1698FF8D2B42EA1300D5D49B /* HomeScene */,
 				1601F3442B42AB2200A2AC61 /* MainScene */,
 				1601F3282B42A8A400A2AC61 /* OnBoardingScene */,
@@ -259,6 +262,14 @@
 				1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		E6BA6B232B4D4162000CF8C4 /* CommonSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6BA6B242B4D4170000CF8C4 /* PromotionPageView.swift */,
+			);
+			path = CommonSubviews;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -598,6 +609,7 @@
 				E6EB66482B43F2F400B82AD9 /* HomeStoryShopListView.swift in Sources */,
 				E6EB66442B43F10300B82AD9 /* HomePointShopListView.swift in Sources */,
 				E6BA6B1B2B4CF46C000CF8C4 /* HomeMenuListView.swift in Sources */,
+				E6BA6B252B4D4170000CF8C4 /* PromotionPageView.swift in Sources */,
 				1698FF932B42EA6B00D5D49B /* HomeTabBarView.swift in Sources */,
 				E6EB663B2B439E5400B82AD9 /* HomeNearbyShopListView.swift in Sources */,
 				E6EB663E2B43A96A00B82AD9 /* LargeShopListCell.swift in Sources */,
