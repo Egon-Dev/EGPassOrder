@@ -15,6 +15,8 @@
 		1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3452B42AB5200A2AC61 /* MainTabView.swift */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
 		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
+		E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */; };
+		E6A6001D2B551DE6001510AE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6001C2B551DE6001510AE /* HomeView.swift */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieCoffeeAnimation.json; sourceTree = "<group>"; };
+		E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPageTabView.swift; sourceTree = "<group>"; };
+		E6A6001C2B551DE6001510AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		E6018C192B3E73FB0032566E /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				E6A600192B551CC9001510AE /* CommonSubviews */,
+				E6A600182B551CB3001510AE /* HomeScene */,
 				1601F3442B42AB2200A2AC61 /* MainScene */,
 				1601F3282B42A8A400A2AC61 /* OnBoardingScene */,
 				E6018C1A2B3E741D0032566E /* SplashScene */,
@@ -144,6 +150,22 @@
 				E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */,
 			);
 			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		E6A600182B551CB3001510AE /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				E6A6001C2B551DE6001510AE /* HomeView.swift */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		E6A600192B551CC9001510AE /* CommonSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */,
+			);
+			path = CommonSubviews;
 			sourceTree = "<group>";
 		};
 		E6C177892B3D46D10011FE74 = {
@@ -468,7 +490,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
+				E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
+				E6A6001D2B551DE6001510AE /* HomeView.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
 				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
