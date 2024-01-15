@@ -37,14 +37,14 @@ fileprivate struct OrderByListView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
+                // FIXME: - Remove Dummy
                 PromotionPageTabView(
-                    pageList: [
-                        // FIXME: - DI
-                        PromotionPage(pageImage: Image(systemName: "1.square.fill"), destinationView: Text("1")),
-                        PromotionPage(pageImage: Image(systemName: "2.square.fill"), destinationView: Text("2")),
-                        PromotionPage(pageImage: Image(systemName: "3.square.fill"), destinationView: Text("3")),
-                    ],
-                    height: 100
+                    pageList: Image.dummyImageList
+                        .enumerated()
+                        .map { index, image in
+                            PromotionPage(pageImage: image, destinationView: Text("ImageIndex: \(index)"))
+                    },
+                    height: 120
                 )
                 .padding()
             }
