@@ -36,17 +36,23 @@ struct HomeView: View {
 fileprivate struct OrderByListView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(spacing: 20) {
-                // FIXME: - Remove Dummy
+            VStack(spacing: CGFloat.subviewVerticalSpacing) {
                 PromotionPageTabView(
                     pageList: Image.dummyImageList
                         .enumerated()
                         .map { index, image in
-                            PromotionPage(pageImage: image, destinationView: Text("ImageIndex: \(index)"))
+                            // FIXME: - Remove Dummy
+                            PromotionPage(
+                                pageImage: image,
+                                destinationView: Text("ImageIndex: \(index)")
+                            )
                     },
-                    height: 120
+                    height: CGFloat.promotionPageTabViewHeight
+
                 )
                 .padding()
+
+                NearbyCafeListView()
             }
         }
     }
@@ -60,6 +66,12 @@ fileprivate struct OrderByMapView: View {
     }
 }
 
+
+// MARK: - Extension: CGFloat
+fileprivate extension CGFloat {
+    static let subviewVerticalSpacing: CGFloat = 20
+    static let promotionPageTabViewHeight: CGFloat = 120
+}
 
 
 // MARK: - PREVIEW

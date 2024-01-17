@@ -121,7 +121,7 @@ struct PromotionPage {
 }
 
 
-// MARK: - Extension TimeInterval
+// MARK: - Extension: TimeInterval
 fileprivate extension TimeInterval {
     static let defaultFlipTime = 3.0
 }

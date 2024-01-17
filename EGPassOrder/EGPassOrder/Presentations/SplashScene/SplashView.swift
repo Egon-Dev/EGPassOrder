@@ -91,14 +91,14 @@ struct SplashView: View {
 
 // MARK: - Colors
 fileprivate extension Color {
-    static let splashIndigo = Color("SplashView/indigo")
+    static let splashIndigo = Color("SplashScene/indigo")
 }
 
 
 // MARK: - Images
 fileprivate extension Image {
-    static let splashLogoImage = Image("SplashView/SplashImage")
-    static let splashCIImage = Image("SplashView/SplashCI")
+    static let splashLogoImage = Image("SplashScene/splashImage")
+    static let splashCIImage = Image("SplashScene/splashCI")
 }
 
 
@@ -113,7 +113,7 @@ fileprivate enum Lottie {
     private var fileName: String {
         switch self {
         case .coffee:
-            return "LottieCoffeeAnimation"
+            return "CoffeeAnimation"
         }
     }
 }
