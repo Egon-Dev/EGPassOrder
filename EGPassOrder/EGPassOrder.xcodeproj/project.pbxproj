@@ -14,15 +14,20 @@
 		1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */; };
 		1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3452B42AB5200A2AC61 /* MainTabView.swift */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
-		E6018C232B3E95090032566E /* LottieCoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* LottieCoffeeAnimation.json */; };
+		E6018C232B3E95090032566E /* CoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* CoffeeAnimation.json */; };
 		E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */; };
 		E6A6001D2B551DE6001510AE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6001C2B551DE6001510AE /* HomeView.swift */; };
+		E6A600212B553B64001510AE /* NearbyCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A600202B553B64001510AE /* NearbyCafeListView.swift */; };
+		E6A600232B553BBC001510AE /* LargeCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A600222B553BBC001510AE /* LargeCafeListCell.swift */; };
+		E6A600252B553BDB001510AE /* CafeListCellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A600242B553BDB001510AE /* CafeListCellConfigurable.swift */; };
+		E6A600282B554647001510AE /* Legacy.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A600272B554646001510AE /* Legacy.xcassets */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
 		E6C177A72B3D46D30011FE74 /* EGPassOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */; };
 		E6C177B12B3D46D30011FE74 /* EGPassOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */; };
 		E6C177B32B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */; };
+		E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,10 @@
 		E6018C222B3E95090032566E /* CoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CoffeeAnimation.json; sourceTree = "<group>"; };
 		E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPageTabView.swift; sourceTree = "<group>"; };
 		E6A6001C2B551DE6001510AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E6A600202B553B64001510AE /* NearbyCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCafeListView.swift; sourceTree = "<group>"; };
+		E6A600222B553BBC001510AE /* LargeCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCafeListCell.swift; sourceTree = "<group>"; };
+		E6A600242B553BDB001510AE /* CafeListCellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListCellConfigurable.swift; sourceTree = "<group>"; };
+		E6A600272B554646001510AE /* Legacy.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Legacy.xcassets; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +76,7 @@
 		E6C177AC2B3D46D30011FE74 /* EGPassOrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGPassOrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITests.swift; sourceTree = "<group>"; };
 		E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeOperationStatus.swift; sourceTree = "<group>"; };
 		EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,8 +119,9 @@
 		1601F33A2B42A8DE00A2AC61 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E6A600262B553CD1001510AE /* LottieAnimations */,
 				1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */,
+				E6A600272B554646001510AE /* Legacy.xcassets */,
+				E6A600262B553CD1001510AE /* LottieAnimations */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 		E6A600182B551CB3001510AE /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
+				E6A6001E2B553B0C001510AE /* Subviews */,
 				E6A6001C2B551DE6001510AE /* HomeView.swift */,
 			);
 			path = HomeScene;
@@ -163,9 +175,28 @@
 		E6A600192B551CC9001510AE /* CommonSubviews */ = {
 			isa = PBXGroup;
 			children = (
+				E6A6001F2B553B17001510AE /* CafeListCells */,
 				E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */,
 			);
 			path = CommonSubviews;
+			sourceTree = "<group>";
+		};
+		E6A6001E2B553B0C001510AE /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6A600202B553B64001510AE /* NearbyCafeListView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		E6A6001F2B553B17001510AE /* CafeListCells */ = {
+			isa = PBXGroup;
+			children = (
+				E6A600242B553BDB001510AE /* CafeListCellConfigurable.swift */,
+				E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */,
+				E6A600222B553BBC001510AE /* LargeCafeListCell.swift */,
+			);
+			path = CafeListCells;
 			sourceTree = "<group>";
 		};
 		E6A600262B553CD1001510AE /* LottieAnimations */ = {
@@ -367,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A600282B554647001510AE /* Legacy.xcassets in Resources */,
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
 				1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */,
 				E6018C232B3E95090032566E /* CoffeeAnimation.json in Resources */,
@@ -497,10 +529,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A600232B553BBC001510AE /* LargeCafeListCell.swift in Sources */,
+				E6A600212B553B64001510AE /* NearbyCafeListView.swift in Sources */,
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
 				E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */,
+				E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				E6A6001D2B551DE6001510AE /* HomeView.swift in Sources */,
+				E6A600252B553BDB001510AE /* CafeListCellConfigurable.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
 				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
