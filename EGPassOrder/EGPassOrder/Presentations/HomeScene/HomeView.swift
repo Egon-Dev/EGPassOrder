@@ -55,6 +55,13 @@ fileprivate struct OrderByListView: View {
                 NearbyCafeListView()
 
                 PointCafeListView()
+
+                AutoChangeAdvertiseView(
+                    pageList: [Text("1"), Text("2"), Text("3")],
+                    height: 120,
+                    timerInterval: 2.0
+                )
+                .padding()
             }
         }
     }
@@ -71,8 +78,9 @@ fileprivate struct OrderByMapView: View {
 
 // MARK: - Extension: CGFloat
 fileprivate extension CGFloat {
-    static let subviewVerticalSpacing: CGFloat = 20
-    static let promotionPageTabViewHeight: CGFloat = 120
+    static let subviewVerticalSpacing = CGFloat(20)
+    static let promotionPageTabViewHeight = CGFloat(120)
+    static let autoChangeAdvertiseViewHeight = CGFloat(120)
 }
 
 
