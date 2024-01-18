@@ -13,9 +13,7 @@ struct NearbyCafeListView: View {
     var body: some View {
         VStack(alignment: .leading) {
             TitleView(isPhoneOrderable: $isPhoneOrderable)
-
             CafeListScrollView(isPhoneOrderable: $isPhoneOrderable)
-
             AccessaryView()
                 .padding()
         }
@@ -24,7 +22,7 @@ struct NearbyCafeListView: View {
 
 
 // MARK: - Subview: TitleView
-fileprivate struct TitleView: View {
+private struct TitleView: View {
     @Binding var isPhoneOrderable: Bool
 
     var body: some View {
@@ -38,9 +36,12 @@ fileprivate struct TitleView: View {
 
                 Image.passbadge
             }
+            .padding(.horizontal)
 
             HStack {
                 Text.titleToggleLeadingText
+                    .padding(.horizontal)
+
                 Toggle("", isOn: $isPhoneOrderable)
                     .tint(Color.titleTextOrange)
                     .labelsHidden()
@@ -53,7 +54,7 @@ fileprivate struct TitleView: View {
 
 
 // MARK: - Subview: CafeListScrollView
-fileprivate struct CafeListScrollView: View {
+private struct CafeListScrollView: View {
     @Binding var isPhoneOrderable: Bool
     
     // FIXME: Remove Dummy
@@ -82,6 +83,7 @@ private struct AccessaryView: View {
     var body: some View {
         HStack {
             Spacer()
+
             Button(action: {
 
             }, label: {
@@ -113,11 +115,12 @@ fileprivate extension Image {
 
 // MARK: - Extension: Text
 fileprivate extension Text {
-    static let titleText = Text("게스트님과\n")
+    static let titleText = Text("게스트님과\n").font(.title3)
     + Text("가까이 있는 매장")
         .foregroundStyle(Color.titleTextOrange)
+        .font(.title3)
         .fontWeight(.bold)
-    + Text("이에요!")
+    + Text("이에요!").font(.title3)
 
     static let titleToggleLeadingText = Text("전화주문 매장 보기")
     static let viewMoreButtonText = Text("더보기")
