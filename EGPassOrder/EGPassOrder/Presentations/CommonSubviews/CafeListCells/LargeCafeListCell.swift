@@ -97,8 +97,9 @@ fileprivate struct OpenedCafeImageOverlayView: View {
 
                 HStack {
                     Image.pointBadge
-                    Image.togetherBadge
+                    Image.pointTogetherBadge
                 }
+
                 HStack {
                     Image.newCafeBadge
                 }
@@ -290,7 +291,7 @@ fileprivate extension Image {
 
     // Badges
     static let pointBadge = Image("CommonSubviews/CafeListCells/pointBadge")
-    static let togetherBadge = Image("CommonSubviews/CafeListCells/togetherBadge")
+    static let pointTogetherBadge = Image("CommonSubviews/CafeListCells/pointTogetherBadge")
     static let newCafeBadge = Image("CommonSubviews/CafeListCells/newCafeBadge")
     static let phoneCallBadge = Image("CommonSubviews/CafeListCells/phoneCallBadge")
 

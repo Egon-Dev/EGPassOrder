@@ -53,6 +53,8 @@ fileprivate struct OrderByListView: View {
                 .padding()
 
                 NearbyCafeListView()
+
+                PointCafeListView()
             }
         }
     }
