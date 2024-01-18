@@ -27,6 +27,7 @@ private struct TitleView: View {
 
             Spacer()
         }
+        .padding(.horizontal)
     }
 }
 
