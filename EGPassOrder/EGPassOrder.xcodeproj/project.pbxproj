@@ -29,6 +29,8 @@
 		E6C177A72B3D46D30011FE74 /* EGPassOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */; };
 		E6C177B12B3D46D30011FE74 /* EGPassOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */; };
 		E6C177B32B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */; };
+		E6CCBEC82B5A108E0048D382 /* DineInCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBEC72B5A108E0048D382 /* DineInCafeListView.swift */; };
+		E6CCBECA2B5A11D10048D382 /* MediumCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBEC92B5A11D10048D382 /* MediumCafeListCell.swift */; };
 		E6D504222B576FBD00BE4A7B /* PointCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */; };
 		E6D504242B5772E500BE4A7B /* SmallCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */; };
 		E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */; };
@@ -82,6 +84,8 @@
 		E6C177AC2B3D46D30011FE74 /* EGPassOrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGPassOrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITests.swift; sourceTree = "<group>"; };
 		E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6CCBEC72B5A108E0048D382 /* DineInCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInCafeListView.swift; sourceTree = "<group>"; };
+		E6CCBEC92B5A11D10048D382 /* MediumCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCafeListCell.swift; sourceTree = "<group>"; };
 		E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCafeListView.swift; sourceTree = "<group>"; };
 		E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCafeListCell.swift; sourceTree = "<group>"; };
 		E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeOperationStatus.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				E6A600202B553B64001510AE /* NearbyCafeListView.swift */,
 				E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */,
 				E6162D492B591697002937C8 /* StoryCafeListView.swift */,
+				E6CCBEC72B5A108E0048D382 /* DineInCafeListView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */,
 				E6A600222B553BBC001510AE /* LargeCafeListCell.swift */,
 				E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */,
+				E6CCBEC92B5A11D10048D382 /* MediumCafeListCell.swift */,
 			);
 			path = CafeListCells;
 			sourceTree = "<group>";
@@ -545,6 +551,7 @@
 				E6A600212B553B64001510AE /* NearbyCafeListView.swift in Sources */,
 				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
 				E6162D482B590AFC002937C8 /* AutoChangeAdvertiseView.swift in Sources */,
+				E6CCBEC82B5A108E0048D382 /* DineInCafeListView.swift in Sources */,
 				E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */,
 				E6162D4A2B591697002937C8 /* StoryCafeListView.swift in Sources */,
 				E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */,
@@ -555,6 +562,7 @@
 				E6A600252B553BDB001510AE /* CafeListCellConfigurable.swift in Sources */,
 				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
 				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
+				E6CCBECA2B5A11D10048D382 /* MediumCafeListCell.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
 				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,

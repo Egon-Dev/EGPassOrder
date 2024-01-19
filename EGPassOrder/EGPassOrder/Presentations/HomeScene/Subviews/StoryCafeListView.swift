@@ -88,7 +88,7 @@ fileprivate extension Color {
 
 // MARK: - Extension: Text
 fileprivate extension Text {
-    static let titleText = Text("게스트님 근처에\n").font(.title3)
+    static let titleText = Text("게스트님 근처에 있는\n").font(.title3)
     + Text("스토리가 많은 매장")
         .foregroundStyle(Color.titleTextTurquoise)
         .font(.title3)

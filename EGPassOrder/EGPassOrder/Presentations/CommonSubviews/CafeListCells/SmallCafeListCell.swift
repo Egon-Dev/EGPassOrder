@@ -32,6 +32,7 @@ struct SmallCafeListCell: View, CafeListCellConfigurable {
 
     var body: some View {
         NavigationLink(
+            // TODO: Add Destination View
             destination: { EmptyView() },
             label: {
                 HStack(spacing: CGFloat.cellHorizontalSpacing) {
@@ -223,9 +224,8 @@ fileprivate struct PointCafeDescriptionView: View {
         ) {
             // Cafe Name
             Text.dummyCafeNameText
-                .foregroundStyle(Color.cafeNameBlack)
                 .lineLimit(Int.cafeNameLineLimit)
-            
+
             // Cafe Distance
             Label(
                 title: { Text.dummyCafeDistanceText },
@@ -367,7 +367,6 @@ fileprivate extension Image {
     static let cartIcon = Image("CommonSubviews/CafeListCells/cartIcon")
 
     // Badges
-    // TODO: Add Image Assets
     static let newCafeCircleBadge = Image("CommonSubviews/CafeListCells/newCafeCircleBadge")
     static let discountCircleBadge = Image("CommonSubviews/CafeListCells/discountCircleBadge")
     static let pointCircleBadge = Image("CommonSubviews/CafeListCells/pointCircleBadge")
@@ -384,7 +383,7 @@ fileprivate extension Int {
 // MARK: - Extension: Text
 fileprivate extension Text {
     // FIXME: Replace Dummy
-    static let dummyCafeNameText = Text("하이브커피하이브커피하이브커피하이브커피").font(.title3)
+    static let dummyCafeNameText = Text("하이브커피하이브커피하이브커피하이브커피").font(.title3).foregroundStyle(Color.cafeNameBlack)
     static let dummyCafeDistanceText = Text("132.0m").foregroundStyle(Color.descriptionGray)
     static let dummyCafeSalePostText = Text("판매글 1").foregroundStyle(Color.descriptionGray)
     static let dummyCafePointText = Text("구매가능 포인트 330P").foregroundStyle(Color.descriptionGray)
