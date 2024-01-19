@@ -31,20 +31,17 @@ struct SmallCafeListCell: View, CafeListCellConfigurable {
     }
 
     var body: some View {
-        HStack(spacing: CGFloat.cellHorizontalSpacing) {
-            CafeImageView(
-                status: $cafeOperationStatus,
-                image: $cafeImage,
-                width: $imageWidth,
-                aspectRatio: Self.$imageAspectRatio
-            )
+        NavigationLink(
+            destination: { EmptyView() },
+            label: {
+                HStack(spacing: CGFloat.cellHorizontalSpacing) {
+                    CafeImageView(
+                        status: $cafeOperationStatus,
+                        image: $cafeImage,
+                        width: $imageWidth,
+                        aspectRatio: Self.$imageAspectRatio
+                    )
 
-            CafeDescriptionView(
-                status: $cafeOperationStatus,
-                height: $imageWidth,
-                aspectRatio: Self.$descriptionAspectRatio
-            )
-        }
                     switch cafeListType {
                     case .point:
                         PointCafeDescriptionView(
@@ -59,6 +56,9 @@ struct SmallCafeListCell: View, CafeListCellConfigurable {
                             aspectRatio: Self.$descriptionAspectRatio
                         )
                     }
+                }
+            }
+        )
     }
 }
 

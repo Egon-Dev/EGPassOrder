@@ -12,21 +12,23 @@ struct HomeView: View {
     @State var selectedTabIndex: Int = .zero
 
     var body: some View {
-        VStack {
-            if selectedTabIndex == .zero {
-                OrderByListView()
-                    .onAppear {
-                        isMainTabBarVisible = true
-                    }
-            } else {
-                OrderByMapView()
-                    .onAppear {
-                        isMainTabBarVisible = false
-                    }
-                    .ignoresSafeArea(edges: .bottom)
-            }
+        NavigationStack {
+            VStack {
+                if selectedTabIndex == .zero {
+                    OrderByListView()
+                        .onAppear {
+                            isMainTabBarVisible = true
+                        }
+                } else {
+                    OrderByMapView()
+                        .onAppear {
+                            isMainTabBarVisible = false
+                        }
+                        .ignoresSafeArea(edges: .bottom)
+                }
 
-            Spacer()
+                Spacer()
+            }
         }
     }
 }

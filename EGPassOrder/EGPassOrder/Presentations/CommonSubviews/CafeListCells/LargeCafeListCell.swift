@@ -20,22 +20,27 @@ struct LargeCafeListCell: View, CafeListCellConfigurable {
     }
 
     var body: some View {
-        VStack(
-            alignment: .leading,
-            spacing: CGFloat.cellVerticalSpacing
-        ) {
-            CafeImageView(
-                cafeOperationStatus: $cafeOperationStatus,
-                cafeImage: $cafeImage,
-                imageWidth: $imageWidth,
-                imageAspectRatio: Self.$imageAspectRatio
-            )
+        NavigationLink(
+            destination: { EmptyView() },
+            label: {
+                VStack(
+                    alignment: .leading,
+                    spacing: CGFloat.cellVerticalSpacing
+                ) {
+                    CafeImageView(
+                        cafeOperationStatus: $cafeOperationStatus,
+                        cafeImage: $cafeImage,
+                        imageWidth: $imageWidth,
+                        imageAspectRatio: Self.$imageAspectRatio
+                    )
 
-            CafeDescriptionView(
-                cafeOperationStatus: $cafeOperationStatus,
-                width: $imageWidth
-            )
-        }
+                    CafeDescriptionView(
+                        cafeOperationStatus: $cafeOperationStatus,
+                        width: $imageWidth
+                    )
+                }
+            }
+        )
     }
 }
 
@@ -108,13 +113,13 @@ fileprivate struct OpenedCafeImageOverlayView: View {
                     Label {
                         Text.heartCount
                     } icon: {
-                        Image.heartIcon
+                        Image.heartOrangeFillIcon
                     }
 
                     Label {
                         Text.storyCount
                     } icon: {
-                        Image.storyIcon
+                        Image.storyWhiteIcon
                     }
                     .labelStyle(.titleAndIcon)
 
@@ -163,13 +168,13 @@ fileprivate struct PhoneOrderOnlyCafeImageOverlayView: View {
                     Label {
                         Text.heartCount
                     } icon: {
-                        Image.heartIcon
+                        Image.heartOrangeFillIcon
                     }
 
                     Label {
                         Text.storyCount
                     } icon: {
-                        Image.storyIcon
+                        Image.storyWhiteIcon
                     }
                     .labelStyle(.titleAndIcon)
 
@@ -220,6 +225,7 @@ fileprivate struct CafeDescriptionView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text.cafeNameTitle
+                .foregroundStyle(Color.cafeNameBlack)
                 .lineLimit(Int.cafeNameLineLimit)
             Text("")
                 .frame(width: width)
@@ -259,6 +265,7 @@ fileprivate extension Color {
     static let phoneOrderableWhite = Color.white
     static let preparingCafeWhite = Color.white
     static let dimmedOverlayBlack = Color.black.opacity(0.5)
+    static let cafeNameBlack = Color.black
     static let heartOrange = Color("CommonSubviews/CafeListCells/orange")
     static let storyWhite = Color.white
     static let cartWhite = Color.white
@@ -283,8 +290,8 @@ fileprivate extension CGFloat {
 // MARK: - Extension: Image
 fileprivate extension Image {
     // Icons
-    static let heartIcon = Image("CommonSubviews/CafeListCells/heartIcon")
-    static let storyIcon = Image("CommonSubviews/CafeListCells/storyIcon")
+    static let heartOrangeFillIcon = Image("CommonSubviews/CafeListCells/heartOrangeFillIcon")
+    static let storyWhiteIcon = Image("CommonSubviews/CafeListCells/storyWhiteIcon")
     static let cartIcon = Image("CommonSubviews/CafeListCells/cartIcon")
     static let pickUpTimeIcon = Image("CommonSubviews/CafeListCells/pickUpTimeIcon")
     static let locationIcon = Image("CommonSubviews/CafeListCells/locationIcon")
