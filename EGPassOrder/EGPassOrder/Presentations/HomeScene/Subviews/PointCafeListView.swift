@@ -45,6 +45,7 @@ private struct CafeListScrollView: View {
                 ForEach(rows.indices, id: \.self) { item in
                     // FIXME: Remove Dummy
                     SmallCafeListCell(
+                        cafeListType: .point,
                         cafeOperationStatus: .open,
                         imageWidth: UIScreen.main.bounds.width * CGFloat.cellWidthCoefficient
                     )

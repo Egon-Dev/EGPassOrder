@@ -7,14 +7,25 @@
 
 import SwiftUI
 
+enum CafeListType {
+    case point
+    case story
+}
+
 struct SmallCafeListCell: View, CafeListCellConfigurable {
     @State private(set) var cafeOperationStatus: CafeOperationStatus
     @State var cafeImage: Image?
     @State var imageWidth: CGFloat
     @State static var imageAspectRatio = CGFloat.defaultImageAspectRatio
     @State static var descriptionAspectRatio = CGFloat.defaultDescriptionRatio
+    let cafeListType: CafeListType
 
-    init(cafeOperationStatus: CafeOperationStatus, imageWidth: CGFloat) {
+    init(
+        cafeListType: CafeListType,
+        cafeOperationStatus: CafeOperationStatus,
+        imageWidth: CGFloat
+    ) {
+        self.cafeListType = cafeListType
         self.cafeOperationStatus = cafeOperationStatus
         self.imageWidth = imageWidth
     }
@@ -34,6 +45,20 @@ struct SmallCafeListCell: View, CafeListCellConfigurable {
                 aspectRatio: Self.$descriptionAspectRatio
             )
         }
+                    switch cafeListType {
+                    case .point:
+                        PointCafeDescriptionView(
+                            status: $cafeOperationStatus,
+                            height: $imageWidth,
+                            aspectRatio: Self.$descriptionAspectRatio
+                        )
+                    case .story:
+                        StoryCafeDescriptionView(
+                            status: $cafeOperationStatus,
+                            height: $imageWidth,
+                            aspectRatio: Self.$descriptionAspectRatio
+                        )
+                    }
     }
 }
 
