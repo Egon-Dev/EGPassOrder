@@ -1,13 +1,13 @@
 //
-//  PointCafeListView.swift
+//  StoryCafeListView.swift
 //  EGPassOrder
 //
-//  Created by changmuk.im@phoenixdarts.com on 1/17/24.
+//  Created by changmuk.im@phoenixdarts.com on 1/18/24.
 //
 
 import SwiftUI
 
-struct PointCafeListView: View {
+struct StoryCafeListView: View {
     var body: some View {
         VStack(alignment: .leading) {
             TitleView()
@@ -45,7 +45,7 @@ private struct CafeListScrollView: View {
                 ForEach(rows.indices, id: \.self) { item in
                     // FIXME: Remove Dummy
                     SmallCafeListCell(
-                        cafeListType: .point,
+                        cafeListType: .story,
                         cafeOperationStatus: .open,
                         imageWidth: UIScreen.main.bounds.width * CGFloat.cellWidthCoefficient
                     )
@@ -75,22 +75,22 @@ private struct AccessaryView: View {
 
 // MARK: - Extension: CGFloat
 fileprivate extension CGFloat {
-    static let cellWidthCoefficient = 0.25
-    static let cellSpacing: CGFloat = 16
+    static let cellWidthCoefficient = CGFloat(0.25)
+    static let cellSpacing = CGFloat(16)
 }
 
 
 // MARK: - Extension: Color
 fileprivate extension Color {
-    static let titleTextSkyblue = Color("HomeScene/Subviews/PointCafeListView/skyblue")
+    static let titleTextTurquoise = Color("HomeScene/Subviews/StoryCafeListView/turquoise")
 }
 
 
 // MARK: - Extension: Text
 fileprivate extension Text {
     static let titleText = Text("게스트님 근처에\n").font(.title3)
-    + Text("판매중인 적립이 있는 매장")
-        .foregroundStyle(Color.titleTextSkyblue)
+    + Text("스토리가 많은 매장")
+        .foregroundStyle(Color.titleTextTurquoise)
         .font(.title3)
         .fontWeight(.bold)
     + Text("이에요!").font(.title3)
@@ -100,5 +100,5 @@ fileprivate extension Text {
 
 
 #Preview {
-    PointCafeListView()
+    StoryCafeListView()
 }
