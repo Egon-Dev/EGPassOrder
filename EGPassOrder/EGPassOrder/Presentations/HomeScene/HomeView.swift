@@ -66,6 +66,8 @@ fileprivate struct OrderByListView: View {
                 .padding()
 
                 StoryCafeListView()
+
+                DineInCafeListView()
             }
         }
     }

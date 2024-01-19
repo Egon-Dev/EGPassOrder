@@ -21,6 +21,7 @@ struct LargeCafeListCell: View, CafeListCellConfigurable {
 
     var body: some View {
         NavigationLink(
+            // TODO: Add Destination View
             destination: { EmptyView() },
             label: {
                 VStack(
@@ -90,7 +91,7 @@ fileprivate struct CafeImageView: View {
 }
 
 
-// MARK: - Subview: CafeImageViews
+// MARK: - Subview: CafeImageOverlayViews
 fileprivate struct OpenedCafeImageOverlayView: View {
     @Binding var imageWidth: CGFloat
     @Binding var imageAspectRatio: CGFloat
@@ -225,8 +226,8 @@ fileprivate struct CafeDescriptionView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text.cafeNameTitle
-                .foregroundStyle(Color.cafeNameBlack)
                 .lineLimit(Int.cafeNameLineLimit)
+                .multilineTextAlignment(.leading)
             Text("")
                 .frame(width: width)
 
@@ -333,7 +334,7 @@ fileprivate extension Text {
     static let heartCount = Text("0").foregroundStyle(Color.heartOrange)
     static let storyCount = Text("0").foregroundStyle(Color.storyWhite)
     static let cartCount = Text("주문수 \(1234.decimalString)").foregroundStyle(Color.cartWhite).font(.subheadline)
-    static let cafeNameTitle = Text("커피사피엔스 구로한영 캐슬시티점 aaaaaaaa").font(.title3)
+    static let cafeNameTitle = Text("커피사피엔스 구로한영 캐슬시티점 aaaaaaaa").font(.title3).foregroundStyle(Color.cafeNameBlack)
     static let receiveNow = Text("지금 수령").foregroundStyle(Color.heartOrange)
     static let preparingNow = Text("준비 중").foregroundStyle(Color.preparingGray)
     static let cafeDistance = Text("120.0m").foregroundStyle(Color.distanceGray)

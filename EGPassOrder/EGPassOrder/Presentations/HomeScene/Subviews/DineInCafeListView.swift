@@ -1,16 +1,17 @@
 //
-//  StoryCafeListView.swift
+//  DineInCafeListView.swift
 //  EGPassOrder
 //
-//  Created by changmuk.im@phoenixdarts.com on 1/18/24.
+//  Created by changmuk.im@phoenixdarts.com on 1/19/24.
 //
 
 import SwiftUI
 
-struct StoryCafeListView: View {
+struct DineInCafeListView: View {
     var body: some View {
         VStack(alignment: .leading) {
             TitleView()
+                .padding(.horizontal)
             CafeListScrollView()
             AccessaryView()
                 .padding()
@@ -27,7 +28,6 @@ private struct TitleView: View {
 
             Spacer()
         }
-        .padding(.horizontal)
     }
 }
 
@@ -38,14 +38,11 @@ private struct CafeListScrollView: View {
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()],
-                      alignment: .leading,
-                      spacing: CGFloat.cellSpacing) {
+            LazyHGrid(rows: [GridItem()], alignment: .top, spacing: CGFloat.cellSpacing) {
                 // FIXME: Remove Dummy
                 ForEach(rows.indices, id: \.self) { item in
-                    // FIXME: Remove Dummy
-                    SmallCafeListCell(
-                        cafeListType: .story,
+                    MediumCafeListCell(
+                        // FIXME: Remove Dummy
                         cafeOperationStatus: .open,
                         imageWidth: UIScreen.main.bounds.width * CGFloat.cellWidthCoefficient
                     )
@@ -75,22 +72,22 @@ private struct AccessaryView: View {
 
 // MARK: - Extension: CGFloat
 fileprivate extension CGFloat {
-    static let cellWidthCoefficient = CGFloat(0.25)
+    static let cellWidthCoefficient = CGFloat(0.35)
     static let cellSpacing = CGFloat(16)
 }
 
 
 // MARK: - Extension: Color
 fileprivate extension Color {
-    static let titleTextTurquoise = Color("HomeScene/Subviews/StoryCafeListView/turquoise")
+    static let titleTextYellow = Color("HomeScene/Subviews/DineInCafeListView/yellow")
 }
 
 
 // MARK: - Extension: Text
 fileprivate extension Text {
     static let titleText = Text("게스트님 근처에 있는\n").font(.title3)
-    + Text("스토리가 많은 매장")
-        .foregroundStyle(Color.titleTextTurquoise)
+    + Text("먹고갈 수 있는 매장")
+        .foregroundStyle(Color.titleTextYellow)
         .font(.title3)
         .fontWeight(.bold)
     + Text("이에요!").font(.title3)
@@ -100,5 +97,5 @@ fileprivate extension Text {
 
 
 #Preview {
-    StoryCafeListView()
+    DineInCafeListView()
 }
