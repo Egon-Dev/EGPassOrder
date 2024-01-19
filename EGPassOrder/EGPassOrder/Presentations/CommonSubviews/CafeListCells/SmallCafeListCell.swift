@@ -184,8 +184,8 @@ fileprivate struct PreparingCafeImageOverlayView: View {
 }
 
 
-// MARK: - Subview: CellDescriptionView
-fileprivate struct CafeDescriptionView: View {
+// MARK: - Subview: PointCafeDescriptionView
+fileprivate struct PointCafeDescriptionView: View {
     @Binding var status: CafeOperationStatus
     @Binding var height: CGFloat
     @Binding var aspectRatio: CGFloat
@@ -196,22 +196,100 @@ fileprivate struct CafeDescriptionView: View {
             alignment: .leading,
             spacing: CGFloat.DescriptionVerticalSpacing
         ) {
+            // Cafe Name
             Text.dummyCafeNameText
+                .foregroundStyle(Color.cafeNameBlack)
                 .lineLimit(Int.cafeNameLineLimit)
-
+            
+            // Cafe Distance
             Label(
                 title: { Text.dummyCafeDistanceText },
                 icon: { Image.locationIcon }
             )
-
+            
+            // Cafe Sale Posts
             Label(
                 title: { Text.dummyCafeSalePostText },
                 icon: { Image.salePostIcon }
             )
-
+            
+            // Cafe Points
             Label(
                 title: { Text.dummyCafePointText },
                 icon: { Image.pointIcon }
+            )
+        }
+        .frame(width: width, height: height)
+    }
+}
+
+
+// MARK: - Subview: StoryCafeDescriptionView
+fileprivate struct StoryCafeDescriptionView: View {
+    @Binding var status: CafeOperationStatus
+    @Binding var height: CGFloat
+    @Binding var aspectRatio: CGFloat
+    private var width: CGFloat { height / aspectRatio }
+
+    var body: some View {
+        VStack(
+            alignment: .leading,
+            spacing: CGFloat.DescriptionVerticalSpacing
+        ) {
+            // Cafe Name
+            Text.dummyCafeNameText
+                .foregroundStyle(Color.cafeNameBlack)
+                .lineLimit(Int.cafeNameLineLimit)
+            
+            // Cafe Hearts & Stories
+            HStack {
+                Label(
+                    title: { Text.dummyCafeHeartCountText },
+                    icon: { Image.heartOrangeFillIcon }
+                )
+
+                Label(
+                    title: { Text.dummyCafeStoryCountText },
+                    icon: { Image.storyNavyIcon }
+                )
+
+                Spacer()
+            }
+
+            // Cafe Receive Time & Distance
+            HStack {
+                switch status {
+                case .open:
+                    Label(
+                        title: { Text.dummyCafePickUpTimeText },
+                        icon: { Image.pickUpTimeIcon }
+                    )
+                case .phoneOrderOnly:
+                    // TODO: Check case
+                    EmptyView()
+                case .preparing:
+                    Label(
+                        title: { Text.preparingCafe },
+                        icon: {
+                            Image.pickUpTimeIcon
+                                .renderingMode(.template)
+                                .foregroundStyle(Color.preparingGray)
+                        }
+                    )
+                }
+
+                Label(
+                    title: { Text.dummyCafeDistanceText },
+                    icon: { Image.locationIcon }
+                )
+
+                Spacer()
+            }
+
+            // Cafe Order Counts
+            Label(
+                title: { Text.dummyCafeOrderCountText },
+                icon: { Image.cartIcon }
             )
         }
         .frame(width: width, height: height)
@@ -235,7 +313,13 @@ fileprivate extension CGFloat {
 fileprivate extension Color {
     static let titleBlack = Color.black
     static let descriptionGray = Color.gray
+    static let cafeNameBlack = Color.black
     static let dimmedOverlayBlack = Color.black.opacity(0.5)
+    static let preparingGray = Color.gray
+    static let heartOrange = Color.orange
+    static let pickUpOrange = Color.orange
+    static let storyNavy = Color.indigo
+    static let cartGray = Color.gray
 }
 
 
@@ -248,10 +332,14 @@ fileprivate extension Image {
     static let preparingClockImage = Image("CommonSubviews/CafeListCells/preparingClockImage")
 
     // Icons
-    static let locationIcon = Image("CommonSubviews/CafeListCells/locationIcon")
+    static let heartOrangeFillIcon = Image("CommonSubviews/CafeListCells/heartOrangeFillIcon")
     static let salePostIcon = Image("CommonSubviews/CafeListCells/salePostIcon")
     static let pointIcon = Image("CommonSubviews/CafeListCells/pointIcon")
     static let stampIcon = Image("CommonSubviews/CafeListCells/stampIcon")
+    static let storyNavyIcon = Image("CommonSubviews/CafeListCells/storyNavyIcon")
+    static let pickUpTimeIcon = Image("CommonSubviews/CafeListCells/pickUpTimeIcon")
+    static let locationIcon = Image("CommonSubviews/CafeListCells/locationIcon")
+    static let cartIcon = Image("CommonSubviews/CafeListCells/cartIcon")
 
     // Badges
     // TODO: Add Image Assets
@@ -276,9 +364,19 @@ fileprivate extension Text {
     static let dummyCafeSalePostText = Text("판매글 1").foregroundStyle(Color.descriptionGray)
     static let dummyCafePointText = Text("구매가능 포인트 330P").foregroundStyle(Color.descriptionGray)
     static let dummyCafeStampText = Text("구매가능 스탬프 2개 쿠폰 0개").foregroundStyle(Color.descriptionGray)
+    static let dummyCafeHeartCountText = Text("1234").foregroundStyle(Color.heartOrange)
+    static let dummyCafeStoryCountText = Text("5678").foregroundStyle(Color.storyNavy)
+    static let dummyCafePickUpTimeText = Text("5분 후 수령").foregroundStyle(Color.pickUpOrange)
+    static let dummyCafeOrderCountText = Text("주분수 39,448").foregroundStyle(Color.cartGray)
+
+    static let preparingCafe = Text("준비 중").foregroundStyle(Color.preparingGray)
 }
 
 
 #Preview {
-    SmallCafeListCell(cafeOperationStatus: .open, imageWidth: 100)
+    SmallCafeListCell(
+        cafeListType: .story,
+        cafeOperationStatus: .open,
+        imageWidth: 100
+    )
 }

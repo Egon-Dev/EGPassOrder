@@ -62,6 +62,8 @@ fileprivate struct OrderByListView: View {
                     timerInterval: 2.0
                 )
                 .padding()
+
+                StoryCafeListView()
             }
         }
     }
