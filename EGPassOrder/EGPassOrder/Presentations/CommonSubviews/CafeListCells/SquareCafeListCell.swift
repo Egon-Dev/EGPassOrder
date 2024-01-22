@@ -1,27 +1,29 @@
 //
-//  LargeCafeListCell.swift
+//  SquareCafeListCell.swift
 //  EGPassOrder
 //
-//  Created by changmuk.im@phoenixdarts.com on 1/15/24.
+//  Created by changmuk.im@phoenixdarts.com on 1/19/24.
 //
 
 import SwiftUI
 
-struct LargeCafeListCell: View, CafeListCellConfigurable {
+struct SquareCafeListCell: View, CafeListCellConfigurable {
     @State private(set) var cafeOperationStatus: CafeOperationStatus
-    @State private var isFirst: Bool = false
     @State var cafeImage: Image?
     @State var imageWidth: CGFloat
     @State static var imageAspectRatio = CGFloat.defaultImageAspectRatio
 
-    init(cafeOperationStatus: CafeOperationStatus, imageWidth: CGFloat) {
+    init(
+        cafeOperationStatus: CafeOperationStatus,
+        imageWidth: CGFloat
+    ) {
         self.cafeOperationStatus = cafeOperationStatus
         self.imageWidth = imageWidth
     }
 
     var body: some View {
         NavigationLink(
-            // TODO: Add Destination View
+            // TODO; Add Destination View
             destination: { EmptyView() },
             label: {
                 VStack(
@@ -32,7 +34,7 @@ struct LargeCafeListCell: View, CafeListCellConfigurable {
                         cafeOperationStatus: $cafeOperationStatus,
                         cafeImage: $cafeImage,
                         imageWidth: $imageWidth,
-                        imageAspectRatio: 
+                        imageAspectRatio:
                             Self.$imageAspectRatio
                     )
 
@@ -75,10 +77,12 @@ fileprivate struct CafeImageView: View {
                     imageAspectRatio: $imageAspectRatio
                 )
             case .phoneOrderOnly:
-                PhoneOrderOnlyCafeImageOverlayView(
-                    imageWidth: $imageWidth,
-                    imageAspectRatio: $imageAspectRatio
-                )
+                // TODO: Check Cases
+                EmptyView()
+//                PhoneOrderOnlyCafeImageOverlayView(
+//                    imageWidth: $imageWidth,
+//                    imageAspectRatio: $imageAspectRatio
+//                )
             case .preparing:
                 PreparingCafeImageOverlayView(
                     imageWidth: $imageWidth,
@@ -113,13 +117,13 @@ fileprivate struct OpenedCafeImageOverlayView: View {
 
                 HStack {
                     Label {
-                        Text.heartCount
+                        Text.dummyHeartCount
                     } icon: {
                         Image.heartOrangeFillIcon
                     }
 
                     Label {
-                        Text.storyCount
+                        Text.dummyStoryCount
                     } icon: {
                         Image.storyWhiteIcon
                     }
@@ -130,7 +134,7 @@ fileprivate struct OpenedCafeImageOverlayView: View {
 
                 HStack {
                     Label {
-                        Text.cartCount
+                        Text.dummyOrderCount
                     } icon: {
                         Image.cartIcon
                     }
@@ -150,41 +154,8 @@ fileprivate struct PhoneOrderOnlyCafeImageOverlayView: View {
     @Binding var imageAspectRatio: CGFloat
 
     var body: some View {
-        ZStack {
-            Color.dimmedOverlayBlack
-
-            VStack(alignment: .center) {
-                Image.phoneOrderableBalloon
-                Text.phoneOrderableCafe
-            }
-
-            VStack(alignment: .leading) {
-                Spacer()
-
-                HStack {
-                    Image.phoneCallBadge
-                    Spacer()
-                }
-
-                HStack {
-                    Label {
-                        Text.heartCount
-                    } icon: {
-                        Image.heartOrangeFillIcon
-                    }
-
-                    Label {
-                        Text.storyCount
-                    } icon: {
-                        Image.storyWhiteIcon
-                    }
-                    .labelStyle(.titleAndIcon)
-
-                    Spacer()
-                }
-            }
-            .padding(CGFloat.cafeImageContentPadding)
-        }
+        // TODO: Check Cases
+        EmptyView()
     }
 }
 
@@ -195,25 +166,54 @@ fileprivate struct PreparingCafeImageOverlayView: View {
 
     var body: some View {
         ZStack {
+            VStack(alignment: .leading) {
+                Spacer()
+
+                HStack {
+                    Image.pointBadge
+                    Image.pointTogetherBadge
+                }
+
+                HStack {
+                    Image.newCafeBadge
+                }
+
+                HStack {
+                    Label {
+                        Text.dummyHeartCount
+                    } icon: {
+                        Image.heartOrangeFillIcon
+                    }
+
+                    Label {
+                        Text.dummyStoryCount
+                    } icon: {
+                        Image.storyWhiteIcon
+                    }
+                    .labelStyle(.titleAndIcon)
+
+                    Spacer()
+                }
+
+                HStack {
+                    Label {
+                        Text.dummyOrderCount
+                    } icon: {
+                        Image.cartIcon
+                    }
+                    .labelStyle(.titleAndIcon)
+
+                    Spacer()
+                }
+            }
+            .padding(CGFloat.cafeImageContentPadding)
+
             Color.dimmedOverlayBlack
 
             VStack(alignment: .center) {
                 Image.preparingClockImage
                 Text.preparingCafeTitle
             }
-
-            VStack(alignment: .leading) {
-                Spacer()
-
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text.preparingButton
-                        .padding(CGFloat.preparingButtonPadding)
-                        .frame(width: imageWidth - CGFloat.preparingButtonMargin)
-                        .background(Color.preparingButtonOrange)
-                        .clipShape(.rect(cornerRadius: CGFloat.preparingButtonCornerRadius))
-                })
-            }
-            .padding(CGFloat.cafeImageContentPadding)
         }
     }
 }
@@ -226,9 +226,10 @@ fileprivate struct CafeDescriptionView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text.cafeNameTitle
+            Text.dummyCafeNameTitle
                 .lineLimit(Int.cafeNameLineLimit)
                 .multilineTextAlignment(.leading)
+
             Text("")
                 .frame(width: width)
 
@@ -252,7 +253,7 @@ fileprivate struct CafeDescriptionView: View {
             }
 
             Label {
-                Text.cafeDistance
+                Text.dummyCafeDistance
             } icon: {
                 Image.locationIcon
             }
@@ -262,47 +263,45 @@ fileprivate struct CafeDescriptionView: View {
 }
 
 
-// MARK: - Extension: Color
-fileprivate extension Color {
-    static let phoneOrderableWhite = Color.white
-    static let preparingCafeWhite = Color.white
-    static let dimmedOverlayBlack = Color.black.opacity(0.5)
-    static let cafeNameBlack = Color.black
-    static let heartOrange = Color("CommonSubviews/CafeListCells/orange")
-    static let storyWhite = Color.white
-    static let cartWhite = Color.white
-    static let distanceGray = Color.gray
-    static let preparingButtonOrange = Color("CommonSubviews/CafeListCells/orange")
-    static let preparingGray = Color.gray
-}
-
 
 // MARK: - Extension: CGFloat
 fileprivate extension CGFloat {
-    static let defaultImageAspectRatio = CGFloat(840) / CGFloat(660)
-    static let cellVerticalSpacing: CGFloat = 12
-    static let cafeImageCornerRadius: CGFloat = 4
-    static let cafeImageContentPadding: CGFloat = 8
-    static let preparingButtonMargin: CGFloat = 16
-    static let preparingButtonPadding: CGFloat = 8
-    static let preparingButtonCornerRadius: CGFloat = 6
+    static let badgeHStackPadding = CGFloat(8)
+    static let badgeHStackSpacing = CGFloat(4)
+    static let cafeImageContentPadding = CGFloat(8)
+    static let cafeImageCornerRadius = CGFloat(4)
+    static let cellVerticalSpacing = CGFloat(12)
+    static let defaultImageAspectRatio = CGFloat(1)
+}
+
+
+// MARK: - Extension: Color
+fileprivate extension Color {
+    static let cafeNameBlack = Color.black
+    static let cartWhite = Color.white
+    static let dimmedOverlayBlack = Color.black.opacity(0.5)
+    static let distanceGray = Color.gray
+    static let heartOrange = Color("CommonSubviews/CafeListCells/orange")
+    static let preparingCafeWhite = Color.white
+    static let preparingGray = Color.gray
+    static let storyWhite = Color.white
 }
 
 
 // MARK: - Extension: Image
 fileprivate extension Image {
-    // Icons
-    static let heartOrangeFillIcon = Image("CommonSubviews/CafeListCells/heartOrangeFillIcon")
-    static let storyWhiteIcon = Image("CommonSubviews/CafeListCells/storyWhiteIcon")
-    static let cartIcon = Image("CommonSubviews/CafeListCells/cartIcon")
-    static let pickUpTimeIcon = Image("CommonSubviews/CafeListCells/pickUpTimeIcon")
-    static let locationIcon = Image("CommonSubviews/CafeListCells/locationIcon")
-
     // Badges
-    static let pointBadge = Image("CommonSubviews/CafeListCells/pointBadge")
-    static let pointTogetherBadge = Image("CommonSubviews/CafeListCells/pointTogetherBadge")
     static let newCafeBadge = Image("CommonSubviews/CafeListCells/newCafeBadge")
     static let phoneCallBadge = Image("CommonSubviews/CafeListCells/phoneCallBadge")
+    static let pointBadge = Image("CommonSubviews/CafeListCells/pointBadge")
+    static let pointTogetherBadge = Image("CommonSubviews/CafeListCells/pointTogetherBadge")
+
+    // Icons
+    static let cartIcon = Image("CommonSubviews/CafeListCells/cartIcon")
+    static let heartOrangeFillIcon = Image("CommonSubviews/CafeListCells/heartOrangeFillIcon")
+    static let locationIcon = Image("CommonSubviews/CafeListCells/locationIcon")
+    static let pickUpTimeIcon = Image("CommonSubviews/CafeListCells/pickUpTimeIcon")
+    static let storyWhiteIcon = Image("CommonSubviews/CafeListCells/storyWhiteIcon")
 
     // Images
     static let phoneOrderableBalloon = Image("CommonSubviews/CafeListCells/phoneOrderableBalloon")
@@ -315,33 +314,28 @@ fileprivate extension Image {
 
 // MARK: - Extension: Int
 fileprivate extension Int {
-    static let cafeNameLineLimit: Int = 2
-
-    var decimalString: String {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .decimal
-
-        return numberFormatter.string(from: NSNumber(value: self)) ?? "0"
-    }
+    static let cafeNameLineLimit = Int(2)
 }
 
 
 // MARK: - Extension: Text
 fileprivate extension Text {
-    // FIXME: Replace Dummy
-    static let phoneOrderableCafe = Text("전화주문 매장").font(.title3).fontWeight(.bold).foregroundStyle(Color.phoneOrderableWhite)
-    static let preparingCafeTitle = Text("준비 중 입니다.").foregroundStyle(Color.preparingCafeWhite)
-    static let preparingButton = Text("매장이 열리면 알려드릴까요?").font(.footnote).fontWeight(.semibold).foregroundStyle(Color.preparingCafeWhite)
-    static let heartCount = Text("0").foregroundStyle(Color.heartOrange)
-    static let storyCount = Text("0").foregroundStyle(Color.storyWhite)
-    static let cartCount = Text("주문수 \(1234.decimalString)").foregroundStyle(Color.cartWhite).font(.subheadline)
-    static let cafeNameTitle = Text("커피사피엔스 구로한영 캐슬시티점 aaaaaaaa").font(.title3).foregroundStyle(Color.cafeNameBlack)
-    static let receiveNow = Text("지금 수령").foregroundStyle(Color.heartOrange)
+    // FIXME: Remove Dummy
+    static let dummyCafeDistance = Text("14.8km").foregroundStyle(Color.distanceGray)
+    static let dummyCafeNameTitle = Text("커피사피엔스 구로한영").font(.title3).foregroundStyle(Color.cafeNameBlack)
+    static let dummyHeartCount = Text("123").foregroundStyle(Color.heartOrange)
+    static let dummyStoryCount = Text("456").foregroundStyle(Color.storyWhite)
+    static let dummyOrderCount = Text("주문수 0").foregroundStyle(Color.cartWhite)
+    
     static let preparingNow = Text("준비 중").foregroundStyle(Color.preparingGray)
-    static let cafeDistance = Text("120.0m").foregroundStyle(Color.distanceGray)
+    static let preparingCafeTitle = Text("준비 중 입니다.").foregroundStyle(Color.preparingCafeWhite)
+    static let receiveNow = Text("지금 수령").foregroundStyle(Color.heartOrange)
 }
 
 
 #Preview {
-    LargeCafeListCell(cafeOperationStatus: .open, imageWidth: 200)
+    SquareCafeListCell(
+        cafeOperationStatus: .open,
+        imageWidth: 240
+    )
 }
