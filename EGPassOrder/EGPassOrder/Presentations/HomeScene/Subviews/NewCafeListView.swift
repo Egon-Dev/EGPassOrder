@@ -1,5 +1,5 @@
 //
-//  DineInCafeListView.swift
+//  NewCafeListView.swift
 //  EGPassOrder
 //
 //  Created by changmuk.im@phoenixdarts.com on 1/19/24.
@@ -7,15 +7,13 @@
 
 import SwiftUI
 
-struct DineInCafeListView: View {
+struct NewCafeListView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            TitleView()
-                .padding(.horizontal)
-            CafeListScrollView()
-            AccessaryView()
-                .padding()
-        }
+        TitleView()
+            .padding(.horizontal)
+        CafeListScrollView()
+        AccessaryView()
+            .padding()
     }
 }
 
@@ -35,14 +33,17 @@ private struct TitleView: View {
 // MARK: - Subview: CafeListScrollView
 private struct CafeListScrollView: View {
     // FIXME: Remove Dummy
-    let rows = (0..<12)
+    let rows = (0...12)
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: [GridItem()], alignment: .top, spacing: CGFloat.cellSpacing) {
-                // FIXME: Remove Dummy
-                ForEach(rows.indices, id: \.self) { item in
-                    MediumCafeListCell(
+            LazyHGrid(
+                rows: [GridItem()],
+                alignment: .top,
+                spacing: CGFloat.cellSpacing
+            ) {
+                ForEach(rows.indices, id: \.self) { index in
+                    SquareCafeListCell(
                         // FIXME: Remove Dummy
                         cafeOperationStatus: .open,
                         imageWidth: UIScreen.main.bounds.width * CGFloat.cellWidthCoefficient
@@ -61,11 +62,12 @@ private struct AccessaryView: View {
         HStack {
             Spacer()
 
-            Button(action: {
-
-            }, label: {
-                Text.viewMoreButtonText
-            })
+            Button(
+                action: {},
+                label: {
+                    Text.viewMoreButtonText
+                }
+            )
         }
     }
 }
@@ -73,30 +75,29 @@ private struct AccessaryView: View {
 
 // MARK: - Extension: CGFloat
 fileprivate extension CGFloat {
-    static let cellWidthCoefficient = CGFloat(0.35)
     static let cellSpacing = CGFloat(16)
+    static let cellWidthCoefficient = CGFloat(0.55)
 }
 
 
 // MARK: - Extension: Color
 fileprivate extension Color {
-    static let titleTextYellow = Color("HomeScene/Subviews/DineInCafeListView/yellow")
+    static let titleTextOrange = Color("HomeScene/Subviews/NewCafeListView/titleOrange")
 }
 
 
 // MARK: - Extension: Text
 fileprivate extension Text {
-    static let titleText = Text("게스트님 근처에 있는\n").font(.title3)
-    + Text("먹고갈 수 있는 매장")
-        .foregroundStyle(Color.titleTextYellow)
+    static let titleText = Text("새로 추가된\n").font(.title3)
+    + Text("신규매장")
+        .foregroundStyle(Color.titleTextOrange)
         .font(.title3)
         .fontWeight(.bold)
-    + Text("이에요!").font(.title3)
-
+    + Text("을 소개합니다!").font(.title3)
     static let viewMoreButtonText = Text("더보기")
 }
 
 
 #Preview {
-    DineInCafeListView()
+    NewCafeListView()
 }
