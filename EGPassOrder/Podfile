@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'EGPassOrder' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for EGPassOrder
+  pod 'lottie-ios'
+
+  pod 'NMapsMap'
+  pod 'SwiftLint'
+
+  target 'EGPassOrderTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'EGPassOrderUITests' do
+    # Pods for testing
+  end
+
+end
