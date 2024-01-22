@@ -89,3 +89,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 .DS_Store
+*.xcscheme
+EGPassOrder/Pods
+*.xcworkspacedata
+EGPassOrder/EGPassOrder.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist

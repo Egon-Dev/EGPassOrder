@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1601F3322B42A8A400A2AC61 /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */; };
+		1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F32A2B42A8A400A2AC61 /* OnBoardingPageView.swift */; };
+		1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */; };
+		1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */; };
+		1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */; };
+		1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3452B42AB5200A2AC61 /* MainTabView.swift */; };
+		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
+		E6018C232B3E95090032566E /* CoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* CoffeeAnimation.json */; };
+		E6162D482B590AFC002937C8 /* AutoChangeAdvertiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6162D472B590AFC002937C8 /* AutoChangeAdvertiseView.swift */; };
+		E6162D4A2B591697002937C8 /* StoryCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6162D492B591697002937C8 /* StoryCafeListView.swift */; };
+		E62F833C2B5E08CC0077F7B5 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F833B2B5E08CC0077F7B5 /* FeedbackView.swift */; };
+		E62F833E2B5E16B00077F7B5 /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F833D2B5E16B00077F7B5 /* TermsOfServiceView.swift */; };
+		E62F83402B5E45AC0077F7B5 /* HomeTopTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F833F2B5E45AC0077F7B5 /* HomeTopTabBarView.swift */; };
+		E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */; };
+		E6A6001D2B551DE6001510AE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6001C2B551DE6001510AE /* HomeView.swift */; };
+		E6A600212B553B64001510AE /* NearbyCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A600202B553B64001510AE /* NearbyCafeListView.swift */; };
+		E6A600232B553BBC001510AE /* LargeCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A600222B553BBC001510AE /* LargeCafeListCell.swift */; };
+		E6A600252B553BDB001510AE /* CafeListCellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A600242B553BDB001510AE /* CafeListCellConfigurable.swift */; };
+		E6A600282B554647001510AE /* Legacy.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A600272B554646001510AE /* Legacy.xcassets */; };
 		E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */; };
 		E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177972B3D46D10011FE74 /* ContentView.swift */; };
-		E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C177992B3D46D20011FE74 /* Assets.xcassets */; };
 		E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */; };
 		E6C177A72B3D46D30011FE74 /* EGPassOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */; };
 		E6C177B12B3D46D30011FE74 /* EGPassOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */; };
 		E6C177B32B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */; };
+		E6CCBEC82B5A108E0048D382 /* DineInCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBEC72B5A108E0048D382 /* DineInCafeListView.swift */; };
+		E6CCBECA2B5A11D10048D382 /* MediumCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBEC92B5A11D10048D382 /* MediumCafeListCell.swift */; };
+		E6CCBECC2B5A35590048D382 /* SquareCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBECB2B5A35590048D382 /* SquareCafeListCell.swift */; };
+		E6CCBECE2B5A35620048D382 /* NewCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBECD2B5A35620048D382 /* NewCafeListView.swift */; };
+		E6D504222B576FBD00BE4A7B /* PointCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */; };
+		E6D504242B5772E500BE4A7B /* SmallCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */; };
+		E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +59,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		1601F32A2B42A8A400A2AC61 /* OnBoardingPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageView.swift; sourceTree = "<group>"; };
+		1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
+		1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageControl.swift; sourceTree = "<group>"; };
+		1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1601F3452B42AB5200A2AC61 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2F1F680F3EA683556C8C9132 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		551B393532CA17FEF6F1A83F /* Pods-EGPassOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.release.xcconfig"; sourceTree = "<group>"; };
+		6002AE66324A569D6F302023 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C532378734AD1877FC21D16D /* Pods-EGPassOrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.release.xcconfig"; sourceTree = "<group>"; };
+		D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E6018C222B3E95090032566E /* CoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CoffeeAnimation.json; sourceTree = "<group>"; };
+		E6162D472B590AFC002937C8 /* AutoChangeAdvertiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoChangeAdvertiseView.swift; sourceTree = "<group>"; };
+		E6162D492B591697002937C8 /* StoryCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCafeListView.swift; sourceTree = "<group>"; };
+		E62F833B2B5E08CC0077F7B5 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		E62F833D2B5E16B00077F7B5 /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
+		E62F833F2B5E45AC0077F7B5 /* HomeTopTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopTabBarView.swift; sourceTree = "<group>"; };
+		E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPageTabView.swift; sourceTree = "<group>"; };
+		E6A6001C2B551DE6001510AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E6A600202B553B64001510AE /* NearbyCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCafeListView.swift; sourceTree = "<group>"; };
+		E6A600222B553BBC001510AE /* LargeCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCafeListCell.swift; sourceTree = "<group>"; };
+		E6A600242B553BDB001510AE /* CafeListCellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListCellConfigurable.swift; sourceTree = "<group>"; };
+		E6A600272B554646001510AE /* Legacy.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Legacy.xcassets; sourceTree = "<group>"; };
 		E6C177922B3D46D10011FE74 /* EGPassOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGPassOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderApp.swift; sourceTree = "<group>"; };
 		E6C177972B3D46D10011FE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E6C177992B3D46D20011FE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C1779C2B3D46D20011FE74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6C177A22B3D46D30011FE74 /* EGPassOrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGPassOrderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177A62B3D46D30011FE74 /* EGPassOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderTests.swift; sourceTree = "<group>"; };
 		E6C177AC2B3D46D30011FE74 /* EGPassOrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGPassOrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C177B02B3D46D30011FE74 /* EGPassOrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITests.swift; sourceTree = "<group>"; };
 		E6C177B22B3D46D30011FE74 /* EGPassOrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGPassOrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6CCBEC72B5A108E0048D382 /* DineInCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInCafeListView.swift; sourceTree = "<group>"; };
+		E6CCBEC92B5A11D10048D382 /* MediumCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCafeListCell.swift; sourceTree = "<group>"; };
+		E6CCBECB2B5A35590048D382 /* SquareCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCafeListCell.swift; sourceTree = "<group>"; };
+		E6CCBECD2B5A35620048D382 /* NewCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCafeListView.swift; sourceTree = "<group>"; };
+		E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCafeListView.swift; sourceTree = "<group>"; };
+		E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCafeListCell.swift; sourceTree = "<group>"; };
+		E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeOperationStatus.swift; sourceTree = "<group>"; };
+		EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +127,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1601F3282B42A8A400A2AC61 /* OnBoardingScene */ = {
+			isa = PBXGroup;
+			children = (
+				1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */,
+				1601F32A2B42A8A400A2AC61 /* OnBoardingPageView.swift */,
+				1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */,
+				1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */,
+			);
+			path = OnBoardingScene;
+			sourceTree = "<group>";
+		};
+		1601F33A2B42A8DE00A2AC61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */,
+				E6A600272B554646001510AE /* Legacy.xcassets */,
+				E6A600262B553CD1001510AE /* LottieAnimations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1601F3432B42A9B200A2AC61 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */,
+				E6C177972B3D46D10011FE74 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1601F3442B42AB2200A2AC61 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				1601F3452B42AB5200A2AC61 /* MainTabView.swift */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		E6018C192B3E73FB0032566E /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				E6A600192B551CC9001510AE /* CommonSubviews */,
+				E6A600182B551CB3001510AE /* HomeScene */,
+				1601F3442B42AB2200A2AC61 /* MainScene */,
+				1601F3282B42A8A400A2AC61 /* OnBoardingScene */,
+				E6018C1A2B3E741D0032566E /* SplashScene */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		E6018C1A2B3E741D0032566E /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				E6018C1B2B3E742F0032566E /* SplashView.swift */,
+			);
+			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		E6A600182B551CB3001510AE /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				E6A6001E2B553B0C001510AE /* Subviews */,
+				E6A6001C2B551DE6001510AE /* HomeView.swift */,
+				E62F833F2B5E45AC0077F7B5 /* HomeTopTabBarView.swift */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		E6A600192B551CC9001510AE /* CommonSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6A6001F2B553B17001510AE /* CafeListCells */,
+				E6A6001A2B551D2E001510AE /* PromotionPageTabView.swift */,
+				E6162D472B590AFC002937C8 /* AutoChangeAdvertiseView.swift */,
+			);
+			path = CommonSubviews;
+			sourceTree = "<group>";
+		};
+		E6A6001E2B553B0C001510AE /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6A600202B553B64001510AE /* NearbyCafeListView.swift */,
+				E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */,
+				E6162D492B591697002937C8 /* StoryCafeListView.swift */,
+				E6CCBEC72B5A108E0048D382 /* DineInCafeListView.swift */,
+				E6CCBECD2B5A35620048D382 /* NewCafeListView.swift */,
+				E62F833B2B5E08CC0077F7B5 /* FeedbackView.swift */,
+				E62F833D2B5E16B00077F7B5 /* TermsOfServiceView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		E6A6001F2B553B17001510AE /* CafeListCells */ = {
+			isa = PBXGroup;
+			children = (
+				E6A600242B553BDB001510AE /* CafeListCellConfigurable.swift */,
+				E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */,
+				E6A600222B553BBC001510AE /* LargeCafeListCell.swift */,
+				E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */,
+				E6CCBEC92B5A11D10048D382 /* MediumCafeListCell.swift */,
+				E6CCBECB2B5A35590048D382 /* SquareCafeListCell.swift */,
+			);
+			path = CafeListCells;
+			sourceTree = "<group>";
+		};
+		E6A600262B553CD1001510AE /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				E6018C222B3E95090032566E /* CoffeeAnimation.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
 		E6C177892B3D46D10011FE74 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +247,8 @@
 				E6C177A52B3D46D30011FE74 /* EGPassOrderTests */,
 				E6C177AF2B3D46D30011FE74 /* EGPassOrderUITests */,
 				E6C177932B3D46D10011FE74 /* Products */,
+				FA67FBE7D3C4304E6085E1BB /* Pods */,
+				F954730D75B09BCA24FA7144 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +265,9 @@
 		E6C177942B3D46D10011FE74 /* EGPassOrder */ = {
 			isa = PBXGroup;
 			children = (
-				E6C177952B3D46D10011FE74 /* EGPassOrderApp.swift */,
-				E6C177972B3D46D10011FE74 /* ContentView.swift */,
-				E6C177992B3D46D20011FE74 /* Assets.xcassets */,
+				1601F3432B42A9B200A2AC61 /* App */,
+				1601F33A2B42A8DE00A2AC61 /* Resources */,
+				E6018C192B3E73FB0032566E /* Presentations */,
 				E6C1779B2B3D46D20011FE74 /* Preview Content */,
 			);
 			path = EGPassOrder;
@@ -127,6 +298,26 @@
 			path = EGPassOrderUITests;
 			sourceTree = "<group>";
 		};
+		F954730D75B09BCA24FA7144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA67FBE7D3C4304E6085E1BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */,
+				551B393532CA17FEF6F1A83F /* Pods-EGPassOrder.release.xcconfig */,
+				2F1F680F3EA683556C8C9132 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */,
+				6002AE66324A569D6F302023 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */,
+				D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */,
+				C532378734AD1877FC21D16D /* Pods-EGPassOrderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +325,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177B62B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrder" */;
 			buildPhases = (
+				0D857D033D1FD81A1EBF1F0E /* [CP] Check Pods Manifest.lock */,
 				E6C1778E2B3D46D10011FE74 /* Sources */,
 				E6C1778F2B3D46D10011FE74 /* Frameworks */,
 				E6C177902B3D46D10011FE74 /* Resources */,
+				5BEA1401F15C2BD11CFCD260 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EGPassOrder;
+			packageProductDependencies = (
+			);
 			productName = EGPassOrder;
 			productReference = E6C177922B3D46D10011FE74 /* EGPassOrder.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177B92B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrderTests" */;
 			buildPhases = (
+				31BF6DD34D2861CA92988C15 /* [CP] Check Pods Manifest.lock */,
 				E6C1779E2B3D46D30011FE74 /* Sources */,
 				E6C1779F2B3D46D30011FE74 /* Frameworks */,
 				E6C177A02B3D46D30011FE74 /* Resources */,
@@ -169,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177BC2B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrderUITests" */;
 			buildPhases = (
+				21E37CFC5C348A95150BE343 /* [CP] Check Pods Manifest.lock */,
 				E6C177A82B3D46D30011FE74 /* Sources */,
 				E6C177A92B3D46D30011FE74 /* Frameworks */,
 				E6C177AA2B3D46D30011FE74 /* Resources */,
+				54D2D244831F185783FF34D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +413,8 @@
 				Base,
 			);
 			mainGroup = E6C177892B3D46D10011FE74;
+			packageReferences = (
+			);
 			productRefGroup = E6C177932B3D46D10011FE74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +431,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A600282B554647001510AE /* Legacy.xcassets in Resources */,
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
-				E6C1779A2B3D46D20011FE74 /* Assets.xcassets in Resources */,
+				1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */,
+				E6018C232B3E95090032566E /* CoffeeAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +454,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D857D033D1FD81A1EBF1F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21E37CFC5C348A95150BE343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-EGPassOrderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31BF6DD34D2861CA92988C15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54D2D244831F185783FF34D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BEA1401F15C2BD11CFCD260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6C1778E2B3D46D10011FE74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A600232B553BBC001510AE /* LargeCafeListCell.swift in Sources */,
+				E6A600212B553B64001510AE /* NearbyCafeListView.swift in Sources */,
+				E62F833C2B5E08CC0077F7B5 /* FeedbackView.swift in Sources */,
+				1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */,
+				E6162D482B590AFC002937C8 /* AutoChangeAdvertiseView.swift in Sources */,
+				E6CCBECE2B5A35620048D382 /* NewCafeListView.swift in Sources */,
+				E6CCBEC82B5A108E0048D382 /* DineInCafeListView.swift in Sources */,
+				E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */,
+				E6162D4A2B591697002937C8 /* StoryCafeListView.swift in Sources */,
+				E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */,
+				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
+				E62F83402B5E45AC0077F7B5 /* HomeTopTabBarView.swift in Sources */,
+				E6D504242B5772E500BE4A7B /* SmallCafeListCell.swift in Sources */,
+				E6A6001D2B551DE6001510AE /* HomeView.swift in Sources */,
+				E6D504222B576FBD00BE4A7B /* PointCafeListView.swift in Sources */,
+				E6A600252B553BDB001510AE /* CafeListCellConfigurable.swift in Sources */,
+				1601F3382B42A8A400A2AC61 /* OnBoardingPageViewController.swift in Sources */,
+				1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */,
+				E6CCBECC2B5A35590048D382 /* SquareCafeListCell.swift in Sources */,
+				E6CCBECA2B5A11D10048D382 /* MediumCafeListCell.swift in Sources */,
 				E6C177982B3D46D10011FE74 /* ContentView.swift in Sources */,
 				E6C177962B3D46D10011FE74 /* EGPassOrderApp.swift in Sources */,
+				E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */,
+				1601F3322B42A8A400A2AC61 /* OnBoardingPage.swift in Sources */,
+				E62F833E2B5E16B00077F7B5 /* TermsOfServiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +660,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -395,7 +723,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -404,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -416,6 +744,7 @@
 		};
 		E6C177B72B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,8 +757,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,14 +767,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Egon.EGPassOrder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E6C177B82B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 551B393532CA17FEF6F1A83F /* Pods-EGPassOrder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,8 +792,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,14 +802,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Egon.EGPassOrder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		E6C177BA2B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +835,7 @@
 		};
 		E6C177BB2B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C532378734AD1877FC21D16D /* Pods-EGPassOrderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +856,7 @@
 		};
 		E6C177BD2B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1F680F3EA683556C8C9132 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +875,7 @@
 		};
 		E6C177BE2B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6002AE66324A569D6F302023 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
