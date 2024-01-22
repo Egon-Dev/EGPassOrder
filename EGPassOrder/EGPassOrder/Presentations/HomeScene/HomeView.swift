@@ -14,6 +14,12 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                HomeTopTabBarView(
+                    selectedTabIndex: $selectedTabIndex,
+                    spacing: CGFloat.topTabBarSpacing,
+                    height: CGFloat.topTabBarHeight
+                )
+
                 if selectedTabIndex == .zero {
                     OrderByListView()
                         .onAppear {
@@ -90,9 +96,11 @@ fileprivate struct OrderByMapView: View {
 
 // MARK: - Extension: CGFloat
 fileprivate extension CGFloat {
-    static let subviewVerticalSpacing = CGFloat(20)
-    static let promotionPageTabViewHeight = CGFloat(120)
     static let autoChangeAdvertiseViewHeight = CGFloat(120)
+    static let promotionPageTabViewHeight = CGFloat(120)
+    static let subviewVerticalSpacing = CGFloat(20)
+    static let topTabBarHeight = CGFloat(44)
+    static let topTabBarSpacing = CGFloat(20)
 }
 
 
