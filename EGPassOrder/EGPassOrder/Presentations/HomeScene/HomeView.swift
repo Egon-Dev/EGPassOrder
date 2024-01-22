@@ -70,6 +70,8 @@ fileprivate struct OrderByListView: View {
                 DineInCafeListView()
 
                 NewCafeListView()
+
+                FeedbackView()
             }
         }
     }
