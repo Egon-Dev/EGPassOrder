@@ -6,8 +6,10 @@ target 'EGPassOrder' do
   use_frameworks!
 
   # Pods for EGPassOrder
-  pod 'NMapsMap'
   pod 'lottie-ios'
+
+  pod 'NMapsMap'
+  pod 'SwiftLint'
 
   target 'EGPassOrderTests' do
     inherit! :search_paths
