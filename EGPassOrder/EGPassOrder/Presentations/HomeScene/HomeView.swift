@@ -72,6 +72,8 @@ fileprivate struct OrderByListView: View {
                 NewCafeListView()
 
                 FeedbackView()
+
+                TermsOfServiceView()
             }
         }
     }
