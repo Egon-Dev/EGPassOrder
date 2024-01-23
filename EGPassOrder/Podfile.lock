@@ -3,22 +3,26 @@ PODS:
   - NMapsGeometry (1.0.1)
   - NMapsMap (3.17.0):
     - NMapsGeometry
+  - SwiftLint (0.54.0)
 
 DEPENDENCIES:
   - lottie-ios
   - NMapsMap
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - lottie-ios
     - NMapsGeometry
     - NMapsMap
+    - SwiftLint
 
 SPEC CHECKSUMS:
   lottie-ios: 3d98679b41fa6fd6aff2352b3953dbd3df8a397e
   NMapsGeometry: 53c573ead66466681cf123f99f698dc8071a4b83
   NMapsMap: a5b909a31b6f3d27a670f6eb2ddc913c38975474
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
 
-PODFILE CHECKSUM: 27fbe377c05fab6016dc46d504d1a8be785ee18e
+PODFILE CHECKSUM: 97dc32224681340e7efb1f00e5d61bc7ba70b64b
 
 COCOAPODS: 1.12.1

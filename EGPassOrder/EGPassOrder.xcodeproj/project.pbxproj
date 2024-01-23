@@ -13,8 +13,11 @@
 		1601F3392B42A8A400A2AC61 /* OnBoardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */; };
 		1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */; };
 		1601F3462B42AB5200A2AC61 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1601F3452B42AB5200A2AC61 /* MainTabView.swift */; };
+		BBCF708C12367261661B2429 /* Pods_EGPassOrderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E194BA37DF93EECA55E6D8 /* Pods_EGPassOrderTests.framework */; };
+		C7D753A3FEC4FAE2AB484787 /* Pods_EGPassOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C55EEECDCC48626AC4D1F9F /* Pods_EGPassOrder.framework */; };
 		E6018C1C2B3E742F0032566E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018C1B2B3E742F0032566E /* SplashView.swift */; };
 		E6018C232B3E95090032566E /* CoffeeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6018C222B3E95090032566E /* CoffeeAnimation.json */; };
+		E6059A492B5E5C9B00C25CB4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E6059A482B5E5C9B00C25CB4 /* .swiftlint.yml */; };
 		E6162D482B590AFC002937C8 /* AutoChangeAdvertiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6162D472B590AFC002937C8 /* AutoChangeAdvertiseView.swift */; };
 		E6162D4A2B591697002937C8 /* StoryCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6162D492B591697002937C8 /* StoryCafeListView.swift */; };
 		E62F833C2B5E08CC0077F7B5 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F833B2B5E08CC0077F7B5 /* FeedbackView.swift */; };
@@ -39,6 +42,7 @@
 		E6D504222B576FBD00BE4A7B /* PointCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */; };
 		E6D504242B5772E500BE4A7B /* SmallCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */; };
 		E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */; };
+		FF30BDC64171BAC002D1CA2D /* Pods_EGPassOrder_EGPassOrderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F391B09812087BEB46D303 /* Pods_EGPassOrder_EGPassOrderUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,19 +63,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D7079A5A99EB0972A475060 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		12AFB6832FD91ED1966D7B61 /* Pods-EGPassOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1601F3292B42A8A400A2AC61 /* OnBoardingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
 		1601F32A2B42A8A400A2AC61 /* OnBoardingPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageView.swift; sourceTree = "<group>"; };
 		1601F3302B42A8A400A2AC61 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
 		1601F3312B42A8A400A2AC61 /* OnBoardingPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPageControl.swift; sourceTree = "<group>"; };
 		1601F33B2B42A8DE00A2AC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1601F3452B42AB5200A2AC61 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		2F1F680F3EA683556C8C9132 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		551B393532CA17FEF6F1A83F /* Pods-EGPassOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.release.xcconfig"; sourceTree = "<group>"; };
-		6002AE66324A569D6F302023 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C532378734AD1877FC21D16D /* Pods-EGPassOrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.release.xcconfig"; sourceTree = "<group>"; };
-		D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A52615FE64EFC5800E67246 /* Pods-EGPassOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.release.xcconfig"; sourceTree = "<group>"; };
+		2C55EEECDCC48626AC4D1F9F /* Pods_EGPassOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGPassOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E194BA37DF93EECA55E6D8 /* Pods_EGPassOrderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGPassOrderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F391B09812087BEB46D303 /* Pods_EGPassOrder_EGPassOrderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGPassOrder_EGPassOrderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D556F76B0481748CA15BEC /* Pods-EGPassOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.debug.xcconfig"; sourceTree = "<group>"; };
+		CB04FC3CADB68A8B0D74224F /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6018C1B2B3E742F0032566E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E6018C222B3E95090032566E /* CoffeeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CoffeeAnimation.json; sourceTree = "<group>"; };
+		E6059A482B5E5C9B00C25CB4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E6162D472B590AFC002937C8 /* AutoChangeAdvertiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoChangeAdvertiseView.swift; sourceTree = "<group>"; };
 		E6162D492B591697002937C8 /* StoryCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCafeListView.swift; sourceTree = "<group>"; };
 		E62F833B2B5E08CC0077F7B5 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
@@ -99,7 +107,7 @@
 		E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCafeListView.swift; sourceTree = "<group>"; };
 		E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCafeListCell.swift; sourceTree = "<group>"; };
 		E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeOperationStatus.swift; sourceTree = "<group>"; };
-		EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrder.debug.xcconfig"; path = "Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder.debug.xcconfig"; sourceTree = "<group>"; };
+		F80E3A1431D3CA90F11311B1 /* Pods-EGPassOrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D753A3FEC4FAE2AB484787 /* Pods_EGPassOrder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCF708C12367261661B2429 /* Pods_EGPassOrderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,12 +131,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF30BDC64171BAC002D1CA2D /* Pods_EGPassOrder_EGPassOrderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0447E94E2121667C427E0C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C55EEECDCC48626AC4D1F9F /* Pods_EGPassOrder.framework */,
+				50F391B09812087BEB46D303 /* Pods_EGPassOrder_EGPassOrderUITests.framework */,
+				35E194BA37DF93EECA55E6D8 /* Pods_EGPassOrderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1601F3282B42A8A400A2AC61 /* OnBoardingScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +204,13 @@
 				E6018C1B2B3E742F0032566E /* SplashView.swift */,
 			);
 			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		E6059A472B5E5C6700C25CB4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E6A600182B551CB3001510AE /* HomeScene */ = {
@@ -243,12 +271,13 @@
 		E6C177892B3D46D10011FE74 = {
 			isa = PBXGroup;
 			children = (
+				E6059A482B5E5C9B00C25CB4 /* .swiftlint.yml */,
 				E6C177942B3D46D10011FE74 /* EGPassOrder */,
 				E6C177A52B3D46D30011FE74 /* EGPassOrderTests */,
 				E6C177AF2B3D46D30011FE74 /* EGPassOrderUITests */,
 				E6C177932B3D46D10011FE74 /* Products */,
 				FA67FBE7D3C4304E6085E1BB /* Pods */,
-				F954730D75B09BCA24FA7144 /* Frameworks */,
+				0447E94E2121667C427E0C3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +298,7 @@
 				1601F33A2B42A8DE00A2AC61 /* Resources */,
 				E6018C192B3E73FB0032566E /* Presentations */,
 				E6C1779B2B3D46D20011FE74 /* Preview Content */,
+				E6059A472B5E5C6700C25CB4 /* Utils */,
 			);
 			path = EGPassOrder;
 			sourceTree = "<group>";
@@ -298,22 +328,15 @@
 			path = EGPassOrderUITests;
 			sourceTree = "<group>";
 		};
-		F954730D75B09BCA24FA7144 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		FA67FBE7D3C4304E6085E1BB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */,
-				551B393532CA17FEF6F1A83F /* Pods-EGPassOrder.release.xcconfig */,
-				2F1F680F3EA683556C8C9132 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */,
-				6002AE66324A569D6F302023 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */,
-				D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */,
-				C532378734AD1877FC21D16D /* Pods-EGPassOrderTests.release.xcconfig */,
+				65D556F76B0481748CA15BEC /* Pods-EGPassOrder.debug.xcconfig */,
+				2A52615FE64EFC5800E67246 /* Pods-EGPassOrder.release.xcconfig */,
+				0D7079A5A99EB0972A475060 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */,
+				CB04FC3CADB68A8B0D74224F /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */,
+				12AFB6832FD91ED1966D7B61 /* Pods-EGPassOrderTests.debug.xcconfig */,
+				F80E3A1431D3CA90F11311B1 /* Pods-EGPassOrderTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -325,19 +348,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177B62B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrder" */;
 			buildPhases = (
-				0D857D033D1FD81A1EBF1F0E /* [CP] Check Pods Manifest.lock */,
+				5FF4F272579518618590CD48 /* [CP] Check Pods Manifest.lock */,
 				E6C1778E2B3D46D10011FE74 /* Sources */,
 				E6C1778F2B3D46D10011FE74 /* Frameworks */,
 				E6C177902B3D46D10011FE74 /* Resources */,
-				5BEA1401F15C2BD11CFCD260 /* [CP] Embed Pods Frameworks */,
+				E62F83442B5E592E0077F7B5 /* Run SwiftLint Script */,
+				3FF24B7801B32BC264C1DD67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EGPassOrder;
-			packageProductDependencies = (
-			);
 			productName = EGPassOrder;
 			productReference = E6C177922B3D46D10011FE74 /* EGPassOrder.app */;
 			productType = "com.apple.product-type.application";
@@ -346,7 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177B92B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrderTests" */;
 			buildPhases = (
-				31BF6DD34D2861CA92988C15 /* [CP] Check Pods Manifest.lock */,
+				2B843DA5C0C30EB40F752646 /* [CP] Check Pods Manifest.lock */,
 				E6C1779E2B3D46D30011FE74 /* Sources */,
 				E6C1779F2B3D46D30011FE74 /* Frameworks */,
 				E6C177A02B3D46D30011FE74 /* Resources */,
@@ -365,11 +387,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C177BC2B3D46D30011FE74 /* Build configuration list for PBXNativeTarget "EGPassOrderUITests" */;
 			buildPhases = (
-				21E37CFC5C348A95150BE343 /* [CP] Check Pods Manifest.lock */,
+				C27C7FC32D84C3B39F4BF19D /* [CP] Check Pods Manifest.lock */,
 				E6C177A82B3D46D30011FE74 /* Sources */,
 				E6C177A92B3D46D30011FE74 /* Frameworks */,
 				E6C177AA2B3D46D30011FE74 /* Resources */,
-				54D2D244831F185783FF34D3 /* [CP] Embed Pods Frameworks */,
+				338C344EE34A12ECEC2B6BB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,8 +435,6 @@
 				Base,
 			);
 			mainGroup = E6C177892B3D46D10011FE74;
-			packageReferences = (
-			);
 			productRefGroup = E6C177932B3D46D10011FE74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6059A492B5E5C9B00C25CB4 /* .swiftlint.yml in Resources */,
 				E6A600282B554647001510AE /* Legacy.xcassets in Resources */,
 				E6C1779D2B3D46D20011FE74 /* Preview Assets.xcassets in Resources */,
 				1601F33C2B42A8DE00A2AC61 /* Assets.xcassets in Resources */,
@@ -455,51 +476,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D857D033D1FD81A1EBF1F0E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		21E37CFC5C348A95150BE343 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-EGPassOrderUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31BF6DD34D2861CA92988C15 /* [CP] Check Pods Manifest.lock */ = {
+		2B843DA5C0C30EB40F752646 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,7 +498,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		54D2D244831F185783FF34D3 /* [CP] Embed Pods Frameworks */ = {
+		338C344EE34A12ECEC2B6BB6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -538,7 +515,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder-EGPassOrderUITests/Pods-EGPassOrder-EGPassOrderUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5BEA1401F15C2BD11CFCD260 /* [CP] Embed Pods Frameworks */ = {
+		3FF24B7801B32BC264C1DD67 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,6 +531,69 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGPassOrder/Pods-EGPassOrder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5FF4F272579518618590CD48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27C7FC32D84C3B39F4BF19D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGPassOrder-EGPassOrderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E62F83442B5E592E0077F7B5 /* Run SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\nswiftlint | sed s/error:/warning:/g\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -744,7 +784,7 @@
 		};
 		E6C177B72B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB98853B538F2BC7EBD8398B /* Pods-EGPassOrder.debug.xcconfig */;
+			baseConfigurationReference = 65D556F76B0481748CA15BEC /* Pods-EGPassOrder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -760,6 +800,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -779,7 +820,7 @@
 		};
 		E6C177B82B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551B393532CA17FEF6F1A83F /* Pods-EGPassOrder.release.xcconfig */;
+			baseConfigurationReference = 2A52615FE64EFC5800E67246 /* Pods-EGPassOrder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -795,6 +836,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -814,7 +856,7 @@
 		};
 		E6C177BA2B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D26E143797ADF8EAD75FB5DF /* Pods-EGPassOrderTests.debug.xcconfig */;
+			baseConfigurationReference = 12AFB6832FD91ED1966D7B61 /* Pods-EGPassOrderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -835,7 +877,7 @@
 		};
 		E6C177BB2B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C532378734AD1877FC21D16D /* Pods-EGPassOrderTests.release.xcconfig */;
+			baseConfigurationReference = F80E3A1431D3CA90F11311B1 /* Pods-EGPassOrderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -856,7 +898,7 @@
 		};
 		E6C177BD2B3D46D30011FE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F1F680F3EA683556C8C9132 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */;
+			baseConfigurationReference = 0D7079A5A99EB0972A475060 /* Pods-EGPassOrder-EGPassOrderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -875,7 +917,7 @@
 		};
 		E6C177BE2B3D46D30011FE74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6002AE66324A569D6F302023 /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */;
+			baseConfigurationReference = CB04FC3CADB68A8B0D74224F /* Pods-EGPassOrder-EGPassOrderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
