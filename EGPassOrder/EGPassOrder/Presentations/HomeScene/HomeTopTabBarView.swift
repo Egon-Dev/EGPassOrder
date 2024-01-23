@@ -136,6 +136,12 @@ fileprivate extension CGFloat {
 }
 
 
+// MARK: - Extension: Color
+fileprivate extension Color {
+    static let tabTitleBlack = Color.black
+}
+
+
 // MARK: - Extension: Image
 fileprivate extension Image {
     // Icons
@@ -159,8 +165,8 @@ fileprivate extension String {
 
 // MARK; - Extension: Text
 fileprivate extension Text {
-    static let orderByListTitle = Text("리스트로 주문")
-    static let orderByMapTitle = Text("지도로 주문")
+    static let orderByListTitle = Text("리스트로 주문").foregroundStyle(Color.tabTitleBlack)
+    static let orderByMapTitle = Text("지도로 주문").foregroundStyle(Color.tabTitleBlack)
 }
 
 
