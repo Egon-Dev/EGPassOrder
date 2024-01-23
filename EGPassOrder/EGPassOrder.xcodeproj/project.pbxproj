@@ -41,6 +41,7 @@
 		E6CCBECE2B5A35620048D382 /* NewCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCBECD2B5A35620048D382 /* NewCafeListView.swift */; };
 		E6D504222B576FBD00BE4A7B /* PointCafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */; };
 		E6D504242B5772E500BE4A7B /* SmallCafeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */; };
+		E6DCD1942B5FAFBB00EE5D18 /* HomeSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCD1932B5FAFBB00EE5D18 /* HomeSearchBarView.swift */; };
 		E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */; };
 		FF30BDC64171BAC002D1CA2D /* Pods_EGPassOrder_EGPassOrderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F391B09812087BEB46D303 /* Pods_EGPassOrder_EGPassOrderUITests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,7 @@
 		E6CCBECD2B5A35620048D382 /* NewCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCafeListView.swift; sourceTree = "<group>"; };
 		E6D504212B576FBD00BE4A7B /* PointCafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCafeListView.swift; sourceTree = "<group>"; };
 		E6D504232B5772E500BE4A7B /* SmallCafeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCafeListCell.swift; sourceTree = "<group>"; };
+		E6DCD1932B5FAFBB00EE5D18 /* HomeSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchBarView.swift; sourceTree = "<group>"; };
 		E6F8D4042B5668FB009E9305 /* CafeOperationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeOperationStatus.swift; sourceTree = "<group>"; };
 		F80E3A1431D3CA90F11311B1 /* Pods-EGPassOrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGPassOrderTests.release.xcconfig"; path = "Target Support Files/Pods-EGPassOrderTests/Pods-EGPassOrderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,7 +220,6 @@
 			children = (
 				E6A6001E2B553B0C001510AE /* Subviews */,
 				E6A6001C2B551DE6001510AE /* HomeView.swift */,
-				E62F833F2B5E45AC0077F7B5 /* HomeTopTabBarView.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -243,6 +244,8 @@
 				E6CCBECD2B5A35620048D382 /* NewCafeListView.swift */,
 				E62F833B2B5E08CC0077F7B5 /* FeedbackView.swift */,
 				E62F833D2B5E16B00077F7B5 /* TermsOfServiceView.swift */,
+				E6DCD1932B5FAFBB00EE5D18 /* HomeSearchBarView.swift */,
+				E62F833F2B5E45AC0077F7B5 /* HomeTopTabBarView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				E6CCBEC82B5A108E0048D382 /* DineInCafeListView.swift in Sources */,
 				E6A6001B2B551D2E001510AE /* PromotionPageTabView.swift in Sources */,
 				E6162D4A2B591697002937C8 /* StoryCafeListView.swift in Sources */,
+				E6DCD1942B5FAFBB00EE5D18 /* HomeSearchBarView.swift in Sources */,
 				E6F8D4052B5668FB009E9305 /* CafeOperationStatus.swift in Sources */,
 				1601F3332B42A8A400A2AC61 /* OnBoardingPageView.swift in Sources */,
 				E62F83402B5E45AC0077F7B5 /* HomeTopTabBarView.swift in Sources */,

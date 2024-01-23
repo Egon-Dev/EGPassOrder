@@ -1,0 +1,13 @@
+//
+//  ReleaseConfig.xcconfig
+//  EGPassOrder
+//
+//  Created by changmuk.im@phoenixdarts.com on 1/23/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+// MARK: - NaverMap
+NMFClientId = wspd7shdmc

@@ -10,10 +10,15 @@ import SwiftUI
 struct HomeView: View {
     @Binding var isMainTabBarVisible: Bool
     @State var selectedTabIndex: Int = .zero
+    @State var isDropdownVisible = false
 
     var body: some View {
         NavigationStack {
             VStack {
+                HomeSearchBarView(isDropdownVisible: $isDropdownVisible)
+                    .frame(height: CGFloat.searchBarHeight)
+                    .zIndex(1)
+
                 HomeTopTabBarView(
                     selectedTabIndex: $selectedTabIndex,
                     spacing: CGFloat.topTabBarSpacing,
@@ -98,6 +103,7 @@ fileprivate struct OrderByMapView: View {
 fileprivate extension CGFloat {
     static let autoChangeAdvertiseViewHeight = CGFloat(120)
     static let promotionPageTabViewHeight = CGFloat(120)
+    static let searchBarHeight = CGFloat(64)
     static let subviewVerticalSpacing = CGFloat(20)
     static let topTabBarHeight = CGFloat(44)
     static let topTabBarSpacing = CGFloat(20)
