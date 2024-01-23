@@ -93,3 +93,5 @@ iOSInjectionProject/
 EGPassOrder/Pods
 *.xcworkspacedata
 EGPassOrder/EGPassOrder.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+EGPassOrder/EGPassOrder/App/DebugConfig.xcconfig
+EGPassOrder/EGPassOrder/App/ReleaseConfig.xcconfig
